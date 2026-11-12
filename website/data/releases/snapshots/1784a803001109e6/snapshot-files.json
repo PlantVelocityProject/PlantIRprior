@@ -1,0 +1,20 @@
+{
+  "browse": {
+    "bytes": 2269981,
+    "label": "Current browser data",
+    "path": "data/releases/snapshots/1784a803001109e6/browse.js",
+    "sha256": "7c2dea203d920eaf25d8a312da6bd223fdbd49fe7869a1aef6e02c4408f780a7"
+  },
+  "bundle": {
+    "bytes": 33265853,
+    "label": "Complete resources · ZIP",
+    "path": "data/releases/snapshots/1784a803001109e6/plantir-resources.zip",
+    "sha256": "7af5a0f9a3749a72303370d1325ed81703e1c047171076ef0dad488b0a66d381"
+  },
+  "manifest": {
+    "bytes": 20241,
+    "label": "Snapshot manifest · JSON",
+    "path": "data/releases/snapshots/1784a803001109e6/manifest.json",
+    "sha256": "97f81f88d754c4274507e54746b6db692e08f1a65a59cd0fe7c5431d0ed16fdd"
+  }
+}

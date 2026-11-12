@@ -1,0 +1,100 @@
+{
+  "annotation_id": "Zm00001eb.1",
+  "changes": {
+    "kind": "initial"
+  },
+  "cohort_hash": "7d2aa8240cd997b6f955788c92c453a684b582dbecf2b4bf7743f6cd69880288",
+  "created_at": "2026-11-02T14:44:39+00:00",
+  "events": 1782,
+  "files": {
+    "browse": {
+      "bytes": 468538,
+      "label": "Browser data",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/browse.js",
+      "sha256": "389f97f4f1e3c8e7ef6d7fa33498ece7adf684d82772800bd50718ebf73557e4"
+    },
+    "events": {
+      "bytes": 373700,
+      "label": "High-confidence events · CSV",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/events.csv",
+      "sha256": "c2d9cf07b511ec6ffd39e9693c04ea2f28926a11019138ddef51544594e69bbd"
+    },
+    "evidence": {
+      "bytes": 7852791,
+      "label": "Complete intron evidence · TSV.gz",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/intron_evidence.tsv.gz",
+      "sha256": "0ee663f1ce08e0b0cbf2076d93c6437d6948d387fe489f88eb8da01f0245b3ea"
+    },
+    "prior": {
+      "bytes": 69781,
+      "label": "PlantVelo prior · TSV",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/high_confidence_IR.tsv",
+      "sha256": "b4c242924f36e872e8984565f155fc3a4078a9e4b7ead5897b089ad50e2e71d1"
+    },
+    "provenance": {
+      "bytes": 412237,
+      "label": "Source provenance · JSON",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/provenance.json",
+      "sha256": "3afbe2613e893cc8791d2e0912195c69743dd3fd7583dc120f2702ad7b926414"
+    },
+    "qc": {
+      "bytes": 688,
+      "label": "Quality report · JSON",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/qc.json",
+      "sha256": "c496356996a55c03243bd97913e0c8fa001ae25f55c7e5e97e6b1b9361891841"
+    },
+    "samples": {
+      "bytes": 21145,
+      "label": "Included samples · CSV",
+      "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/samples.csv",
+      "sha256": "615432d2103fa7caac86e670396a07cfef7a8f8dfb4d6da58d7efb5b339bab5d"
+    }
+  },
+  "generation": 1,
+  "intron_rows": 187009,
+  "key": "zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74",
+  "reference_id": "Zm-B73-REFERENCE-NAM-5.0",
+  "reference_sha256": {
+    "annotation": "a7376eada3366287e1a7018eee2193ff2eb3a8250b366a5c98bd4fd873852c28",
+    "genome": "dfa228c1fa3c9731cfb3e0f41bd63c4e6316318a884db881e3fd610b27f39d77"
+  },
+  "release_id": "g000001-2bd5d2ad74",
+  "rules": {
+    "candidate_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.1,
+      "min_ir_specificity": 0.5,
+      "min_retained": 3,
+      "min_spliced": 3
+    },
+    "high_confidence_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.2,
+      "min_ir_specificity": 0.7,
+      "min_retained": 5,
+      "min_spliced": 5
+    },
+    "nonIR": {
+      "max_ir_ratio": 0.05,
+      "max_retained": 2,
+      "min_informative": 10,
+      "min_spliced": 10
+    }
+  },
+  "samples": 175,
+  "software": {
+    "name": "IRagent.prior_format",
+    "schema": "plantvelo-high-confidence-five-columns-v1",
+    "source_sha256": {
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    },
+    "version": "1"
+  },
+  "source_hashes": {
+    "high_confidence_IR.tsv": "b4c242924f36e872e8984565f155fc3a4078a9e4b7ead5897b089ad50e2e71d1",
+    "intron_evidence.tsv.gz": "0ee663f1ce08e0b0cbf2076d93c6437d6948d387fe489f88eb8da01f0245b3ea",
+    "provenance.json": "3afbe2613e893cc8791d2e0912195c69743dd3fd7583dc120f2702ad7b926414",
+    "qc.json": "c496356996a55c03243bd97913e0c8fa001ae25f55c7e5e97e6b1b9361891841"
+  },
+  "species": "zma"
+}

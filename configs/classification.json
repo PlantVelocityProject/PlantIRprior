@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "thresholds": {
+    "high_confidence_IR": {
+      "min_ir_ratio": 0.20,
+      "min_ir_specificity": 0.70,
+      "min_retained": 5,
+      "min_informative": 10,
+      "min_spliced": 5
+    },
+    "candidate_IR": {
+      "min_ir_ratio": 0.10,
+      "min_ir_specificity": 0.50,
+      "min_retained": 3,
+      "min_informative": 10,
+      "min_spliced": 3
+    },
+    "nonIR": {
+      "max_ir_ratio": 0.05,
+      "max_retained": 2,
+      "min_informative": 10,
+      "min_spliced": 10
+    }
+  }
+}

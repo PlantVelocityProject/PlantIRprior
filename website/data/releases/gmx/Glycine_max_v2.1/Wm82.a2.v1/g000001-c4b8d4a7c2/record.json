@@ -1,0 +1,100 @@
+{
+  "annotation_id": "Wm82.a2.v1",
+  "changes": {
+    "kind": "initial"
+  },
+  "cohort_hash": "fc8591960dc6e889d3d2fd96012d46e343cd8ff2831a410394196aae30d28f73",
+  "created_at": "2026-11-02T14:43:00+00:00",
+  "events": 2097,
+  "files": {
+    "browse": {
+      "bytes": 505616,
+      "label": "Browser data",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/browse.js",
+      "sha256": "3d39dda76c5a55ababf51ddf2d5e35ed2fee370e9e605c596dc9b5041a28d169"
+    },
+    "events": {
+      "bytes": 414924,
+      "label": "High-confidence events · CSV",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/events.csv",
+      "sha256": "ce17c28d10cbf1804fad493da2425996de84e74b5a7697a4c6189f6b8ceea5b7"
+    },
+    "evidence": {
+      "bytes": 8540481,
+      "label": "Complete intron evidence · TSV.gz",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/intron_evidence.tsv.gz",
+      "sha256": "f449681959fcb27ee5de00fc10d3ca2d5888e0885ed1a498f2cd532b70c27b33"
+    },
+    "prior": {
+      "bytes": 79149,
+      "label": "PlantVelo prior · TSV",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/high_confidence_IR.tsv",
+      "sha256": "130e2ae62703ea4070729560ba808e38b5a8cf6912200f42fb1768d0e1187fb9"
+    },
+    "provenance": {
+      "bytes": 146714,
+      "label": "Source provenance · JSON",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/provenance.json",
+      "sha256": "1cdfc4796e3acc1f85b280a758a7df03aed96f70fd4d92395da5a10a4d3f364c"
+    },
+    "qc": {
+      "bytes": 684,
+      "label": "Quality report · JSON",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/qc.json",
+      "sha256": "c9b78c5a4fa2341c81c417b187af1bdb920ba932d01bd601eef33b0be515e420"
+    },
+    "samples": {
+      "bytes": 7819,
+      "label": "Included samples · CSV",
+      "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/samples.csv",
+      "sha256": "b083fec1cbb66ab20dfdd4e7bf4054bfcd8f2d2b7fa9f04c53502b6a63fb6f90"
+    }
+  },
+  "generation": 1,
+  "intron_rows": 237648,
+  "key": "gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2",
+  "reference_id": "Glycine_max_v2.1",
+  "reference_sha256": {
+    "annotation": "b6a726eaed0d41f09a3f1c250a0c3c5c4b2ce86b900e398934f4bbe08213c659",
+    "genome": "54e6d38b7c435a5d6f60916dd8acfa7cb29137ab78e2c86b05a37cf8550502ee"
+  },
+  "release_id": "g000001-c4b8d4a7c2",
+  "rules": {
+    "candidate_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.1,
+      "min_ir_specificity": 0.5,
+      "min_retained": 3,
+      "min_spliced": 3
+    },
+    "high_confidence_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.2,
+      "min_ir_specificity": 0.7,
+      "min_retained": 5,
+      "min_spliced": 5
+    },
+    "nonIR": {
+      "max_ir_ratio": 0.05,
+      "max_retained": 2,
+      "min_informative": 10,
+      "min_spliced": 10
+    }
+  },
+  "samples": 61,
+  "software": {
+    "name": "IRagent.prior_format",
+    "schema": "plantvelo-high-confidence-five-columns-v1",
+    "source_sha256": {
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    },
+    "version": "1"
+  },
+  "source_hashes": {
+    "high_confidence_IR.tsv": "130e2ae62703ea4070729560ba808e38b5a8cf6912200f42fb1768d0e1187fb9",
+    "intron_evidence.tsv.gz": "f449681959fcb27ee5de00fc10d3ca2d5888e0885ed1a498f2cd532b70c27b33",
+    "provenance.json": "1cdfc4796e3acc1f85b280a758a7df03aed96f70fd4d92395da5a10a4d3f364c",
+    "qc.json": "c9b78c5a4fa2341c81c417b187af1bdb920ba932d01bd601eef33b0be515e420"
+  },
+  "species": "gmx"
+}

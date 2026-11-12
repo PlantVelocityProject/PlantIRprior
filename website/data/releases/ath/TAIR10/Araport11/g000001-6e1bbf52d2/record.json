@@ -1,0 +1,100 @@
+{
+  "annotation_id": "Araport11",
+  "changes": {
+    "kind": "initial"
+  },
+  "cohort_hash": "81982ba115fb0ec5fb8fa9872f002507fb6e1e4872f6921d278b87b5e2608231",
+  "created_at": "2026-11-02T14:42:44+00:00",
+  "events": 2256,
+  "files": {
+    "browse": {
+      "bytes": 543913,
+      "label": "Browser data",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/browse.js",
+      "sha256": "414a0a3024bc3b1c17fc1e13c80239860f6969524eb9299047487140fa3562c2"
+    },
+    "events": {
+      "bytes": 432116,
+      "label": "High-confidence events · CSV",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/events.csv",
+      "sha256": "882889091df28aba27935e1864f21e78e09e2282e230b1e7c35b1f61665809c9"
+    },
+    "evidence": {
+      "bytes": 6106995,
+      "label": "Complete intron evidence · TSV.gz",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/intron_evidence.tsv.gz",
+      "sha256": "2f2a9f227fb8fa8ae27875cfa9f49a34dd390cd816a65b382897ccf5d170f04b"
+    },
+    "prior": {
+      "bytes": 70075,
+      "label": "PlantVelo prior · TSV",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/high_confidence_IR.tsv",
+      "sha256": "72d5dab4a890ace5910c8736bfe15ffc985fac548a9f38bfa849d3f30ce1277c"
+    },
+    "provenance": {
+      "bytes": 347641,
+      "label": "Source provenance · JSON",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/provenance.json",
+      "sha256": "fa11596d6f235684eaaab1cfe1d1d610e52ea88eecb0155fbe351cb980072b61"
+    },
+    "qc": {
+      "bytes": 688,
+      "label": "Quality report · JSON",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/qc.json",
+      "sha256": "c768ae8755bc644babea64b5ecac8ec017ff8c5385d5a3c1df23167ce4cc2998"
+    },
+    "samples": {
+      "bytes": 20669,
+      "label": "Included samples · CSV",
+      "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/samples.csv",
+      "sha256": "e72b21c5a97fbcae891274547d4470515e1f5821b8169a937542626a20903a75"
+    }
+  },
+  "generation": 1,
+  "intron_rows": 132674,
+  "key": "ath/TAIR10/Araport11/g000001-6e1bbf52d2",
+  "reference_id": "TAIR10",
+  "reference_sha256": {
+    "annotation": "addb33b3e1b792af04026d8822215eebc59359b50d2514d4b1f66e9e5e3f7464",
+    "genome": "ae760f0b62995aa434e8b3b8f3d4b44317b6f41320d6558c36bbeeb47bbdfdeb"
+  },
+  "release_id": "g000001-6e1bbf52d2",
+  "rules": {
+    "candidate_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.1,
+      "min_ir_specificity": 0.5,
+      "min_retained": 3,
+      "min_spliced": 3
+    },
+    "high_confidence_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.2,
+      "min_ir_specificity": 0.7,
+      "min_retained": 5,
+      "min_spliced": 5
+    },
+    "nonIR": {
+      "max_ir_ratio": 0.05,
+      "max_retained": 2,
+      "min_informative": 10,
+      "min_spliced": 10
+    }
+  },
+  "samples": 146,
+  "software": {
+    "name": "IRagent.prior_format",
+    "schema": "plantvelo-high-confidence-five-columns-v1",
+    "source_sha256": {
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    },
+    "version": "1"
+  },
+  "source_hashes": {
+    "high_confidence_IR.tsv": "72d5dab4a890ace5910c8736bfe15ffc985fac548a9f38bfa849d3f30ce1277c",
+    "intron_evidence.tsv.gz": "2f2a9f227fb8fa8ae27875cfa9f49a34dd390cd816a65b382897ccf5d170f04b",
+    "provenance.json": "fa11596d6f235684eaaab1cfe1d1d610e52ea88eecb0155fbe351cb980072b61",
+    "qc.json": "c768ae8755bc644babea64b5ecac8ec017ff8c5385d5a3c1df23167ce4cc2998"
+  },
+  "species": "ath"
+}

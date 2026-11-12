@@ -1,0 +1,146 @@
+.release-page-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:32px; }
+.release-page-heading h1 { font-size:44px; letter-spacing:-.035em; }
+.release-page-heading p { color:var(--subtle-text); font-size:var(--font-page-description); margin-top:12px; }
+.release-snapshot { background:var(--field); border:1px solid var(--line); border-radius:12px; padding:30px 32px 19px; }
+.snapshot-intro { display:flex; gap:30px; justify-content:space-between; align-items:center; }
+.release-status { display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:600; color:var(--pine); }
+.release-status::before { content:''; width:6px; height:6px; flex:none; border-radius:50%; background:currentColor; }
+.release-status.is-archived { color:var(--subtle-text); }
+.release-status.is-archived::before { background:transparent; border:1px solid currentColor; }
+.snapshot-intro h2 { font-size:27px; letter-spacing:-.025em; margin-top:12px; }
+.snapshot-intro p { color:var(--subtle-text); max-width:59ch; font-size:15px; margin-top:9px; }
+.snapshot-specimens { display:flex; flex:none; align-items:end; gap:0; }
+.snapshot-specimens .release-botanical { width:65px; height:105px; object-fit:contain; margin-left:-12px; }
+.snapshot-specimens .release-botanical:first-child { margin-left:0; }
+.snapshot-bottom { display:flex; gap:20px; align-items:center; justify-content:space-between; padding-top:26px; margin-top:26px; border-top:1px solid var(--line); }
+.snapshot-counts,.release-evidence-counts { display:flex; flex-wrap:wrap; gap:32px; margin:0; }
+.snapshot-counts div,.release-evidence-counts div { display:flex; flex-direction:column-reverse; gap:3px; }
+.snapshot-counts dt,.release-evidence-counts dt { color:var(--subtle-text); font-size:13px; }
+.snapshot-counts dd,.release-evidence-counts dd { color:var(--pine); font-size:28px; line-height:1.2; font-weight:600; letter-spacing:-.025em; margin:0; font-variant-numeric:tabular-nums; }
+.snapshot-actions { display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+.snapshot-updated { color:var(--subtle-text); font-size:12px; margin-top:24px; }
+.release-register { padding-top:42px; }
+.release-register .section-heading { align-items:center; }
+.release-filter { display:flex; gap:12px; align-items:center; }
+.release-filter label { font-size:14px; color:var(--subtle-text); }
+.release-filter select, .release-filter .filter-select-host { width:215px; min-width:0; font-size:inherit; }
+.release-table { border-bottom:1px solid var(--line); }
+.release-table th { font-size:inherit; background:transparent; padding:12px 10px; }
+.release-table td { padding:16px 10px; }
+.release-table td:first-child,.release-table th:first-child { padding-left:0; }
+.release-table td:last-child,.release-table th:last-child { padding-right:0; }
+.release-species { display:flex; align-items:center; gap:14px; }
+.release-botanical { width:52px; height:62px; object-fit:contain; flex:none; }
+.release-species strong { display:block; font-weight:600; font-size:15px; }
+.release-species i { display:block; color:var(--subtle-text); margin-top:4px; font-size:13px; }
+.release-version { font-weight:600; text-decoration:none; }
+.release-table small { display:block; color:var(--subtle-text); margin-top:5px; font-size:12px; }
+.release-reference { white-space:normal; overflow-wrap:anywhere; max-width:220px; }
+.release-row-action { text-align:right; }
+.release-row-action .button { font-size:13px; min-height:38px; padding:7px 12px; }
+.release-history { padding-top:42px; scroll-margin-top:24px; }
+.release-history-list { list-style:none; padding:0; margin:0; }
+.release-history-list li { display:flex; align-items:start; gap:20px; padding:0 0 25px; position:relative; }
+.release-history-list li:not(:last-child)::before { content:''; position:absolute; top:15px; bottom:0; left:4px; width:1px; background:var(--line); }
+.history-node { width:9px; height:9px; border:2px solid var(--pine); background:var(--paper); border-radius:50%; flex:none; margin-top:7px; z-index:1; }
+.history-title { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+.history-title a { color:var(--ink); text-decoration:none; font-weight:600; }
+.history-title a span { color:var(--subtle-text); font-weight:400; margin-left:8px; }
+.release-history-list p { font-size:14px; margin-top:5px; }
+.release-history-list small { color:var(--subtle-text); display:block; margin-top:6px; font-size:12px; }
+.release-history-list .quiet-link { margin-left:auto; font-size:13px; flex:none; }
+.release-detail-heading { display:flex; align-items:start; justify-content:space-between; gap:16px; }
+.release-detail-heading > div { min-width:0; }
+.release-detail-heading h1 { font-size:40px; letter-spacing:-.035em; }
+.release-detail-heading h1 span { color:var(--subtle-text); font-weight:450; white-space:nowrap; }
+.release-detail-heading .latin-name { color:var(--subtle-text); font-size:16px; margin-top:6px; }
+.release-detail-heading .release-botanical { width:84px; height:99px; }
+.release-id-line { display:flex; align-items:center; flex-wrap:wrap; gap:0 12px; font-size:13px; color:var(--subtle-text); }
+.release-id-line code { overflow-wrap:anywhere; }
+.release-id-line button { font-size:13px; padding-inline:0; }
+#release-copy-status { font-size:12px; }
+.release-detail-meta { display:flex; align-items:center; flex-wrap:wrap; gap:2px 12px; margin-top:8px; color:var(--subtle-text); font-size:13px; overflow-wrap:anywhere; }
+.release-detail-section { border-top:1px solid var(--line); margin-top:18px; padding-top:19px; }
+.release-detail-section h2 { font-size:21px; margin-bottom:8px; }
+.release-detail-section p { font-size:14px; color:var(--subtle-text); }
+.release-detail-section .text-links { gap:6px 9px; margin-top:14px; }
+.release-detail-section .button { font-size:14px; }
+.release-evidence-counts { align-items:start; gap:9px 29px; margin-top:12px; }
+.release-evidence-counts dd { font-size:26px; }
+.release-download-list { max-width:810px; margin:7px 0 0; padding:0; list-style:none; }
+.release-download-list li { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:baseline; gap:1px 14px; padding:8px 0; border-bottom:1px solid var(--line); }
+.release-download-list li:last-child { border-bottom:0; padding-bottom:0; }
+.release-download-list a { font-size:14px; font-weight:600; }
+.release-download-list small { display:block; font-size:13px; color:var(--subtle-text); margin-top:2px; }
+.release-download-meta { color:var(--subtle-text); font-size:12px; white-space:nowrap; font-variant-numeric:tabular-nums; }
+#resource-downloads .release-download-list { max-width:none; margin:0; }
+#resource-downloads > .release-download-list { border-top:1px solid var(--line); }
+#resource-downloads .release-download-list li { align-items:center; padding-block:0; }
+#resource-downloads .release-download-list a { display:inline-flex; align-items:center; min-height:37px; }
+#resource-downloads > .release-download-list a { min-height:44px; }
+@media (pointer: coarse) {
+  #resource-downloads .release-download-list a { min-height:44px; }
+}
+.release-change-groups { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 22px; max-width:710px; margin-top:12px; }
+.release-change-group h3 { padding:7px 10px; background:var(--field); color:var(--pine); font-size:14px; }
+.release-change-counts { margin:0; font-size:13px; }
+.release-change-counts > div { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px; padding:6px 10px; border-bottom:1px solid var(--line); }
+.release-change-counts dd { margin:0; font-weight:600; font-variant-numeric:tabular-nums; }
+.dataset-banner { display:flex; align-items:center; flex-wrap:wrap; gap:8px 18px; padding:13px 17px; background:var(--field); border:1px solid var(--line); border-radius:6px; font-size:13px; margin-bottom:25px; }
+.dataset-banner>span:not(.release-status) { color:var(--subtle-text); }
+.dataset-banner a { font-weight:500; }
+.release-error { padding-block:30px; }
+.release-error p { margin-block:20px; max-width:70ch; color:var(--subtle-text); }
+@media(max-width:1050px) {
+  .snapshot-specimens .release-botanical { width:48px; height:80px; }
+  .snapshot-bottom { align-items:start; }
+  .snapshot-counts { gap:24px; }
+  .snapshot-actions { flex-direction:column; align-items:start; gap:2px; }
+  .release-table .release-botanical { display:none; }
+}
+@media(max-width:760px) {
+  .release-page-heading { flex-direction:column; align-items:start; gap:16px; }
+  .release-page-heading h1 { font-size:36px; }
+  .release-snapshot { padding:24px 22px 18px; }
+  .snapshot-intro h2 { font-size:24px; }
+  .snapshot-specimens { display:none; }
+  .snapshot-bottom { flex-direction:column; align-items:stretch; }
+  .snapshot-actions { flex-direction:row; align-items:center; gap:18px; margin-top:4px; }
+  .snapshot-counts { justify-content:space-between; gap:16px; }
+  .snapshot-counts dd { font-size:26px; }
+  .snapshot-counts dt { font-size:11px; }
+  .release-register .section-heading { align-items:start; flex-direction:column; }
+  .release-filter { width:100%; }
+  .release-filter select, .release-filter .filter-select-host { width:100%; }
+  .release-table thead { display:none; }
+  .release-table,.release-table tbody { display:block; }
+  .release-table tr { display:grid; grid-template-columns:1fr 1fr; padding:22px 0; border-top:1px solid var(--line); gap:14px 24px; }
+  .release-table td { display:block; white-space:normal; border:0; padding:0; text-align:left; }
+  .release-table td:first-child { grid-column:1 / -1; }
+  .release-table .release-botanical { display:block; width:45px; height:52px; }
+  .release-table td:not(:first-child):not(:last-child)::before { display:block; content:attr(data-label); color:var(--subtle-text); font-size:11px; margin-bottom:4px; }
+  .release-row-action { grid-column:1 / -1; }
+  .release-row-action .button { width:100%; margin-top:3px; }
+  .release-history-list li { gap:14px; }
+  .history-title { gap:7px 12px; }
+  .release-detail-heading h1 { font-size:32px; }
+  .release-detail-heading .release-botanical { width:60px; height:75px; }
+  .release-evidence-counts { gap:8px 17px; }
+}
+@media(max-width:640px) {
+  .release-change-groups { grid-template-columns:1fr; gap:11px; }
+}
+@media(max-width:440px) {
+  .snapshot-actions { align-items:start; flex-direction:column; gap:0; }
+  .snapshot-counts { gap:14px; }
+  .snapshot-counts div:last-child { max-width:105px; }
+  .release-detail-heading { gap:8px; }
+  .release-detail-heading h1 { font-size:29px; }
+  .release-detail-heading .latin-name { font-size:14px; }
+  .release-detail-meta,.release-id-line { gap:2px 8px; font-size:12px; }
+  .release-detail-section .button { font-size:13px; padding-inline:11px; }
+  .release-evidence-counts dd { font-size:22px; }
+  .release-evidence-counts div { max-width:130px; }
+  .release-download-list li { gap:10px; }
+  .snapshot-updated span { overflow-wrap:anywhere; }
+}

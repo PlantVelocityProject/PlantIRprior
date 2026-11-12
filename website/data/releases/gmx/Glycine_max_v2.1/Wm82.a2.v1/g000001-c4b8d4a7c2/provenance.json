@@ -1,0 +1,3839 @@
+{
+  "schema_version": 1,
+  "release_id": "g000001-c4b8d4a7c2",
+  "generation": 1,
+  "created_at": "2026-11-02T14:43:00+00:00",
+  "reference": {
+    "annotation_id": "Wm82.a2.v1",
+    "files": {
+      "annotation": {
+        "path": "/workspace/PlantIRagent/storage/references/gmx/Glycine_max_v2.1/Wm82.a2.v1/genes.gtf",
+        "sha256": "b6a726eaed0d41f09a3f1c250a0c3c5c4b2ce86b900e398934f4bbe08213c659"
+      },
+      "genome": {
+        "path": "/workspace/PlantIRagent/storage/references/gmx/Glycine_max_v2.1/Wm82.a2.v1/genome.fa",
+        "sha256": "54e6d38b7c435a5d6f60916dd8acfa7cb29137ab78e2c86b05a37cf8550502ee"
+      }
+    },
+    "reference_id": "Glycine_max_v2.1",
+    "species": "gmx"
+  },
+  "catalogue_software": {
+    "name": "PlantIRref",
+    "version": "0.2.0"
+  },
+  "recipe": {
+    "rules": {
+      "high_confidence_IR": {
+        "min_ir_ratio": 0.2,
+        "min_ir_specificity": 0.7,
+        "min_retained": 5,
+        "min_informative": 10,
+        "min_spliced": 5
+      },
+      "candidate_IR": {
+        "min_ir_ratio": 0.1,
+        "min_ir_specificity": 0.5,
+        "min_retained": 3,
+        "min_informative": 10,
+        "min_spliced": 3
+      },
+      "nonIR": {
+        "max_ir_ratio": 0.05,
+        "max_retained": 2,
+        "min_informative": 10,
+        "min_spliced": 10
+      }
+    },
+    "implementation": {
+      "aggregate_evidence.py": "e84bf35eda45b851b65d56be746257a16c678330487e88209bccc3f1e5168b22",
+      "aggregate_store.py": "b49f11cb5440ce5c034d13ceab146e989783e46a6a1b17f52c303749312fe42c",
+      "aggregate_release.py": "2d8adf2e8cffc06091883539bf60341dea7e99470aa5a0483de26a4ee5636794",
+      "evidence_admission.py": "fbc8345b08387beb31d1ab07844d56fb8c66f4a22620a0eb35ea1b1608eabef5",
+      "evidence_identity.py": "3e5fca9843eadd6d196cd190cf930fa8194b86e594e46a56ed4063502c711968",
+      "evidence_identity_migrations.json": "8bb983fe0d84528e2c5832dda05b6010bcbe1f1a7a66a7b3f538f954b93264df",
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    },
+    "evidence_admission": {
+      "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+      "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+      "native_policy": {
+        "aggregation": "audited_heterogeneous_counts",
+        "historical_extraction_equivalence_claimed": false,
+        "parameters": {
+          "min_anchor": 8,
+          "min_intron_coverage": 0.9,
+          "min_mapq": 20,
+          "splice_tolerance": 5,
+          "strand_mode": "unstranded"
+        },
+        "software": {
+          "name": "PlantIRref",
+          "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+          "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+          "pysam_version": "0.24.0",
+          "version": "0.2.0"
+        }
+      },
+      "path": "admission.json",
+      "sha256": "75d0d3f521d6411660b752d77f6645c04510f28fcf03976dfc45af9b9a0594b3"
+    }
+  },
+  "cohort_hash": "fc8591960dc6e889d3d2fd96012d46e343cd8ff2831a410394196aae30d28f73",
+  "samples": [
+    {
+      "accession": "CRR1297105",
+      "version": "d5534c6664a9a1ad52074f2d277845ab3faaa1e2d2fc584360fcfaa81985c257",
+      "source": {
+        "accession": "CRR1297105",
+        "metadata": {
+          "Accession": "CRR1297105",
+          "BioProject": "PRJCA030124",
+          "BioSample": "SAMC4132171",
+          "Database": "NGDC",
+          "Ecotype": "ChiHei 23",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "leaf",
+          "Treatment": ""
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/CRR1297105.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "08af0ebe94ddea684741d9d6c374a374d88bab71bbb95f5379e75f5231f17de6",
+        "version": "d5534c6664a9a1ad52074f2d277845ab3faaa1e2d2fc584360fcfaa81985c257"
+      },
+      "metadata": {
+        "Accession": "CRR1297105",
+        "BioProject": "PRJCA030124",
+        "BioSample": "SAMC4132171",
+        "Database": "NGDC",
+        "Ecotype": "ChiHei 23",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "leaf",
+        "Treatment": ""
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "CRR355301",
+      "version": "75bcb47033f50e193c458db534adea98ab71f9b0974c919c19d5bd15c347a9c7",
+      "source": {
+        "accession": "CRR355301",
+        "metadata": {
+          "Accession": "CRR355301",
+          "BioProject": "PRJCA007575",
+          "BioSample": "SAMC536477",
+          "Database": "NGDC",
+          "Ecotype": "Wm82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Glycine max",
+          "Tissue": "shoot",
+          "Treatment": "14 day(s)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/CRR355301.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "0e4d6f7186b866dc29e5a437b658d4764b2666f2c443dff9f0c50f4632ca881b",
+        "version": "75bcb47033f50e193c458db534adea98ab71f9b0974c919c19d5bd15c347a9c7"
+      },
+      "metadata": {
+        "Accession": "CRR355301",
+        "BioProject": "PRJCA007575",
+        "BioSample": "SAMC536477",
+        "Database": "NGDC",
+        "Ecotype": "Wm82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Glycine max",
+        "Tissue": "shoot",
+        "Treatment": "14 day(s)"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "CRR355302",
+      "version": "97d78801979a2fe17eb25b4a4bb499fc400fd9e2f54dc5c065df2c2da8149865",
+      "source": {
+        "accession": "CRR355302",
+        "metadata": {
+          "Accession": "CRR355302",
+          "BioProject": "PRJCA007575",
+          "BioSample": "SAMC536478",
+          "Database": "NGDC",
+          "Ecotype": "Wm82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Glycine max",
+          "Tissue": "shoot",
+          "Treatment": "14 day(s)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/CRR355302.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "9dd73f04aa913ec5b91d3d6a252b8da46aa92f1e997213cf35c82c2b373f2f05",
+        "version": "97d78801979a2fe17eb25b4a4bb499fc400fd9e2f54dc5c065df2c2da8149865"
+      },
+      "metadata": {
+        "Accession": "CRR355302",
+        "BioProject": "PRJCA007575",
+        "BioSample": "SAMC536478",
+        "Database": "NGDC",
+        "Ecotype": "Wm82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Glycine max",
+        "Tissue": "shoot",
+        "Treatment": "14 day(s)"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "CRR355303",
+      "version": "217133d11d755a7af9a8e372d12a3b3abb5a81a1c58152f22298cb98b3dc4444",
+      "source": {
+        "accession": "CRR355303",
+        "metadata": {
+          "Accession": "CRR355303",
+          "BioProject": "PRJCA007575",
+          "BioSample": "SAMC536479",
+          "Database": "NGDC",
+          "Ecotype": "Wm82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Glycine max",
+          "Tissue": "shoot",
+          "Treatment": "14 day(s)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/CRR355303.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "d9d2d25c6f159d1e1d49008f40aa521124b93e3f32efc776a2906bb70271c385",
+        "version": "217133d11d755a7af9a8e372d12a3b3abb5a81a1c58152f22298cb98b3dc4444"
+      },
+      "metadata": {
+        "Accession": "CRR355303",
+        "BioProject": "PRJCA007575",
+        "BioSample": "SAMC536479",
+        "Database": "NGDC",
+        "Ecotype": "Wm82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Glycine max",
+        "Tissue": "shoot",
+        "Treatment": "14 day(s)"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "ERR5777389",
+      "version": "3e6f1500a13c95dc526193ad0314d8b56b1fcb285515fd1388eb355ec8c7f853",
+      "source": {
+        "accession": "ERR5777389",
+        "metadata": {
+          "Accession": "ERR5777389",
+          "BioProject": "PRJEB44525",
+          "BioSample": "SAMEA8618121",
+          "Database": "ENA",
+          "Ecotype": "",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT direct RNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "Primary leaf",
+          "Treatment": "0.9% NaCl 1h; First Trifoliate"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/ERR5777389.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "f3c2aa478a0224d37ae4dbcf48498b7c4243a727d4ab4ad48717259e946299ff",
+        "version": "3e6f1500a13c95dc526193ad0314d8b56b1fcb285515fd1388eb355ec8c7f853"
+      },
+      "metadata": {
+        "Accession": "ERR5777389",
+        "BioProject": "PRJEB44525",
+        "BioSample": "SAMEA8618121",
+        "Database": "ENA",
+        "Ecotype": "",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT direct RNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "Primary leaf",
+        "Treatment": "0.9% NaCl 1h; First Trifoliate"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "ERR5777390",
+      "version": "4f210923aff38f7f90c176e7ebb9ee03df018a8dbf7f475acb67035f2f3c74c5",
+      "source": {
+        "accession": "ERR5777390",
+        "metadata": {
+          "Accession": "ERR5777390",
+          "BioProject": "PRJEB44525",
+          "BioSample": "SAMEA8618120",
+          "Database": "ENA",
+          "Ecotype": "",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT direct RNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "Primary leaf",
+          "Treatment": "No treatment; First Trifoliate"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/ERR5777390.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "3f8f2705bf96250842ec26111003258954f585055bf92749aeb67c4dce278973",
+        "version": "4f210923aff38f7f90c176e7ebb9ee03df018a8dbf7f475acb67035f2f3c74c5"
+      },
+      "metadata": {
+        "Accession": "ERR5777390",
+        "BioProject": "PRJEB44525",
+        "BioSample": "SAMEA8618120",
+        "Database": "ENA",
+        "Ecotype": "",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT direct RNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "Primary leaf",
+        "Treatment": "No treatment; First Trifoliate"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10305130",
+      "version": "ccb1e595896c9bd75e56ea8257f95f0bf199724cc92e7a5a0921645f33820bdf",
+      "source": {
+        "accession": "SRR10305130",
+        "metadata": {
+          "Accession": "SRR10305130",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10305130.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "5d5e0a068d92457db45d552c17f3b8d76c68de0b927a1f6f88169b99868ec997",
+        "version": "ccb1e595896c9bd75e56ea8257f95f0bf199724cc92e7a5a0921645f33820bdf"
+      },
+      "metadata": {
+        "Accession": "SRR10305130",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309858",
+      "version": "30271aaf68c2b000c9a3bbb8d5cb2470ac7ced0ab3de267424af6d31ba99ec4b",
+      "source": {
+        "accession": "SRR10309858",
+        "metadata": {
+          "Accession": "SRR10309858",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309858.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "082e4b160263beb4b8809d8a065be7bef289e8b6f981cc790a0d5925d47b19b7",
+        "version": "30271aaf68c2b000c9a3bbb8d5cb2470ac7ced0ab3de267424af6d31ba99ec4b"
+      },
+      "metadata": {
+        "Accession": "SRR10309858",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309859",
+      "version": "de0ab2edd564a74a8bb5e565c89084b8435b7f8ae41a194d512f7ce82f30b726",
+      "source": {
+        "accession": "SRR10309859",
+        "metadata": {
+          "Accession": "SRR10309859",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309859.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "dfa5bd0d6b050c2a6f59a1dded89625d588481eae9fe5f7e9ff847c65084c33c",
+        "version": "de0ab2edd564a74a8bb5e565c89084b8435b7f8ae41a194d512f7ce82f30b726"
+      },
+      "metadata": {
+        "Accession": "SRR10309859",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309860",
+      "version": "73e90ec702c481c71fafbdba09e8921012357ad0c075b842e6e634f8b7216e6f",
+      "source": {
+        "accession": "SRR10309860",
+        "metadata": {
+          "Accession": "SRR10309860",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309860.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "d41d6a664ab6d66ba131bf25e993e5f8057d47a21b09bb617a0cc0ef1fba895f",
+        "version": "73e90ec702c481c71fafbdba09e8921012357ad0c075b842e6e634f8b7216e6f"
+      },
+      "metadata": {
+        "Accession": "SRR10309860",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309861",
+      "version": "138bdb1f2b3db7d99aa199074ec865fc6c9b6e766ef50bce9ed6830670e4895f",
+      "source": {
+        "accession": "SRR10309861",
+        "metadata": {
+          "Accession": "SRR10309861",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309861.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "aae2097f03ffb4e233cdfde28365faf0976cbdafaa6cb463560be7e27de96208",
+        "version": "138bdb1f2b3db7d99aa199074ec865fc6c9b6e766ef50bce9ed6830670e4895f"
+      },
+      "metadata": {
+        "Accession": "SRR10309861",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309862",
+      "version": "bdd6451a1adc756aa70fa9f782515d7f527d5fda8fd3043d209e0b30c115cc1b",
+      "source": {
+        "accession": "SRR10309862",
+        "metadata": {
+          "Accession": "SRR10309862",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309862.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e46284edf47eb81dc077c2139d69c4f64c534be0d918800972490a88338800ca",
+        "version": "bdd6451a1adc756aa70fa9f782515d7f527d5fda8fd3043d209e0b30c115cc1b"
+      },
+      "metadata": {
+        "Accession": "SRR10309862",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309863",
+      "version": "e48a2fa907ed0a7974268af2b5841c8cc09aa3e31bde48ff78425f15b3d8834b",
+      "source": {
+        "accession": "SRR10309863",
+        "metadata": {
+          "Accession": "SRR10309863",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309863.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "af5034e180e8a37922bda3d3dfa94bd37ff294794762da10adb01886aff393a8",
+        "version": "e48a2fa907ed0a7974268af2b5841c8cc09aa3e31bde48ff78425f15b3d8834b"
+      },
+      "metadata": {
+        "Accession": "SRR10309863",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309864",
+      "version": "8a1b838090d7cc33d4ebcd00965b8f25de4ca981e046888577900f5cb84ceae5",
+      "source": {
+        "accession": "SRR10309864",
+        "metadata": {
+          "Accession": "SRR10309864",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309864.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e16fef8edbc59f48403fb5894d28dc453a81354904753b8469582bbc4c038ab9",
+        "version": "8a1b838090d7cc33d4ebcd00965b8f25de4ca981e046888577900f5cb84ceae5"
+      },
+      "metadata": {
+        "Accession": "SRR10309864",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309865",
+      "version": "9e1127b8f9f88d7fe83d36712c23f8b97d217572ba72d1e3f6f9085d9628ecb3",
+      "source": {
+        "accession": "SRR10309865",
+        "metadata": {
+          "Accession": "SRR10309865",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309865.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "027ec2518045f0578f6d6fabc12c6bbe1820ab0bcda6855c933f18e9454bb90e",
+        "version": "9e1127b8f9f88d7fe83d36712c23f8b97d217572ba72d1e3f6f9085d9628ecb3"
+      },
+      "metadata": {
+        "Accession": "SRR10309865",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309866",
+      "version": "b156d166b67f1ed8150ebc7bd100e255bac761f9468399f10733164836ce8ec9",
+      "source": {
+        "accession": "SRR10309866",
+        "metadata": {
+          "Accession": "SRR10309866",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309866.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "009d0e8d0fc064faab304438e0dc6925a72f997826aa45ea20f8ce53dcdcabd6",
+        "version": "b156d166b67f1ed8150ebc7bd100e255bac761f9468399f10733164836ce8ec9"
+      },
+      "metadata": {
+        "Accession": "SRR10309866",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309867",
+      "version": "4ac120abbc94fef0dbbb78ec0bfb3498af1b3e02db41f195c0a34091fa333724",
+      "source": {
+        "accession": "SRR10309867",
+        "metadata": {
+          "Accession": "SRR10309867",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309867.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "397f8c9294b031885ea6efeb5c1cb4e52ba3b950df0861c203d3959db06a712b",
+        "version": "4ac120abbc94fef0dbbb78ec0bfb3498af1b3e02db41f195c0a34091fa333724"
+      },
+      "metadata": {
+        "Accession": "SRR10309867",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309868",
+      "version": "99c425e4be6f48334b93c9de0192cc6fca3a4dce85f0e2f24a0b91f781881770",
+      "source": {
+        "accession": "SRR10309868",
+        "metadata": {
+          "Accession": "SRR10309868",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309868.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "db08f779f9aa569b9eed28ea2ab3afeb15b15f0101e1f1496030c6c1f7424e08",
+        "version": "99c425e4be6f48334b93c9de0192cc6fca3a4dce85f0e2f24a0b91f781881770"
+      },
+      "metadata": {
+        "Accession": "SRR10309868",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309869",
+      "version": "f151fdf7ed607f3507dc260a6e82feb5a72271d1a75a3fe594099a018fa43b1a",
+      "source": {
+        "accession": "SRR10309869",
+        "metadata": {
+          "Accession": "SRR10309869",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309869.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "662e84a11f0df0a07eab3557a8e86e4ac858bfe99516228edd90badce566b262",
+        "version": "f151fdf7ed607f3507dc260a6e82feb5a72271d1a75a3fe594099a018fa43b1a"
+      },
+      "metadata": {
+        "Accession": "SRR10309869",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309870",
+      "version": "a9f0b0b6e95f7d0621239d2e2b94b12a867ab98d4770a7e5e38bc49f49ff9a87",
+      "source": {
+        "accession": "SRR10309870",
+        "metadata": {
+          "Accession": "SRR10309870",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309870.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "94b1b793acf93569654ec65154a5dba415fd580989c5ffbf199e82ffdeb5ec3b",
+        "version": "a9f0b0b6e95f7d0621239d2e2b94b12a867ab98d4770a7e5e38bc49f49ff9a87"
+      },
+      "metadata": {
+        "Accession": "SRR10309870",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309871",
+      "version": "ee5f77b13e6b30744e5daa39a4aaf41251b08abf9cb9f1efca0e94469f6d25d6",
+      "source": {
+        "accession": "SRR10309871",
+        "metadata": {
+          "Accession": "SRR10309871",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309871.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "bb088ece65a62caafd622fc89249824a218fcc1d28828fe896c81e4a5a986b5d",
+        "version": "ee5f77b13e6b30744e5daa39a4aaf41251b08abf9cb9f1efca0e94469f6d25d6"
+      },
+      "metadata": {
+        "Accession": "SRR10309871",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309872",
+      "version": "9444242915b5db5127ebef48fe69c76a058e7a7e4072b8cee75dbdbf4a2788c9",
+      "source": {
+        "accession": "SRR10309872",
+        "metadata": {
+          "Accession": "SRR10309872",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309872.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "d6031933e603a147fee4e379798efe33ff8ddf393aef197b73e922f2b15a905b",
+        "version": "9444242915b5db5127ebef48fe69c76a058e7a7e4072b8cee75dbdbf4a2788c9"
+      },
+      "metadata": {
+        "Accession": "SRR10309872",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309873",
+      "version": "ee73bdf4f1c0bc6099c1581cae03c81ed2d9134d2d11ea655b23c2fe42b21647",
+      "source": {
+        "accession": "SRR10309873",
+        "metadata": {
+          "Accession": "SRR10309873",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309873.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "25b77507a58c8fcf202390d3563619f9c8a988239343a2b7791348f27f98c470",
+        "version": "ee73bdf4f1c0bc6099c1581cae03c81ed2d9134d2d11ea655b23c2fe42b21647"
+      },
+      "metadata": {
+        "Accession": "SRR10309873",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309874",
+      "version": "ffcbc045956914e659cadc00282f8307bfdb463ca43ed6cd81fe26a5e70c0685",
+      "source": {
+        "accession": "SRR10309874",
+        "metadata": {
+          "Accession": "SRR10309874",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309874.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "0c9c8413843229c83a96fbd182e0ca70b8b72b321d58de6e2f801c226ef0f538",
+        "version": "ffcbc045956914e659cadc00282f8307bfdb463ca43ed6cd81fe26a5e70c0685"
+      },
+      "metadata": {
+        "Accession": "SRR10309874",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309875",
+      "version": "90c80af54e63a94794a383a91e99517952f371e890700743885a3f3a937883d0",
+      "source": {
+        "accession": "SRR10309875",
+        "metadata": {
+          "Accession": "SRR10309875",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309875.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e55330c937a8966b193047baba82a27bf32077d140bac4712e49d37eacde1402",
+        "version": "90c80af54e63a94794a383a91e99517952f371e890700743885a3f3a937883d0"
+      },
+      "metadata": {
+        "Accession": "SRR10309875",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309876",
+      "version": "ecc957ef6c6212dd251b945487dfb1fbeb8296d2b3fde14c5b111f7c6b0d2741",
+      "source": {
+        "accession": "SRR10309876",
+        "metadata": {
+          "Accession": "SRR10309876",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309876.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "24b1dbff6ddc6e8043c92640c6a6c77769cde249f56ec0a32ba23618cec11b66",
+        "version": "ecc957ef6c6212dd251b945487dfb1fbeb8296d2b3fde14c5b111f7c6b0d2741"
+      },
+      "metadata": {
+        "Accession": "SRR10309876",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309877",
+      "version": "2f7e28e5c9ba3a3f27cc06c351e951e12ff80c78ffa05980a27481d6e8d6ee07",
+      "source": {
+        "accession": "SRR10309877",
+        "metadata": {
+          "Accession": "SRR10309877",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309877.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "3febaa7304c314c24809d7a5091c1697a51e76dcf96b943d2823ddeb7d7984db",
+        "version": "2f7e28e5c9ba3a3f27cc06c351e951e12ff80c78ffa05980a27481d6e8d6ee07"
+      },
+      "metadata": {
+        "Accession": "SRR10309877",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309878",
+      "version": "a247b5ebe4d37d455b2300f032e135a0af165b4b512ad39cf9f6dd4427a488fe",
+      "source": {
+        "accession": "SRR10309878",
+        "metadata": {
+          "Accession": "SRR10309878",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309878.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "b925929bc9c8a879fc8155b6eae4613ef6c596548b7dd390735320c80d2d5889",
+        "version": "a247b5ebe4d37d455b2300f032e135a0af165b4b512ad39cf9f6dd4427a488fe"
+      },
+      "metadata": {
+        "Accession": "SRR10309878",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR10309879",
+      "version": "01fcab5dbe17c850f93901f0e3acea75935fa23e67c0430c56c3470a3c344fd3",
+      "source": {
+        "accession": "SRR10309879",
+        "metadata": {
+          "Accession": "SRR10309879",
+          "BioProject": "PRJNA561626",
+          "BioSample": "SAMN12622420",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixed tissue",
+          "Treatment": "35 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR10309879.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "5605c014acd5741241f364c5ca06bd631e0efc67c3094f8b73a66820104864cf",
+        "version": "01fcab5dbe17c850f93901f0e3acea75935fa23e67c0430c56c3470a3c344fd3"
+      },
+      "metadata": {
+        "Accession": "SRR10309879",
+        "BioProject": "PRJNA561626",
+        "BioSample": "SAMN12622420",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixed tissue",
+        "Treatment": "35 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR12327364",
+      "version": "bf223ff901088b7099fcf1054accd66080b0939984c2b5c9c813ce4f52202672",
+      "source": {
+        "accession": "SRR12327364",
+        "metadata": {
+          "Accession": "SRR12327364",
+          "BioProject": "PRJNA648759",
+          "BioSample": "SAMN15647391",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "the Full length RNAseq of heterograft soybean roots",
+          "Treatment": "V0 stage; 7 days seeding"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR12327364.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "b9abcfcf2b5815f801d1b9a83a92eae55c039651b1463cae379cc35892fc06b0",
+        "version": "bf223ff901088b7099fcf1054accd66080b0939984c2b5c9c813ce4f52202672"
+      },
+      "metadata": {
+        "Accession": "SRR12327364",
+        "BioProject": "PRJNA648759",
+        "BioSample": "SAMN15647391",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "the Full length RNAseq of heterograft soybean roots",
+        "Treatment": "V0 stage; 7 days seeding"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR12327382",
+      "version": "a4c58910164c9720ad242f0de4f62052a05530e85fa0096a59487f05062f9d10",
+      "source": {
+        "accession": "SRR12327382",
+        "metadata": {
+          "Accession": "SRR12327382",
+          "BioProject": "PRJNA648759",
+          "BioSample": "SAMN15647397",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "the Full length RNAseq of homograft soybean roots",
+          "Treatment": "V0 stage; 7 days seeding"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR12327382.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "cb0a391e84622c2ae8beae27422a546f7b0ca50bf51540ffe99d813500350117",
+        "version": "a4c58910164c9720ad242f0de4f62052a05530e85fa0096a59487f05062f9d10"
+      },
+      "metadata": {
+        "Accession": "SRR12327382",
+        "BioProject": "PRJNA648759",
+        "BioSample": "SAMN15647397",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "the Full length RNAseq of homograft soybean roots",
+        "Treatment": "V0 stage; 7 days seeding"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR12327383",
+      "version": "fa9adceb570bf3b3c3d4a2359b08341fe67ddc03bed486b5fbbead515e32eafd",
+      "source": {
+        "accession": "SRR12327383",
+        "metadata": {
+          "Accession": "SRR12327383",
+          "BioProject": "PRJNA648759",
+          "BioSample": "SAMN15647396",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "the Full length RNAseq of homograft soybean shoots",
+          "Treatment": "V0 stage; 7 days seeding"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR12327383.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "dc9f0e33778b49f5034fe18ecec932fc430f07959fbb34fb66e562629f4d4a63",
+        "version": "fa9adceb570bf3b3c3d4a2359b08341fe67ddc03bed486b5fbbead515e32eafd"
+      },
+      "metadata": {
+        "Accession": "SRR12327383",
+        "BioProject": "PRJNA648759",
+        "BioSample": "SAMN15647396",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "the Full length RNAseq of homograft soybean shoots",
+        "Treatment": "V0 stage; 7 days seeding"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR12327385",
+      "version": "4e9c220a642f05d701e4d8490c51815039737dbe2b941c335ba856a39b40cf0d",
+      "source": {
+        "accession": "SRR12327385",
+        "metadata": {
+          "Accession": "SRR12327385",
+          "BioProject": "PRJNA648759",
+          "BioSample": "SAMN15647394",
+          "Database": "NCBI",
+          "Ecotype": "Williams 82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "the Full length RNAseq of heterograft soybean shoots",
+          "Treatment": "V0 stage; 7 days seeding"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR12327385.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "6cfe0877857c56f467226184fe52e09390d7b7698109b8f15967e584767438db",
+        "version": "4e9c220a642f05d701e4d8490c51815039737dbe2b941c335ba856a39b40cf0d"
+      },
+      "metadata": {
+        "Accession": "SRR12327385",
+        "BioProject": "PRJNA648759",
+        "BioSample": "SAMN15647394",
+        "Database": "NCBI",
+        "Ecotype": "Williams 82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "the Full length RNAseq of heterograft soybean shoots",
+        "Treatment": "V0 stage; 7 days seeding"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR15602385",
+      "version": "6a5f3f47b7c79c8bc0a0380a11f66cf3aaa4b7ea584910bd7da54d95e4709ddc",
+      "source": {
+        "accession": "SRR15602385",
+        "metadata": {
+          "Accession": "SRR15602385",
+          "BioProject": "PRJNA757530",
+          "BioSample": "SAMN20965968",
+          "Database": "NCBI",
+          "Ecotype": "KB000009_107",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "leaf",
+          "Treatment": "Flowering; 60 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR15602385.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "439cd7d2cc47bd5f243352ff6c87e76b9f0be41b4a38836c7956d30a53c932c2",
+        "version": "6a5f3f47b7c79c8bc0a0380a11f66cf3aaa4b7ea584910bd7da54d95e4709ddc"
+      },
+      "metadata": {
+        "Accession": "SRR15602385",
+        "BioProject": "PRJNA757530",
+        "BioSample": "SAMN20965968",
+        "Database": "NCBI",
+        "Ecotype": "KB000009_107",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "leaf",
+        "Treatment": "Flowering; 60 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR15602386",
+      "version": "76ec1683eb1ff8f82922e3614940154f5a5ade4cdaf115892cf4937c889145cd",
+      "source": {
+        "accession": "SRR15602386",
+        "metadata": {
+          "Accession": "SRR15602386",
+          "BioProject": "PRJNA757530",
+          "BioSample": "SAMN20965967",
+          "Database": "NCBI",
+          "Ecotype": "KB000009_107",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "leaf",
+          "Treatment": "Flowering; 60 days"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR15602386.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "8f426b053595b1baa219becd2ed3c937e7bf2a08cb049478dc680a0dd13b9ff1",
+        "version": "76ec1683eb1ff8f82922e3614940154f5a5ade4cdaf115892cf4937c889145cd"
+      },
+      "metadata": {
+        "Accession": "SRR15602386",
+        "BioProject": "PRJNA757530",
+        "BioSample": "SAMN20965967",
+        "Database": "NCBI",
+        "Ecotype": "KB000009_107",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "leaf",
+        "Treatment": "Flowering; 60 days"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17226646",
+      "version": "fa2f4caa744249a85e36f604a02324138a51e217e0919422de6c268b1adbf382",
+      "source": {
+        "accession": "SRR17226646",
+        "metadata": {
+          "Accession": "SRR17226646",
+          "BioProject": "PRJNA788163",
+          "BioSample": "SAMN23929506",
+          "Database": "NCBI",
+          "Ecotype": "Wm82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Glycine max",
+          "Tissue": "shoot nuc",
+          "Treatment": "14"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17226646.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "fb8b4e074362e980f4c61f45165c68b36fc7332a881e60cbdcbedae2978246ed",
+        "version": "fa2f4caa744249a85e36f604a02324138a51e217e0919422de6c268b1adbf382"
+      },
+      "metadata": {
+        "Accession": "SRR17226646",
+        "BioProject": "PRJNA788163",
+        "BioSample": "SAMN23929506",
+        "Database": "NCBI",
+        "Ecotype": "Wm82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Glycine max",
+        "Tissue": "shoot nuc",
+        "Treatment": "14"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17226648",
+      "version": "363b1de6f4061b6dff14d3f5201017289c4b9b157b0c082ec5882f658d2f4c8e",
+      "source": {
+        "accession": "SRR17226648",
+        "metadata": {
+          "Accession": "SRR17226648",
+          "BioProject": "PRJNA788163",
+          "BioSample": "SAMN23929505",
+          "Database": "NCBI",
+          "Ecotype": "Wm82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Glycine max",
+          "Tissue": "shoot",
+          "Treatment": "14"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17226648.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "3602490ca39aef749cd0ca54f8179fed7cdc4a0af07794bf2bacf6bc40e77527",
+        "version": "363b1de6f4061b6dff14d3f5201017289c4b9b157b0c082ec5882f658d2f4c8e"
+      },
+      "metadata": {
+        "Accession": "SRR17226648",
+        "BioProject": "PRJNA788163",
+        "BioSample": "SAMN23929505",
+        "Database": "NCBI",
+        "Ecotype": "Wm82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Glycine max",
+        "Tissue": "shoot",
+        "Treatment": "14"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17226649",
+      "version": "4614cef95f7a2482e7c940362724a800154b0c9e41b104ece344840bf9fc14f4",
+      "source": {
+        "accession": "SRR17226649",
+        "metadata": {
+          "Accession": "SRR17226649",
+          "BioProject": "PRJNA788163",
+          "BioSample": "SAMN23929504",
+          "Database": "NCBI",
+          "Ecotype": "Wm82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Glycine max",
+          "Tissue": "shoot",
+          "Treatment": "14"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17226649.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "a2f67ffdda87c0b8299c6a524d35f75ff12c5097127f51290ae8562bdf1a747c",
+        "version": "4614cef95f7a2482e7c940362724a800154b0c9e41b104ece344840bf9fc14f4"
+      },
+      "metadata": {
+        "Accession": "SRR17226649",
+        "BioProject": "PRJNA788163",
+        "BioSample": "SAMN23929504",
+        "Database": "NCBI",
+        "Ecotype": "Wm82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Glycine max",
+        "Tissue": "shoot",
+        "Treatment": "14"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876321",
+      "version": "7aafed670de5a318ad38cabaa0c8e739a89ec2cad6777271d974f85237b96ac7",
+      "source": {
+        "accession": "SRR17876321",
+        "metadata": {
+          "Accession": "SRR17876321",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638651",
+          "Database": "NCBI",
+          "Ecotype": "SCN4replicate2",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876321.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "8a54a6cc4c45ef5c7ed67304dc21f0271ca29a86ae3283f64e81608899378271",
+        "version": "7aafed670de5a318ad38cabaa0c8e739a89ec2cad6777271d974f85237b96ac7"
+      },
+      "metadata": {
+        "Accession": "SRR17876321",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638651",
+        "Database": "NCBI",
+        "Ecotype": "SCN4replicate2",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876322",
+      "version": "3b4487e93e053869067d2c5971df58b467c52a1bad2970f13ec684cfb665b2df",
+      "source": {
+        "accession": "SRR17876322",
+        "metadata": {
+          "Accession": "SRR17876322",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638650",
+          "Database": "NCBI",
+          "Ecotype": "SCN4replicate1",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876322.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "613d997e6d5514292001bc83528d3ab855afa16b887cc39bf0dbd22c6f5ae683",
+        "version": "3b4487e93e053869067d2c5971df58b467c52a1bad2970f13ec684cfb665b2df"
+      },
+      "metadata": {
+        "Accession": "SRR17876322",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638650",
+        "Database": "NCBI",
+        "Ecotype": "SCN4replicate1",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876323",
+      "version": "e2f35dfef8fc21fad744aa0ddcb0bd2858e257f20e3fe257a47aad6967730c84",
+      "source": {
+        "accession": "SRR17876323",
+        "metadata": {
+          "Accession": "SRR17876323",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638649",
+          "Database": "NCBI",
+          "Ecotype": "CKreplicate3",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876323.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e524762d342a68625d0adb9803c2e21a08cea7975f117db66106bd42c967e465",
+        "version": "e2f35dfef8fc21fad744aa0ddcb0bd2858e257f20e3fe257a47aad6967730c84"
+      },
+      "metadata": {
+        "Accession": "SRR17876323",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638649",
+        "Database": "NCBI",
+        "Ecotype": "CKreplicate3",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876324",
+      "version": "ed60f65e05873a20d00576f228f22ecaed8f1cd5e49cfab7b36121a84c820f29",
+      "source": {
+        "accession": "SRR17876324",
+        "metadata": {
+          "Accession": "SRR17876324",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638648",
+          "Database": "NCBI",
+          "Ecotype": "CKreplicate2",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876324.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "62b9189930e8b59475fcc3e04e0394342fbe223f0a12fdda1b7e199a311aa20e",
+        "version": "ed60f65e05873a20d00576f228f22ecaed8f1cd5e49cfab7b36121a84c820f29"
+      },
+      "metadata": {
+        "Accession": "SRR17876324",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638648",
+        "Database": "NCBI",
+        "Ecotype": "CKreplicate2",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876325",
+      "version": "860cae386014e8ad1390426825f4d319f4b5b7bfb701a97e2902ec78cceca965",
+      "source": {
+        "accession": "SRR17876325",
+        "metadata": {
+          "Accession": "SRR17876325",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638647",
+          "Database": "NCBI",
+          "Ecotype": "CKreplicate1",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876325.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "73785addceaece46cb8b671c201178182d5754695d428e9818ecaf66c6f089fe",
+        "version": "860cae386014e8ad1390426825f4d319f4b5b7bfb701a97e2902ec78cceca965"
+      },
+      "metadata": {
+        "Accession": "SRR17876325",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638647",
+        "Database": "NCBI",
+        "Ecotype": "CKreplicate1",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876326",
+      "version": "d28424abcb32dc80a02ad0175f725e4a11ab3e4839ead4dd5e853cb8830e3ea5",
+      "source": {
+        "accession": "SRR17876326",
+        "metadata": {
+          "Accession": "SRR17876326",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638655",
+          "Database": "NCBI",
+          "Ecotype": "SCN5replicate3",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876326.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "1f7124984b857e5a23cf569b2306a3c7725bb7d49c3ee1afdeff710c17329453",
+        "version": "d28424abcb32dc80a02ad0175f725e4a11ab3e4839ead4dd5e853cb8830e3ea5"
+      },
+      "metadata": {
+        "Accession": "SRR17876326",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638655",
+        "Database": "NCBI",
+        "Ecotype": "SCN5replicate3",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876327",
+      "version": "d1840f9fde37e02f0bc2f7adca73002332ba0634a234d44ae8de86eada206de7",
+      "source": {
+        "accession": "SRR17876327",
+        "metadata": {
+          "Accession": "SRR17876327",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638654",
+          "Database": "NCBI",
+          "Ecotype": "SCN5replicate2",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876327.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "214a8df69fe1496945611c041c03936242fc7dbbeacbe2d9b3aa5a03435dfd90",
+        "version": "d1840f9fde37e02f0bc2f7adca73002332ba0634a234d44ae8de86eada206de7"
+      },
+      "metadata": {
+        "Accession": "SRR17876327",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638654",
+        "Database": "NCBI",
+        "Ecotype": "SCN5replicate2",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876328",
+      "version": "d8d8ebff94321f49fd8d2e805a6a7e2316f243af6de77894b6703bd0e423adc1",
+      "source": {
+        "accession": "SRR17876328",
+        "metadata": {
+          "Accession": "SRR17876328",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638653",
+          "Database": "NCBI",
+          "Ecotype": "SCN5replicate1",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876328.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "2be02c9be007be42d64c0b4bd8064c44aa685fe3510d61bd2f319511a92f152e",
+        "version": "d8d8ebff94321f49fd8d2e805a6a7e2316f243af6de77894b6703bd0e423adc1"
+      },
+      "metadata": {
+        "Accession": "SRR17876328",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638653",
+        "Database": "NCBI",
+        "Ecotype": "SCN5replicate1",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR17876329",
+      "version": "891cc51b6bd8495976980b209c8391169faa7c81804d27685c5256e5847c254f",
+      "source": {
+        "accession": "SRR17876329",
+        "metadata": {
+          "Accession": "SRR17876329",
+          "BioProject": "PRJNA803218",
+          "BioSample": "SAMN25638652",
+          "Database": "NCBI",
+          "Ecotype": "SCN4replicate3",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "root",
+          "Treatment": "16 d"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR17876329.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "8bd495cc9ce2e2e54474fa95a5025d2520d3ff06db2670e1f13682871b15ada6",
+        "version": "891cc51b6bd8495976980b209c8391169faa7c81804d27685c5256e5847c254f"
+      },
+      "metadata": {
+        "Accession": "SRR17876329",
+        "BioProject": "PRJNA803218",
+        "BioSample": "SAMN25638652",
+        "Database": "NCBI",
+        "Ecotype": "SCN4replicate3",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "root",
+        "Treatment": "16 d"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR23561053",
+      "version": "d47e4b00551a7a19828a63d34ea1e47d08e343c8639011a360835d3d24b838b5",
+      "source": {
+        "accession": "SRR23561053",
+        "metadata": {
+          "Accession": "SRR23561053",
+          "BioProject": "PRJNA935991",
+          "BioSample": "SAMN33386377",
+          "Database": "NCBI",
+          "Ecotype": "ENREI",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT PCR-cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "mixture of several tissues",
+          "Treatment": "combined from leaf, root, shoot, stem, and seed"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR23561053.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e54fe6b31299bc5178f34442943053ae42c1b0a6d180f69b502e5839642282ed",
+        "version": "d47e4b00551a7a19828a63d34ea1e47d08e343c8639011a360835d3d24b838b5"
+      },
+      "metadata": {
+        "Accession": "SRR23561053",
+        "BioProject": "PRJNA935991",
+        "BioSample": "SAMN33386377",
+        "Database": "NCBI",
+        "Ecotype": "ENREI",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT PCR-cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "mixture of several tissues",
+        "Treatment": "combined from leaf, root, shoot, stem, and seed"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR28278308",
+      "version": "277bf66894791b708e3fea2626ef43facd2ca2e77bf1926e1edb14c72619035e",
+      "source": {
+        "accession": "SRR28278308",
+        "metadata": {
+          "Accession": "SRR28278308",
+          "BioProject": "PRJNA1085890",
+          "BioSample": "SAMN40349390",
+          "Database": "NCBI",
+          "Ecotype": "Hefeng55",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "leaf and root tissues (mixed)",
+          "Treatment": "50 mM NaHCO3; 14-day-old seedlling"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR28278308.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "4035ee70e6de91cdefbd40d1b1df1dc8150fc9bfc9a6654ec2d196f367acd6d0",
+        "version": "277bf66894791b708e3fea2626ef43facd2ca2e77bf1926e1edb14c72619035e"
+      },
+      "metadata": {
+        "Accession": "SRR28278308",
+        "BioProject": "PRJNA1085890",
+        "BioSample": "SAMN40349390",
+        "Database": "NCBI",
+        "Ecotype": "Hefeng55",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "leaf and root tissues (mixed)",
+        "Treatment": "50 mM NaHCO3; 14-day-old seedlling"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR29211040",
+      "version": "a33fa520e1b18e27e627998e40f6858c57f103329d5690531a26f34423fa7a38",
+      "source": {
+        "accession": "SRR29211040",
+        "metadata": {
+          "Accession": "SRR29211040",
+          "BioProject": "PRJNA1114896",
+          "BioSample": "SAMN41553737",
+          "Database": "NCBI",
+          "Ecotype": "Nongdadou2",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "mix",
+          "Treatment": "Seeding, Blooming"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR29211040.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "40c9911c5072dd87417b381562ba3816839ec497d5145019d117f6109515a531",
+        "version": "a33fa520e1b18e27e627998e40f6858c57f103329d5690531a26f34423fa7a38"
+      },
+      "metadata": {
+        "Accession": "SRR29211040",
+        "BioProject": "PRJNA1114896",
+        "BioSample": "SAMN41553737",
+        "Database": "NCBI",
+        "Ecotype": "Nongdadou2",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "mix",
+        "Treatment": "Seeding, Blooming"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR34844829",
+      "version": "6cb6c97a20c4970cd929ece17abb4ea4e69d62cc7aad4254cf583f92f39691ed",
+      "source": {
+        "accession": "SRR34844829",
+        "metadata": {
+          "Accession": "SRR34844829",
+          "BioProject": "PRJNA1298774",
+          "BioSample": "SAMN50284830",
+          "Database": "NCBI",
+          "Ecotype": "Qi Huang NO.34",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Glycine max",
+          "Tissue": "leaf",
+          "Treatment": "V3"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR34844829.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "25cc8b67c1917c91178b4a7d540af87e1d2d4c95100d2a69027caec16e60a507",
+        "version": "6cb6c97a20c4970cd929ece17abb4ea4e69d62cc7aad4254cf583f92f39691ed"
+      },
+      "metadata": {
+        "Accession": "SRR34844829",
+        "BioProject": "PRJNA1298774",
+        "BioSample": "SAMN50284830",
+        "Database": "NCBI",
+        "Ecotype": "Qi Huang NO.34",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Glycine max",
+        "Tissue": "leaf",
+        "Treatment": "V3"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244032",
+      "version": "8205588cd00802ed84c4df1ee4852eab91dd51d34e40860f2560d075bdd607c9",
+      "source": {
+        "accession": "SRR6244032",
+        "metadata": {
+          "Accession": "SRR6244032",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965045",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244032.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "15d740f5e0004c8a497a0d2931bb1627b9f43e76918264ef51de4dbd2289ee2d",
+        "version": "8205588cd00802ed84c4df1ee4852eab91dd51d34e40860f2560d075bdd607c9"
+      },
+      "metadata": {
+        "Accession": "SRR6244032",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965045",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244033",
+      "version": "23efb2bec3eef017112807d176bf2461c70b33be876ea58639dd83e34a958e45",
+      "source": {
+        "accession": "SRR6244033",
+        "metadata": {
+          "Accession": "SRR6244033",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965045",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244033.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "09c9ed6fc2e70fe9fda895077fa0f93473bfee8bff20eeed0398f97f76b9ad39",
+        "version": "23efb2bec3eef017112807d176bf2461c70b33be876ea58639dd83e34a958e45"
+      },
+      "metadata": {
+        "Accession": "SRR6244033",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965045",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244034",
+      "version": "8a2d5c99df92d2387c37662d509c66280145d470cfdb8d5e4ea6acfcf36739d9",
+      "source": {
+        "accession": "SRR6244034",
+        "metadata": {
+          "Accession": "SRR6244034",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965044",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244034.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "50352a7fb2091e6c7962cfd27f68f0ddeca0c538a5499fa7453fde12e435db7c",
+        "version": "8a2d5c99df92d2387c37662d509c66280145d470cfdb8d5e4ea6acfcf36739d9"
+      },
+      "metadata": {
+        "Accession": "SRR6244034",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965044",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244035",
+      "version": "8a525f3a8c80640b814b1fa2f8b09b08234c5d7619509fa4851f400723f5a954",
+      "source": {
+        "accession": "SRR6244035",
+        "metadata": {
+          "Accession": "SRR6244035",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965044",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244035.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "711d40aa594499debb1d5ed92fc88e20a9afeb21084a2a966566c115e4303467",
+        "version": "8a525f3a8c80640b814b1fa2f8b09b08234c5d7619509fa4851f400723f5a954"
+      },
+      "metadata": {
+        "Accession": "SRR6244035",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965044",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244036",
+      "version": "23dc85df491001dcc7860db95e62a4c68f124ebc57ae82ea9eff73a168add6cf",
+      "source": {
+        "accession": "SRR6244036",
+        "metadata": {
+          "Accession": "SRR6244036",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965044",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244036.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "75f64fc38e80932f227a9b0c80aa269ad9730761d99364e61de30cb97c9f3e3d",
+        "version": "23dc85df491001dcc7860db95e62a4c68f124ebc57ae82ea9eff73a168add6cf"
+      },
+      "metadata": {
+        "Accession": "SRR6244036",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965044",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244037",
+      "version": "d67218717af71b601c72fc53abe8a0f6583fe63f1c4dc80a7259b087209cca1e",
+      "source": {
+        "accession": "SRR6244037",
+        "metadata": {
+          "Accession": "SRR6244037",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965044",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244037.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e2eee9647f6baa676cd1ddae67c67d855107ddb556a51c5386d34ad26b0cdb4e",
+        "version": "d67218717af71b601c72fc53abe8a0f6583fe63f1c4dc80a7259b087209cca1e"
+      },
+      "metadata": {
+        "Accession": "SRR6244037",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965044",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244038",
+      "version": "720b91b5ddfb778b47c5094b2a39036971fb1385c7c6cd269cb0387fc9a86606",
+      "source": {
+        "accession": "SRR6244038",
+        "metadata": {
+          "Accession": "SRR6244038",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965045",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244038.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "a105561145c1aa75df9f7b417e043cf32d34f9a8a7e68e73e74eb5abb05373d1",
+        "version": "720b91b5ddfb778b47c5094b2a39036971fb1385c7c6cd269cb0387fc9a86606"
+      },
+      "metadata": {
+        "Accession": "SRR6244038",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965045",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244039",
+      "version": "c249f66394843491e860a458be4dd7c304722dce01cf7e2a47b42802a1592e6b",
+      "source": {
+        "accession": "SRR6244039",
+        "metadata": {
+          "Accession": "SRR6244039",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965045",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244039.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "90458f34bab228f91c6beb3fe02bf8a7bb0ebd947096ee1a0de28181b2615af6",
+        "version": "c249f66394843491e860a458be4dd7c304722dce01cf7e2a47b42802a1592e6b"
+      },
+      "metadata": {
+        "Accession": "SRR6244039",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965045",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244040",
+      "version": "d424b9c82d930ac6fe7c02c54e856cddb0b33d8d6494647b50eca4b7d75c6004",
+      "source": {
+        "accession": "SRR6244040",
+        "metadata": {
+          "Accession": "SRR6244040",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965045",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244040.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "a658f3af341d00a86e56db990a78c95210ea141f7a46b6bd29c41a7a92632966",
+        "version": "d424b9c82d930ac6fe7c02c54e856cddb0b33d8d6494647b50eca4b7d75c6004"
+      },
+      "metadata": {
+        "Accession": "SRR6244040",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965045",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 23 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR6244041",
+      "version": "8cf636abdd2cc21c5e58cf5e36e602c79d92f209419007733be269502f3059b4",
+      "source": {
+        "accession": "SRR6244041",
+        "metadata": {
+          "Accession": "SRR6244041",
+          "BioProject": "PRJNA416810",
+          "BioSample": "SAMN07965044",
+          "Database": "NCBI",
+          "Ecotype": "Williams '82",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Glycine max",
+          "Tissue": "embryonic axis",
+          "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/gmx/Glycine_max_v2.1/Wm82.a2.v1/SRR6244041.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "6d426d241d30533d28b41b039440800155eb5f65cc37ee88b8b18a89dba1a86b",
+        "version": "8cf636abdd2cc21c5e58cf5e36e602c79d92f209419007733be269502f3059b4"
+      },
+      "metadata": {
+        "Accession": "SRR6244041",
+        "BioProject": "PRJNA416810",
+        "BioSample": "SAMN07965044",
+        "Database": "NCBI",
+        "Ecotype": "Williams '82",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Glycine max",
+        "Tissue": "embryonic axis",
+        "Treatment": "Seeds stored at 5C, 35% relative humidity until use; seed; 2 years"
+      },
+      "compatibility": {
+        "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    }
+  ],
+  "plantvelo": {
+    "name": "IRagent.prior_format",
+    "version": "1",
+    "schema": "plantvelo-high-confidence-five-columns-v1",
+    "source_sha256": {
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    }
+  },
+  "read_samples": [],
+  "evidence_admission": {
+    "audit_id": "167a3ddd328a8fce30c0e834172dd020f0f331149358e31baaf3479dcc042940",
+    "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+    "native_policy": {
+      "aggregation": "audited_heterogeneous_counts",
+      "historical_extraction_equivalence_claimed": false,
+      "parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "software": {
+        "name": "PlantIRref",
+        "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+        "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+        "pysam_version": "0.24.0",
+        "version": "0.2.0"
+      }
+    },
+    "path": "admission.json",
+    "sha256": "75d0d3f521d6411660b752d77f6645c04510f28fcf03976dfc45af9b9a0594b3"
+  }
+}

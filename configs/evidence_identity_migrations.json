@@ -1,0 +1,57 @@
+{
+  "contract_aliases": {
+    "PlantIRref.IRprior.read_intron_pairs.v1": "plantvelo.irprior.read_intron_pairs.v1"
+  },
+  "schema_version": 1,
+  "software_migrations": [
+    {
+      "source": {
+        "name": "PlantIRref",
+        "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+        "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+        "pysam_version": "0.24.0",
+        "version": "0.2.0"
+      },
+      "target": {
+        "name": "plantvelo",
+        "package_sha256": "3e004a2b3258b3a1c950d9cb40b6a677d1589477be7332542a7768c2fa117665",
+        "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+        "pysam_version": "0.24.0",
+        "version": "0.3.0"
+      },
+      "verification": {
+        "algorithm_equivalence": "normalized_ast",
+        "normalized_ast_sha256": "ea236ecedae94b6b2d182a5072358ff50504d169175052cb2200f440caac848e",
+        "report": "reports/plantvelo-irprior-migration/20261102/algorithm-equivalence.json",
+        "report_sha256": "2404a4e76c73bf4471c9c2e9a5d76ae3456d612ce6e8806132a94e1a76494b1e",
+        "source_adapter_sha256": [
+          {
+            "align_reads.py": "ffe2f0c5b40b46ccf6cae326881032a614b530175c1e53766b07fa508ec9dcaf",
+            "artifact_lifecycle.py": "508e50d676896a03e0326f2e5b2c133edc80c842ef054af50fd6da2c1b8b66cf",
+            "download_reads.py": "2b270ee08737aec99adbf9d79db300f03c20f929fa1f8bf45078d8be5a0b741a",
+            "evidence_store.py": "7a0923e3e689c47f76ea8e67c3bc7a875eb1857ef49975fb2e4d387352759826",
+            "evidence_validation.py": "04c05535065c648cb0a94a7649da0c6a66e176decfb6e2b765437ecb23967ca4",
+            "extract_ir_evidence.py": "54cda95fbaa02a1345a8d252a57c998c49f3f0b79a6f46b0627fad445afd1bef"
+          },
+          {
+            "align_reads.py": "ffe2f0c5b40b46ccf6cae326881032a614b530175c1e53766b07fa508ec9dcaf",
+            "artifact_lifecycle.py": "508e50d676896a03e0326f2e5b2c133edc80c842ef054af50fd6da2c1b8b66cf",
+            "download_reads.py": "31fdd3a37d0f29556b6d3921d7b108441172785563b83bc907dfcbb5d34c1ba5",
+            "evidence_store.py": "7a0923e3e689c47f76ea8e67c3bc7a875eb1857ef49975fb2e4d387352759826",
+            "evidence_validation.py": "04c05535065c648cb0a94a7649da0c6a66e176decfb6e2b765437ecb23967ca4",
+            "extract_ir_evidence.py": "54cda95fbaa02a1345a8d252a57c998c49f3f0b79a6f46b0627fad445afd1bef"
+          }
+        ],
+        "target_adapter_sha256": {
+          "align_reads.py": "ffe2f0c5b40b46ccf6cae326881032a614b530175c1e53766b07fa508ec9dcaf",
+          "artifact_lifecycle.py": "508e50d676896a03e0326f2e5b2c133edc80c842ef054af50fd6da2c1b8b66cf",
+          "download_reads.py": "2b270ee08737aec99adbf9d79db300f03c20f929fa1f8bf45078d8be5a0b741a",
+          "evidence_identity.py": "3e5fca9843eadd6d196cd190cf930fa8194b86e594e46a56ed4063502c711968",
+          "evidence_store.py": "e2c416653f1f0270edf62ef388a8710ed95905112ad326d1dd72263550c2c95c",
+          "evidence_validation.py": "03fed519372b62887c59b9ed50675acc2dd720005e41b8ddf4dcffdeb3fe9f06",
+          "extract_ir_evidence.py": "c63f4a1d7245df9093224b23d8263f1c814451bc480928c36919e58ae758ffa4"
+        }
+      }
+    }
+  ]
+}

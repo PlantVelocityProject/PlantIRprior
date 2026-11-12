@@ -1,0 +1,227 @@
+/* Only these component islands use Tailwind. Native page styles remain local. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "./**/*.{ts,tsx}";
+@source not "../assets";
+@source not "../data";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #243329;
+  --card: #ffffff;
+  --card-foreground: #243329;
+  --popover: #ffffff;
+  --popover-foreground: #243329;
+  --primary: #234d39;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f7f1;
+  --secondary-foreground: #234d39;
+  --muted: #f3f7f1;
+  --muted-foreground: #5c6d60;
+  --accent: #eaf1e6;
+  --accent-foreground: #234d39;
+  --destructive: #a93030;
+  --border: #dce5d9;
+  --input: #c4d2c2;
+  --ring: #397d58;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  .plantir-ui *, .plantir-ui ::before, .plantir-ui ::after {
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--border);
+  }
+  .plantir-ui :where(button) {
+    appearance: none;
+    background: transparent;
+    font: inherit;
+    color: inherit;
+  }
+}
+
+.header-tools { display: flex; align-items: center; gap: 14px; }
+.plantir-ui a { text-decoration: none; }
+.plantir-ui button { cursor: pointer; font-family: var(--font-ui); }
+.plantir-ui button:disabled { cursor: default; }
+.plantir-ui ul { list-style: none; margin: 0; padding: 0; }
+.desktop-navigation [data-slot="navigation-menu-link"], .desktop-navigation [data-slot="navigation-menu-trigger"] { min-height: 44px; padding: 10px 12px; font-size: 17px; }
+.desktop-navigation [data-active] { color: var(--pine); font-weight: 600; }
+.header-github { gap: 7px; font-size: 16px; }
+.mobile-navigation-trigger { display: none; }
+.menu-surface {
+  border-radius: 8px;
+  background: var(--popover);
+  color: var(--popover-foreground);
+  font-family: var(--font-ui);
+  box-shadow: 0 0 0 1px var(--line), 0 2px 6px rgb(35 77 57 / .12);
+}
+.menu-surface .menu-item { border-radius: 6px; }
+.menu-surface .menu-item:hover,
+.menu-surface .menu-item:focus-visible,
+.menu-surface .menu-item[data-highlighted] { background: var(--accent); }
+button .menu-chevron { width: 14px; height: 14px; flex: none; transition: transform 150ms ease; }
+button[aria-expanded="true"] .menu-chevron { transform: rotate(180deg); }
+.filter-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 11px;
+  border: 1px solid var(--input);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+}
+.filter-select-trigger:hover:not(:disabled),
+.filter-select-trigger[aria-expanded="true"] { border-color: var(--ring); }
+.filter-select-trigger:disabled { background: var(--field); color: var(--subtle-text); }
+.filter-select-value { min-width: 0; overflow-wrap: anywhere; }
+.filter-select-content { width: var(--anchor-width); max-width: var(--available-width); padding: 5px; }
+.filter-select-list { max-height: max(0px, calc(var(--available-height) - 10px)); overflow-y: auto; overscroll-behavior: contain; }
+.filter-select-item { display: flex; align-items: center; justify-content: space-between; gap: 7px; min-height: 44px; padding: 6px 8px; font-size: 14px; overflow-wrap: anywhere; cursor: pointer; }
+.filter-select-check { display: inline-flex; flex: none; color: var(--pine); }
+.catalogue-advanced > div { flex: 0 1 220px; min-width: 0; }
+.catalogue-advanced > .table-action { flex: none; }
+@media (prefers-reduced-motion: reduce) {
+  button .menu-chevron { transition: none; }
+}
+.resource-menu { width: 450px; padding: 12px; }
+.resource-menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.resource-menu [data-slot="navigation-menu-link"] { align-items: flex-start; padding: 12px; gap: 10px; }
+.resource-menu svg { margin-top: 2px; color: var(--pine); }
+.resource-menu strong { font-weight: 600; display: block; font-size: 15px; }
+.resource-menu small { display: block; color: var(--subtle-text); font-size: 13px; line-height: 1.45; margin-top: 5px; }
+.botanical-card { transition: box-shadow 180ms, background-color 180ms; }
+.botanical-card:is(:hover, :focus-within, [data-highlighted="true"]) { box-shadow: 0 0 0 1px #91ad91, 0 5px 18px rgb(35 77 57 / .045); }
+.botanical-card .species-art { transition: background-color 180ms ease-out; }
+.botanical-card[data-highlighted="true"] .species-art { background-color: var(--accent); }
+.botanical-card .species-art img { transform-origin: 50% 100%; }
+@media (prefers-reduced-motion: no-preference) {
+  .botanical-card .species-art img { transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .botanical-card:focus-within .species-art img { transform: rotate(-1deg) scale(1.025); }
+  @media (hover: hover) and (pointer: fine) {
+    .botanical-card:hover .species-art img { transform: rotate(-1deg) scale(1.025); }
+  }
+}
+.card-species-header { padding-top: 18px; min-height: 95px; }
+.card-species-header [data-slot="card-description"] { line-height: 1.35; }
+.card-species-counts { padding-block: 12px 20px; }
+.card-species-counts p:first-child { font-size: 14px; color: var(--subtle-text); }
+.card-species-counts strong { font-size: 23px; font-weight: 600; color: var(--pine); margin-right: 4px; font-variant-numeric: tabular-nums; }
+.card-species-counts p + p { color: var(--subtle-text); margin-top: 3px; font-size: 14px; }
+.card-species-actions { padding: 12px; }
+.card-species-actions a { color: var(--pine); }
+.card-species-actions [data-slot="button"] { min-height: 40px; }
+#page-overview .card-species-actions :is([data-slot="button"], svg) { transition: none; animation: none; transform: none; translate: none; }
+.resource-coverage { --coverage-ath: #adca83; --coverage-osa: #ddc78d; --coverage-sly: #e58173; --coverage-zma: #98b67e; --coverage-gmx: #b9c495; --coverage-ir: #c0413a; border-top: 1px solid var(--line); padding: 30px 0 34px; }
+.resource-coverage .section-heading { align-items: center; margin-bottom: 24px; }
+.resource-coverage .coverage-instruction { margin: 0; font-size: 14px; color: var(--subtle-text); }
+.coverage-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 44px; }
+.coverage-figure { min-width: 0; margin: 0; }
+.coverage-figure figcaption { font-size: 18px; font-weight: 600; line-height: 1.3; margin-bottom: 8px; }
+.coverage-chart, .coverage-chart-placeholder { display: block; width: 100%; height: 290px; aspect-ratio: auto; font-family: var(--font-ui); font-size: 14px; }
+.coverage-chart .recharts-cartesian-axis-tick text { font-family: var(--font-ui); font-size: 14px; fill: var(--subtle-text); }
+.coverage-species-tick { font-family: var(--font-ui); font-size: 14px; font-style: italic; fill: var(--subtle-text); }
+.coverage-value { font-family: var(--font-ui); font-size: 14px; font-weight: 500; fill: var(--ink); }
+.coverage-stem { stroke-width: 2px; }
+.coverage-mark { cursor: pointer; outline: none; }
+.coverage-mark :is(.coverage-bar, .coverage-stem, .coverage-dot) { transition: opacity 160ms ease-out; }
+.coverage-mark[data-muted="true"] :is(.coverage-bar, .coverage-stem, .coverage-dot) { opacity: .45; }
+.coverage-dot { transform-box: fill-box; transform-origin: center; transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), opacity 160ms ease-out; }
+.coverage-mark[data-highlighted="true"] .coverage-dot { transform: scale(1.08); }
+.coverage-hit-target { fill: transparent; }
+.coverage-mark[data-highlighted="true"] .coverage-hit-target { fill: rgb(35 77 57 / .045); }
+.coverage-mark:focus-visible .coverage-hit-target { stroke: var(--pine); stroke-width: 2px; stroke-dasharray: 3 3; }
+.coverage-tooltip { min-width: 190px; padding: 13px 15px; background: white; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 20px rgb(35 77 57 / .08); color: var(--ink); font-family: var(--font-ui); font-size: 14px; }
+.coverage-tooltip > i { display: block; margin-bottom: 10px; }
+.coverage-tooltip dl { margin: 0; }
+.coverage-tooltip dl > div { display: flex; justify-content: space-between; gap: 22px; margin-top: 5px; }
+.coverage-tooltip dt { color: var(--subtle-text); }
+.coverage-tooltip dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+@media(max-width:800px) {
+  .coverage-grid { grid-template-columns: minmax(0,1fr); gap: 30px; }
+}
+@media(max-width:560px) {
+  .resource-coverage { padding: 26px 0; }
+  .resource-coverage .section-heading { align-items: start; gap: 8px; }
+  .coverage-chart, .coverage-chart-placeholder { height: 320px; }
+}
+.mobile-navigation-sheet { width: min(340px,90vw) !important; }
+.sheet-navigation { display: flex; flex-direction: column; padding: 0 16px 24px; gap: 4px; }
+.sheet-navigation a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; min-height: 46px; border-radius: 6px; font-size: 16px; }
+.sheet-navigation a:hover { background: var(--field); }
+.sheet-navigation svg { width: 18px; height: 18px; }
+.sheet-group-title { margin: 20px 12px 6px; color: var(--subtle-text); font-size: 13px; }
+@media(max-width:1180px) {
+  .header-inner { gap: 20px; }
+  .header-tools { gap: 8px; }
+  .header-github span { display: none; }
+  .download-label { display: none; }
+}
+@media(max-width:900px) {
+  .desktop-navigation { display: none; }
+  .mobile-navigation-trigger { display: inline-flex; min-height: 44px; min-width: 44px; }
+  .header-tools { gap: 8px; }
+  .header-github { display: none; }
+  .download-label { display: inline; }
+}
+@media(max-width:560px) {
+  .botanical-card { display: grid; grid-template-columns: 102px minmax(0,1fr); }
+  .botanical-card .species-art { grid-row: 1 / 4; min-height: 204px; }
+  .card-species-header { padding: 16px 16px 0; min-height: 0; }
+  .card-species-counts { padding: 10px 16px 13px; }
+  .card-species-counts strong { font-size: 21px; }
+  .card-species-counts p + p { font-size: 13px; }
+  .card-species-actions { padding: 8px 10px; }
+  .card-species-actions [data-slot="button"] { min-height: 44px; padding-inline: 10px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .plantir-ui *, [data-slot="navigation-menu"] *, [data-slot="dialog-overlay"], [data-slot="sheet-overlay"], [data-slot="sheet-content"] { transition: none !important; animation: none !important; }
+  #page-overview .botanical-card .species-art { transition: background-color 120ms ease-out !important; }
+  #page-overview .coverage-mark :is(.coverage-bar, .coverage-stem, .coverage-dot) { transition: opacity 120ms ease-out !important; }
+}
+
+/* Home controls acknowledge focus and activation without moving their layout. */
+#page-overview .search-control input { caret-color: var(--pine); transition: border-color 140ms ease-out, background-color 140ms ease-out; }
+#page-overview .search-control input:focus { border-color: var(--pine); background-color: var(--field); }
+#page-overview .home-search .button { transition: background-color 140ms ease-out, transform 100ms ease-out; }
+#page-overview .home-search .button:hover { background-color: #193f2d; }
+#page-overview ::selection { background: var(--accent); color: var(--pine); }
+@media (prefers-reduced-motion: no-preference) {
+  #page-overview .home-search .button:active { transform: scale(.98); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #page-overview .home-search .button { transition: background-color 120ms ease-out; }
+  #page-overview .coverage-dot { transform: none; }
+}

@@ -1,0 +1,249 @@
+﻿Accession,BioSample,BioProject,Species,Tissue,Treatment,Ecotype,Genotype,Platform,Protocol,Database
+CRR034189,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034190,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034191,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034445,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034446,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034447,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034448,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034449,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034450,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034451,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034452,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034453,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034454,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034455,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR034456,SAMC046965,PRJCA001057,Oryza sativa,caryopsis,"high-temperature treatment and controls at 1, 3 and 5 d (pooled)",XN0437T; XN0437S,,PACBIO_SMRT,Iso-seq,NGDC
+CRR1796273,SAMC5064974,PRJCA039529,Oryza sativa,whole plant,2 month(s),Oryza sativa Linn. subsp. indica Kato,,OXFORD_NANOPORE,ONT cDNA-seq,NGDC
+CRR355304,SAMC536480,PRJCA007575,Oryza sativa,shoot,14 day(s),NIP,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355305,SAMC536481,PRJCA007575,Oryza sativa,shoot,14 day(s),NIP,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355306,SAMC536482,PRJCA007575,Oryza sativa,shoot,14 day(s),NIP,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+DRR180003,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180004,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180005,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180006,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180007,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180008,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180009,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180010,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR180011,SAMD00171424,PRJDB8306,Oryza sativa,,,Nipponbare,,PACBIO_SMRT,Iso-seq,DDBJ
+SRR12057535,SAMN15327386,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),Nipponbare,japonica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057536,SAMN15327385,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),N22,aus; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057537,SAMN15327384,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),Moroberekan,japonica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057538,SAMN15327383,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),M202,japonica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057539,SAMN15327382,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),IR72,indica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057540,SAMN15327381,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),IR64,indica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057541,SAMN15327380,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),IR62266-42-6-2,indica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057542,SAMN15327379,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),Dular,aus; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057543,SAMN15327378,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),CT9993-5-10-1M,japonica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR12057544,SAMN15327377,PRJNA640670,Oryza sativa,multiple organs/tissues (pooled),control + abiotic stresses (pooled),Anjali,indica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193042,SAMN18652172,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193043,SAMN18647474,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193044,SAMN18652175,PRJNA720049,Oryza sativa,panicle,rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193045,SAMN18652178,PRJNA720049,Oryza sativa,panicle,rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193046,SAMN18647470,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193047,SAMN18647471,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193048,SAMN18652106,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193049,SAMN18652107,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193050,SAMN18652121,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193051,SAMN18652122,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193052,SAMN18652160,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193053,SAMN18652161,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193054,SAMN18652182,PRJNA720049,Oryza sativa,panicle,4kb-above; rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193055,SAMN18647475,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193056,SAMN18647472,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193057,SAMN18647473,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193058,SAMN18652108,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193059,SAMN18652109,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193060,SAMN18652123,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193061,SAMN18652124,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193062,SAMN18652162,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193063,SAMN18652163,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193064,SAMN18652110,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193065,SAMN18652176,PRJNA720049,Oryza sativa,panicle,rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193066,SAMN18652111,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193067,SAMN18652112,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193068,SAMN18652125,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193069,SAMN18652126,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193070,SAMN18652164,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193071,SAMN18652165,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193072,SAMN18652166,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193073,SAMN18647476,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193074,SAMN18647477,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193075,SAMN18652113,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193076,SAMN18652177,PRJNA720049,Oryza sativa,panicle,rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193077,SAMN18652114,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193078,SAMN18652127,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193079,SAMN18652128,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193080,SAMN18652167,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193081,SAMN18652168,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193082,SAMN18647478,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193083,SAMN18647479,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193084,SAMN18652115,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193085,SAMN18652116,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193086,SAMN18652129,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193087,SAMN18652179,PRJNA720049,Oryza sativa,panicle,rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193088,SAMN18652130,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193089,SAMN18652169,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193090,SAMN18652170,PRJNA720049,Oryza sativa,leaf,four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193091,SAMN18647480,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193092,SAMN18647481,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193093,SAMN18652117,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193094,SAMN18652118,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,ZS97,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193095,SAMN18652131,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193096,SAMN18652132,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193097,SAMN18652171,PRJNA720049,Oryza sativa,leaf,4kb-above; four leaf stage; 3 weeks,RC(reciprocal cross),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193098,SAMN18652180,PRJNA720049,Oryza sativa,panicle,4kb-above; rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR14193099,SAMN18652181,PRJNA720049,Oryza sativa,panicle,4kb-above; rice booting stage; 90 days,hybrid rice(SY63),,PACBIO_SMRT,Iso-seq,NCBI
+SRR15371758,SAMN20667820,PRJNA752930,Oryza sativa,stem,stem2,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15371759,SAMN20667819,PRJNA752930,Oryza sativa,stem,stem1,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15371761,SAMN20667809,PRJNA752930,Oryza sativa,embryo,embryo1,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558517,SAMN20667818,PRJNA752930,Oryza sativa,root,root2,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558518,SAMN20667817,PRJNA752930,Oryza sativa,root,root1,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558519,SAMN20667816,PRJNA752930,Oryza sativa,stamen,stamen2,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558520,SAMN20667815,PRJNA752930,Oryza sativa,stamen,stamen1,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558521,SAMN20667814,PRJNA752930,Oryza sativa,pistil,pistil2,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558522,SAMN20667813,PRJNA752930,Oryza sativa,pistil,pistil1,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558523,SAMN20667812,PRJNA752930,Oryza sativa,leaf,leaf2,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558524,SAMN20667811,PRJNA752930,Oryza sativa,leaf,leaf1,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15558525,SAMN20667810,PRJNA752930,Oryza sativa,embryo,embryo2,Nipponbare,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR15851177,SAMN21236483,PRJNA760839,Oryza sativa,panicle,,N22,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851178,SAMN21236482,PRJNA760839,Oryza sativa,leaf,,N22,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851179,SAMN21236489,PRJNA760839,Oryza sativa,root,,IRGC 117425,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851180,SAMN21236488,PRJNA760839,Oryza sativa,leaf,,IRGC 117425,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851181,SAMN21236504,PRJNA760839,Oryza sativa,root,,IR64,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851182,SAMN21236503,PRJNA760839,Oryza sativa,panicle,,IR64,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851183,SAMN21236495,PRJNA760839,Oryza sativa,root,,Nipponbare,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851184,SAMN21236494,PRJNA760839,Oryza sativa,panicle,,Nipponbare,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851185,SAMN21236493,PRJNA760839,Oryza sativa,leaf,,Nipponbare,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851186,SAMN21236509,PRJNA760839,Oryza sativa,root,,IRGC 132424,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851187,SAMN21236508,PRJNA760839,Oryza sativa,leaf,,IRGC 132424,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851188,SAMN21236508,PRJNA760839,Oryza sativa,leaf,,IRGC 132424,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851189,SAMN21236492,PRJNA760839,Oryza sativa,root,,IRGC 132278,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851190,SAMN21236491,PRJNA760839,Oryza sativa,panicle,,IRGC 132278,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851191,SAMN21236490,PRJNA760839,Oryza sativa,leaf,,IRGC 132278,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851192,SAMN21236502,PRJNA760839,Oryza sativa,leaf,,IR64,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851193,SAMN21236501,PRJNA760839,Oryza sativa,root,,IRGC 128077,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851194,SAMN21236501,PRJNA760839,Oryza sativa,root,,IRGC 128077,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851195,SAMN21236500,PRJNA760839,Oryza sativa,panicle,,IRGC 128077,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851196,SAMN21236499,PRJNA760839,Oryza sativa,leaf,,IRGC 128077,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851197,SAMN21236507,PRJNA760839,Oryza sativa,root,,IRGC 127742,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851198,SAMN21236506,PRJNA760839,Oryza sativa,panicle,,IRGC 127742,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851199,SAMN21236505,PRJNA760839,Oryza sativa,leaf,,IRGC 127742,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851200,SAMN21236487,PRJNA760839,Oryza sativa,root,,IRGC 127652,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851201,SAMN21236486,PRJNA760839,Oryza sativa,panicle,,IRGC 127652,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851202,SAMN21236485,PRJNA760839,Oryza sativa,leaf,,IRGC 127652,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851203,SAMN21236498,PRJNA760839,Oryza sativa,root,,Azucena,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851204,SAMN21236513,PRJNA760839,Oryza sativa,root,,IRGC 127564,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851205,SAMN21236512,PRJNA760839,Oryza sativa,leaf,,IRGC 127564,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851206,SAMN21236515,PRJNA760839,Oryza sativa,root,,IRGC 127518,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851207,SAMN21236514,PRJNA760839,Oryza sativa,leaf,,IRGC 127518,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851208,SAMN21236518,PRJNA760839,Oryza sativa,root,,IRGC 125827,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851209,SAMN21236517,PRJNA760839,Oryza sativa,panicle,,IRGC 125827,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851210,SAMN21236516,PRJNA760839,Oryza sativa,leaf,,IRGC 125827,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851211,SAMN21236511,PRJNA760839,Oryza sativa,root,,IRGC 125619,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851212,SAMN21236510,PRJNA760839,Oryza sativa,leaf,,IRGC 125619,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851213,SAMN21236484,PRJNA760839,Oryza sativa,root,,N22,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851214,SAMN21236497,PRJNA760839,Oryza sativa,panicle,,Azucena,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15851215,SAMN21236496,PRJNA760839,Oryza sativa,leaf,,Azucena,,PACBIO_SMRT,Iso-seq,NCBI
+SRR16493514,SAMN22417805,PRJNA772876,Oryza sativa,leaf,20 days,IR29_Salt_replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493515,SAMN22417804,PRJNA772876,Oryza sativa,leaf,20 days,IR29_CK_replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493516,SAMN22417803,PRJNA772876,Oryza sativa,leaf,20 days,IR29_CK_replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493517,SAMN22417802,PRJNA772876,Oryza sativa,leaf,20 days,IR29_CK_replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493518,SAMN22417801,PRJNA772876,Oryza sativa,leaf,20 days,C34_Salt_replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493519,SAMN22417800,PRJNA772876,Oryza sativa,leaf,20 days,C34_Salt_replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493520,SAMN22417799,PRJNA772876,Oryza sativa,leaf,20 days,C34_Salt_replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493521,SAMN22417798,PRJNA772876,Oryza sativa,leaf,20 days,C34_CK_replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493522,SAMN22417813,PRJNA772876,Oryza sativa,leaf,20 days,NB_Salt_replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493523,SAMN22417812,PRJNA772876,Oryza sativa,leaf,20 days,NB_Salt_replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493524,SAMN22417811,PRJNA772876,Oryza sativa,leaf,20 days,NB_Salt_replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493525,SAMN22417810,PRJNA772876,Oryza sativa,leaf,20 days,NB_CK_replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493526,SAMN22417809,PRJNA772876,Oryza sativa,leaf,20 days,NB_CK_replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493527,SAMN22417808,PRJNA772876,Oryza sativa,leaf,20 days,NB_CK_replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493528,SAMN22417807,PRJNA772876,Oryza sativa,leaf,20 days,IR29_Salt_replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493529,SAMN22417806,PRJNA772876,Oryza sativa,leaf,20 days,IR29_Salt_replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493530,SAMN22417797,PRJNA772876,Oryza sativa,leaf,20 days,C34_CK_replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16493531,SAMN22417796,PRJNA772876,Oryza sativa,leaf,20 days,C34_CK_replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR16502233,SAMN22426786,PRJNA773058,Oryza sativa,anther,meiosis stage,Dongnong428,,PACBIO_SMRT,Iso-seq,NCBI
+SRR17226643,SAMN23929509,PRJNA788163,Oryza sativa,shoot nuc,14,Nipponbare,wild type,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17226644,SAMN23929508,PRJNA788163,Oryza sativa,shoot,14,Nipponbare,wild type,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17226645,SAMN23929507,PRJNA788163,Oryza sativa,shoot,14,Nipponbare,wild type,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR18294823,SAMN26521569,PRJNA813759,Oryza sativa,leaf; root; seed; inflorescence; panicle (pooled),developmental stages; seeds/panicles sampled at 5-30 DPA,Nipponbare,japonica; wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR18894075,SAMN27608826,PRJNA827282,Oryza sativa,unfertilized floret,flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894076,SAMN27608825,PRJNA827282,Oryza sativa,young panicle,before flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894077,SAMN27608824,PRJNA827282,Oryza sativa,young panicle,before flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894078,SAMN27608823,PRJNA827282,Oryza sativa,young panicle,before flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894079,SAMN27608831,PRJNA827282,Oryza sativa,fertilized floret,after flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894080,SAMN27608830,PRJNA827282,Oryza sativa,fertilized floret,after flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894081,SAMN27608829,PRJNA827282,Oryza sativa,fertilized floret,after flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894082,SAMN27608828,PRJNA827282,Oryza sativa,unfertilized floret,flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18894083,SAMN27608827,PRJNA827282,Oryza sativa,unfertilized floret,flowering,4266,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18961262,SAMN26521569,PRJNA813759,Oryza sativa,seed,3 months,Nipponbare,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18961263,SAMN26521569,PRJNA813759,Oryza sativa,seed,3 months,Nipponbare,,PACBIO_SMRT,Iso-seq,NCBI
+SRR21103390,SAMN30333109,PRJNA869885,Oryza sativa,whole plant,NaCl treatment; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103391,SAMN30333108,PRJNA869885,Oryza sativa,whole plant,NaCl treatment; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103392,SAMN30333107,PRJNA869885,Oryza sativa,whole plant,NaCl treatment; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103393,SAMN30333106,PRJNA869885,Oryza sativa,whole plant,NaCl treatment; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103394,SAMN30333105,PRJNA869885,Oryza sativa,whole plant,control; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103395,SAMN30333104,PRJNA869885,Oryza sativa,whole plant,control; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103396,SAMN30333103,PRJNA869885,Oryza sativa,whole plant,control; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103397,SAMN30333102,PRJNA869885,Oryza sativa,whole plant,control; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103398,SAMN30333111,PRJNA869885,Oryza sativa,whole plant,NaCl treatment; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103399,SAMN30333110,PRJNA869885,Oryza sativa,whole plant,NaCl treatment; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103400,SAMN30333101,PRJNA869885,Oryza sativa,whole plant,control; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR21103401,SAMN30333100,PRJNA869885,Oryza sativa,whole plant,control; Seedling stage; 16 d,NanGeng9108,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR23804244,SAMN33715764,PRJNA943203,Oryza sativa,seedling,Control,DongJing,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR23804245,SAMN33715765,PRJNA943203,Oryza sativa,seedling,100mM NaCl,DongJing,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR23804248,SAMN33715768,PRJNA943203,Oryza sativa,leaf and inflorescence,in vitro transcribed RNA,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR23804249,SAMN33715769,PRJNA943203,Oryza sativa,leaf and inflorescence,in vitro transcribed RNA,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR23804250,SAMN33715770,PRJNA943203,Oryza sativa,leaf and inflorescence,in vitro transcribed RNA,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR23804251,SAMN33715771,PRJNA943203,Oryza sativa,leaf and inflorescence,in vitro transcribed RNA,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927868,SAMN38377044,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927869,SAMN38377043,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927870,SAMN38377042,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927871,SAMN38377041,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927872,SAMN38377040,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927873,SAMN38377039,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927874,SAMN38377038,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927875,SAMN38377037,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927886,SAMN38377036,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR26927887,SAMN38377035,PRJNA1044249,Oryza sativa,Leaf sheath,Seedling stage,China,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR29039997,SAMN41405232,PRJNA1111853,Oryza sativa,leaf and inflorescence,,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR30002035,SAMN42830423,PRJNA1140378,Oryza sativa,leaf,young leaves of 3-week-old seedling,Jinongda 667,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR30142608,SAMN43044232,PRJNA1034016,Oryza sativa,root,,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR31060329,SAMN44367588,PRJNA1034016,Oryza sativa,root,,,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR31690023,SAMN41831864,PRJNA1178436,Oryza sativa,seedling,Fifteen days after sowing,Balilla,,PACBIO_SMRT,Iso-seq,NCBI
+SRR31690024,SAMN41831847,PRJNA1178436,Oryza sativa,seedling,Fifteen days after sowing,Yuetai B,,PACBIO_SMRT,Iso-seq,NCBI
+SRR32998137,SAMN47807207,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998138,SAMN47807206,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998139,SAMN47807205,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998140,SAMN47807204,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998141,SAMN47807203,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998142,SAMN47807202,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998143,SAMN47807201,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998144,SAMN47807200,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998145,SAMN47807209,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998146,SAMN47807208,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998147,SAMN47807199,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR32998148,SAMN47807198,PRJNA1247236,Oryza sativa,leaf,Tillering stage,Japonica rice,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR34539092,SAMN49959251,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,MH63,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR34539093,SAMN49959250,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,MH63,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR34539094,SAMN49959249,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,ZS97,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR34539095,SAMN49959248,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,ZS97,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR34539096,SAMN49959247,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,MH63,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR34539097,SAMN49959246,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,MH63,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR34539098,SAMN49959245,PRJNA1291274,Oryza sativa,root,root,SY63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR34539106,SAMN49959244,PRJNA1291274,Oryza sativa,root,root,Mixed,,PACBIO_SMRT,Iso-seq,NCBI
+SRR34539107,SAMN49959243,PRJNA1291274,Oryza sativa,flagLeaf,flagLeaf,MH63,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323445,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323446,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323447,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323448,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323449,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323450,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323451,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323452,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323453,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323454,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4323455,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI
+SRR4340935,SAMN05804661,PRJNA343834,Oryza sativa,whole plant,seedling; 20 days,Oryza sativa japonica,,PACBIO_SMRT,Iso-seq,NCBI

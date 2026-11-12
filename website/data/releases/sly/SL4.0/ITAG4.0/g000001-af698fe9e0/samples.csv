@@ -1,0 +1,54 @@
+﻿Accession,BioSample,BioProject,Species,Tissue,Treatment,Ecotype,Genotype,Platform,Protocol,Database
+CRR2204727,SAMC4575903,PRJCA034589,Solanum lycopersicum,leaf,,,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+DRR241610,SAMD00241795,PRJDB10420,Solanum lycopersicum,mature anther,,LA1673,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR241611,SAMD00241795,PRJDB10420,Solanum lycopersicum,mature anther,,LA1673,,PACBIO_SMRT,Iso-seq,DDBJ
+DRR423645,SAMD00562124,PRJDB14491,Solanum lycopersicum,leaf,seedling,microtome,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,DDBJ
+DRR423646,SAMD00562123,PRJDB14491,Solanum lycopersicum,leaf,seedling,microtome,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,DDBJ
+DRR423647,SAMD00562122,PRJDB14491,Solanum lycopersicum,leaf,seedling,microtome,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,DDBJ
+ERR15955249,SAMEA120610651,PRJEB104324,Solanum lycopersicum,PO_0009007,PO_0025571,Moneyberg-TMV,,PACBIO_SMRT,Iso-seq,ENA
+ERR4039883,SAMEA6792745,PRJEB37834,Solanum lycopersicum,ripe fruit,,,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,ENA
+ERR4039884,SAMEA6792746,PRJEB37834,Solanum lycopersicum,ripe fruit,,,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,ENA
+SRR16643553,SAMN22566420,PRJNA773605,Solanum lycopersicum,root,Six weeks,Micro-Tom,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295320,SAMN34358524,PRJNA961334,Solanum lycopersicum,flower buds,heat stress treatment at 45C; flower buds,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295321,SAMN34358523,PRJNA961334,Solanum lycopersicum,flower buds,heat stress treatment at 40C; flower buds,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295322,SAMN34358522,PRJNA961334,Solanum lycopersicum,flower buds,"elevated temperature, 35C; flower buds",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295323,SAMN34358521,PRJNA961334,Solanum lycopersicum,mature green fruit,heat stress treatment at 45C; mature green fruit,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295324,SAMN34358520,PRJNA961334,Solanum lycopersicum,mature green fruit,heat stress treatment at 40C; mature green fruit,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295325,SAMN34358519,PRJNA961334,Solanum lycopersicum,mature green fruit,"Control temperature, 25C; mature green fruit",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295326,SAMN34358518,PRJNA961334,Solanum lycopersicum,leaf,heat stress treatment at 45C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295327,SAMN34358544,PRJNA961334,Solanum lycopersicum,immature green fruits,heat stress treatment at 45C; immature green fruit,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295328,SAMN34358543,PRJNA961334,Solanum lycopersicum,immature green fruits,heat stress treatment at 40C; immature green fruit,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295329,SAMN34358542,PRJNA961334,Solanum lycopersicum,immature green fruits,"elevated temperature, 35C; immature green fruit",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295330,SAMN34358541,PRJNA961334,Solanum lycopersicum,immature green fruits,"Control temperature, 25C; immature green fruit",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295331,SAMN34358540,PRJNA961334,Solanum lycopersicum,leaf,heat stress treatment at 40C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295332,SAMN34358539,PRJNA961334,Solanum lycopersicum,leaf,"Control temperature, 25C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295333,SAMN34358538,PRJNA961334,Solanum lycopersicum,root,heat stress treatment at 45C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295334,SAMN34358537,PRJNA961334,Solanum lycopersicum,root,heat stress treatment at 40C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295335,SAMN34358536,PRJNA961334,Solanum lycopersicum,root,"elevated temperature, 35C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295336,SAMN34358535,PRJNA961334,Solanum lycopersicum,root,"Control temperature, 25C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295337,SAMN34358517,PRJNA961334,Solanum lycopersicum,leaf,heat stress treatment at 40C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295338,SAMN34358534,PRJNA961334,Solanum lycopersicum,immature green fruits,heat stress treatment at 40C; immature green fruit,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295339,SAMN34358533,PRJNA961334,Solanum lycopersicum,root,"Control temperature, 25C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295340,SAMN34358532,PRJNA961334,Solanum lycopersicum,root,heat stress treatment at 45C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295341,SAMN34358531,PRJNA961334,Solanum lycopersicum,root,heat stress treatment at 40C; 6-week old plant,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295342,SAMN34358530,PRJNA961334,Solanum lycopersicum,root,"elevated temperature, 35C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295343,SAMN34358529,PRJNA961334,Solanum lycopersicum,immature green fruits,"elevated temperature, 35C; immature green fruit",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295344,SAMN34358528,PRJNA961334,Solanum lycopersicum,mature green fruit,"elevated temperature, 35C; mature green fruit",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295345,SAMN34358527,PRJNA961334,Solanum lycopersicum,immature green fruits,heat stress treatment at 45C; immature green fruit,cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295346,SAMN34358526,PRJNA961334,Solanum lycopersicum,flower buds,"Control temperature, 25C; flower buds",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295347,SAMN34358525,PRJNA961334,Solanum lycopersicum,immature green fruits,"Control temperature, 25C; immature green fruit",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295348,SAMN34358516,PRJNA961334,Solanum lycopersicum,leaf,"elevated temperature, 35C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24295349,SAMN34358515,PRJNA961334,Solanum lycopersicum,leaf,"Control temperature, 25C; 6-week old plant",cv. Moneymaker,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24847975,SAMN35616886,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by substrates made from Denmark named Pindstrup,Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847976,SAMN35616886,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by substrates made from Denmark named Pindstrup,Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847977,SAMN35616886,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by substrates made from Denmark named Pindstrup,Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847978,SAMN35616885,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by composite substrates made from corn straw(3-5 mm),Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847979,SAMN35616885,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by composite substrates made from corn straw(3-5 mm),Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847980,SAMN35616885,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by composite substrates made from corn straw(3-5 mm),Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847981,SAMN35616884,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by composite substrates made from corn straw(0-3 mm),Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847982,SAMN35616884,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by composite substrates made from corn straw(0-3 mm),Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR24847983,SAMN35616884,PRJNA979958,Solanum lycopersicum,root and leaf,cultivated by composite substrates made from corn straw(0-3 mm),Fentailang,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR36064084,SAMN53281807,PRJNA1365329,Solanum lycopersicum,leaf,sampling time: 20 h,20h_2,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR36064085,SAMN53281806,PRJNA1365329,Solanum lycopersicum,leaf,sampling time: 20 h,20h_1,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR36064086,SAMN53281805,PRJNA1365329,Solanum lycopersicum,leaf,sampling time: 12 h,12h_2,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR36064087,SAMN53281804,PRJNA1365329,Solanum lycopersicum,leaf,sampling time: 12 h,12h_1,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI

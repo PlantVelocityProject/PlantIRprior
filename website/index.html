@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Browse 8,935 long-read-supported intron-retention priors across five plant species. Download IR events, sample metadata and reference versions for PlantVelocity workflows.">
+  <title>PlantIR Prior | Plant intron-retention resources</title>
+  <link rel="icon" href="assets/logo.svg?v=f9a43e925aac" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css?v=016d4ea822a2">
+  <link rel="stylesheet" href="assets/site.css?v=2266ca306660">
+  <link rel="stylesheet" href="assets/ui.css?v=e10c59f50c18">
+  <link rel="stylesheet" href="assets/releases.css?v=335241b73905">
+  <link rel="stylesheet" href="assets/methods.css?v=aa800563ac17">
+  <script src="data/releases/index.js?v=0e763baaebb4" defer></script>
+  <script src="releases.js?v=e47de51be6cb" defer></script>
+  <script src="app.js?v=6a8921d4306c" defer></script>
+  <script src="assets/ui.js?v=2323d4fcd7b1" defer></script>
+  <!-- Resource-first design: paper #ffffff, ink #243329, pine #234d39,
+       secondary #5c6d60, field #f3f7f1, line #dce5d9.
+       Geist throughout, including coordinates and identifiers.
+       Left-aligned intro -> one botanical species row -> compact method/use.
+       Existing botanical illustrations are the visual focus. -->
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="#overview" aria-label="PlantIR Prior home"><img src="assets/logo.svg?v=f9a43e925aac" width="270" height="84" alt="PlantIR Prior"></a>
+  <div id="header-ui" class="plantir-ui header-tools"></div>
+</div></header>
+<main id="main-content" tabindex="-1">
+  <section id="page-overview" class="page" aria-labelledby="home-title"><div class="container">
+    <div class="home-intro">
+      <h1 id="home-title">Long-read IR priors<br>for plant RNA velocity</h1>
+      <p class="intro-description">Explore species-specific intron-retention evidence and download structural priors for PlantVelocity analysis.</p>
+      <div class="home-query-actions">
+        <form id="home-search" class="home-search" role="search" aria-label="Search IR events">
+          <label for="home-ir-search">Gene, intron or genomic interval</label>
+          <div class="home-search-row">
+            <div class="search-control">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+              <input id="home-ir-search" type="search" name="q" placeholder="e.g. AT1G01030" autocomplete="off" required>
+            </div>
+            <button type="submit" class="button primary">Search IR events</button>
+          </div>
+        </form>
+        <a class="quiet-link" href="#resources">View downloads</a>
+      </div>
+      <div class="intro-bottom">
+        <ul class="resource-summary" aria-label="Resource coverage"><li><strong id="home-species-count">5</strong> plant species</li><li><strong id="home-samples-count">683</strong> long-read samples</li><li><strong id="home-events-count">8,935</strong> high-confidence IR events</li></ul>
+        <a id="home-snapshot-link" class="home-snapshot" href="#releases" hidden>Updated <time id="home-snapshot-date"></time></a>
+      </div>
+    </div>
+    <section class="species-section" aria-labelledby="species-heading">
+      <div class="section-heading"><div><h2 id="species-heading">Choose a species</h2><p>Browse its IR priors, source samples and reference genome.</p></div><a class="quiet-link" href="#catalogue">Browse all events</a></div>
+      <div id="species-list" class="plantir-ui species-grid"></div>
+    </section>
+    <div id="resource-coverage-ui" class="plantir-ui"></div>
+    <div class="home-context">
+      <section aria-labelledby="evidence-heading"><h2 id="evidence-heading">From long reads to IR priors</h2><p>Iso-seq, FLEP-seq and ONT data are evaluated using a shared read–intron evidence framework.</p><ol class="compact-process"><li>Classify evidence</li><li>Pool within species</li><li>Select IR priors</li></ol><a href="#methods" class="quiet-link">Read the methods</a></section>
+      <section aria-labelledby="use-heading"><h2 id="use-heading">Use with PlantVelocity</h2><p>Match the prior to your reference genome, then use plantvelo to separate potential IR-associated signals before two-state RNA velocity modelling.</p><div class="text-links"><a href="https://github.com/PlantVelocityProject/plantvelo" target="_blank" rel="noopener" class="quiet-link">plantvelo counting</a><a href="https://github.com/PlantVelocityProject/PlantVelocity" target="_blank" rel="noopener" class="quiet-link">PlantVelocity R package</a></div></section>
+    </div>
+  </div></section>
+
+  <section id="page-catalogue" class="page" hidden aria-labelledby="catalogue-title"><div class="container inner-page">
+    <div class="page-heading catalogue-heading"><h1 id="catalogue-title">IR prior catalogue</h1><p>High-confidence intron-retention events.</p></div>
+    <div id="catalogue-dataset"></div>
+    <div class="catalogue-query" role="search" aria-label="Find IR events">
+      <div class="catalogue-search"><label for="ir-search">Gene, intron or genomic interval</label><div class="search-control">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="ir-search" type="search" placeholder="e.g. AT1G01030 or 1:12355-12423" autocomplete="off">
+      </div></div>
+      <div><label for="species-filter">Species</label><select id="species-filter" class="species-select" data-filter-select="species"></select></div>
+      <button type="button" class="button secondary" id="catalogue-filter-toggle" aria-expanded="false" aria-controls="catalogue-advanced">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 6h5m4 0h7M4 12h10m4 0h2M4 18h2m4 0h10M9 3v6m9 0v6M6 15v6"/></svg><span>Filters</span>
+      </button>
+    </div>
+    <div class="catalogue-advanced" id="catalogue-advanced" hidden>
+      <div><label for="overlap-filter">Exon overlap</label><select id="overlap-filter" data-filter-select><option value="all">All events</option><option value="no">Without warning</option><option value="yes">With warning</option></select></div>
+      <button type="button" class="table-action" data-reset-catalogue>Reset filters</button>
+    </div>
+    <section class="catalogue-results" id="catalogue-results" aria-labelledby="catalogue-results-title">
+      <div class="table-toolbar catalogue-toolbar"><div><h2 id="catalogue-results-title">Results</h2><p id="ir-table-count" role="status" aria-live="polite">Loading IR events…</p></div>
+        <button type="button" class="button primary" id="export-events" disabled>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>Export CSV
+        </button>
+      </div>
+      <p id="catalogue-empty" class="catalogue-empty" hidden>No IR events match these filters. Try another identifier or <button type="button" class="table-action" data-reset-catalogue>reset filters</button>.</p>
+      <div id="catalogue-rows" hidden>
+        <div class="table-scroll catalogue-desktop" tabindex="0" role="region" aria-label="IR events">
+          <table class="catalogue-table"><caption class="sr-only">High-confidence IR events and their long-read evidence</caption><thead><tr><th scope="col" id="ir-species-heading">Species</th><th scope="col">Gene and intron</th><th scope="col">Genomic interval</th><th scope="col" class="numeric">IR ratio</th><th scope="col" class="numeric">Specificity</th><th scope="col" class="numeric">Retained reads</th><th scope="col">Evidence</th></tr></thead><tbody id="ir-table-body"></tbody></table>
+        </div>
+        <ul id="ir-result-list" class="catalogue-mobile" role="list" aria-label="Matching IR events"></ul>
+      </div>
+      <div id="catalogue-pagination" class="table-bottom" hidden><div class="pagination"><button type="button" id="previous-page" class="button secondary">Previous</button><span id="event-page-number"></span><button type="button" id="next-page" class="button secondary">Next</button></div></div>
+    </section>
+  </div></section>
+
+  <section id="page-resources" class="page" hidden aria-labelledby="resources-title"><div class="container inner-page">
+    <div class="page-heading catalogue-heading"><h1 id="resources-title">All downloads</h1><p>Download IR event tables, PlantVelo priors and long-read sample metadata.</p></div>
+    <div class="resource-context" id="resources-dataset"></div>
+    <div id="resource-content" hidden>
+      <section class="resource-intro" id="resource-bundle-panel" aria-labelledby="resource-bundle-title" hidden>
+        <div><h2 id="resource-bundle-title">Complete data bundle</h2><p id="resource-bundle-summary"></p></div>
+        <div class="resource-bundle-action"><a class="button primary" id="resource-bundle" download>Download snapshot · ZIP</a><small id="resource-bundle-size"></small></div>
+      </section>
+      <section aria-labelledby="resource-download-title">
+        <div class="resource-section-heading"><h2 id="resource-download-title">Download by species</h2><a class="quiet-link" id="resource-reference-link" href="#references">Genomes &amp; annotations</a></div>
+        <div id="resource-downloads"></div>
+      </section>
+    </div>
+  </div></section>
+
+  <section id="page-references" class="page" hidden aria-labelledby="references-title"><div class="container inner-page">
+    <div class="page-heading catalogue-heading"><h1 id="references-title">Genomes &amp; annotations</h1><p>Reference assemblies and gene models used to define the IR priors.</p></div>
+    <div class="resource-context" id="references-dataset"></div>
+    <div id="reference-content" hidden>
+      <table class="resource-data-table catalogue-desktop"><caption class="sr-only">Reference genomes and annotations</caption><thead><tr><th scope="col">Species</th><th scope="col">Assembly</th><th scope="col">Assembly accession</th><th scope="col">Annotation</th></tr></thead><tbody id="reference-table-body"></tbody></table>
+      <ul class="catalogue-mobile resource-list" id="reference-list" role="list" aria-label="Reference genomes and annotations"></ul>
+    </div>
+  </div></section>
+
+  <section id="page-samples" class="page" hidden aria-labelledby="samples-title"><div class="container inner-page">
+    <div class="page-heading catalogue-heading"><h1 id="samples-title">Source samples</h1><p>Long-read sequencing records included in the selected dataset.</p></div>
+    <div class="resource-context" id="samples-dataset"></div>
+    <div id="sample-content" hidden>
+      <div class="catalogue-query sample-query" role="search" aria-label="Find source samples">
+        <div class="catalogue-search"><label for="sample-search">Accession, tissue or treatment</label><div class="search-control">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="sample-search" type="search" placeholder="e.g. CRR324070 or seedling" autocomplete="off">
+        </div></div>
+        <div><label for="sample-species">Species</label><select id="sample-species" class="species-select" data-filter-select="species"></select></div>
+        <button type="button" class="button secondary" id="sample-filter-toggle" aria-expanded="false" aria-controls="sample-advanced">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 6h5m4 0h7M4 12h10m4 0h2M4 18h2m4 0h10M9 3v6m9 0v6M6 15v6"/></svg><span>Filters</span>
+        </button>
+      </div>
+      <div class="catalogue-advanced" id="sample-advanced" hidden>
+        <div><label for="sample-protocol">Protocol</label><select id="sample-protocol" data-filter-select><option value="all">All protocols</option></select></div>
+        <button type="button" class="table-action" data-reset-samples>Reset filters</button>
+      </div>
+      <div class="table-toolbar catalogue-toolbar sample-toolbar"><p id="sample-table-count" role="status">Loading sample metadata…</p><button type="button" id="export-samples" class="button secondary" disabled>Download matching CSV</button></div>
+      <p id="sample-empty" class="catalogue-empty" hidden>No samples match these filters. Try another term or <button type="button" class="table-action" data-reset-samples>reset filters</button>.</p>
+      <div id="sample-rows" hidden>
+        <table class="resource-data-table catalogue-desktop"><caption class="sr-only">Long-read source sample metadata</caption><thead><tr><th scope="col">Accession</th><th scope="col">Species</th><th scope="col">Tissue</th><th scope="col">Treatment</th><th scope="col">Protocol</th><th scope="col">BioProject</th></tr></thead><tbody id="sample-table-body"></tbody></table>
+        <ul class="catalogue-mobile resource-list" id="sample-list" role="list" aria-label="Matching source samples"></ul>
+      </div>
+      <div class="table-bottom" id="sample-pagination" hidden><div class="pagination"><button type="button" id="sample-previous" class="button secondary">Previous</button><span id="sample-page-number"></span><button type="button" id="sample-next" class="button secondary">Next</button></div></div>
+    </div>
+  </div></section>
+
+  <section id="page-methods" class="page" hidden aria-labelledby="methods-title"><div class="container inner-page methods-page"><div id="methods-ui" class="plantir-ui"></div></div></section>
+
+  <section id="page-releases" class="page" hidden aria-labelledby="releases-title"><div class="container inner-page">
+    <div class="release-page-heading">
+      <div><h1 id="releases-title">Releases</h1><p>Find the right prior. Keep its version.</p></div>
+      <div id="release-version-menu-ui" class="plantir-ui"><a href="#release-history">Explore release history</a></div>
+    </div>
+    <div id="releases-ui"></div>
+  </div></section>
+  <section id="page-release" class="page" hidden aria-labelledby="release-title"><div class="container inner-page" id="release-detail-ui"></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner">
+  <div class="footer-copy"><p>PlantIR Prior <span>Long-read intron-retention resources</span></p><p class="footer-companion">Companion resources for PlantVelocity</p></div>
+  <nav class="footer-project-links" aria-label="GitHub repositories">
+    <a class="footer-github" href="https://github.com/PlantVelocityProject/plantvelo" target="_blank" rel="noopener">plantvelo</a>
+    <a class="footer-github" href="https://github.com/PlantVelocityProject/PlantVelocity" target="_blank" rel="noopener">PlantVelocity</a>
+    <a class="footer-github" href="https://github.com/PlantVelocityProject/PlantIRprior" target="_blank" rel="noopener">PlantIRprior</a>
+  </nav>
+</div></footer>
+<noscript><div class="noscript-note">Enable JavaScript to browse and filter records. You can still <a href="data/releases/index.json" download>download the release manifest</a>.</div></noscript>
+</body>
+</html>

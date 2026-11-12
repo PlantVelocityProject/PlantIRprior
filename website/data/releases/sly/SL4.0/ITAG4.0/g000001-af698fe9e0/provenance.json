@@ -1,0 +1,3351 @@
+{
+  "schema_version": 1,
+  "release_id": "g000001-af698fe9e0",
+  "generation": 1,
+  "created_at": "2026-11-02T14:43:49+00:00",
+  "reference": {
+    "annotation_id": "ITAG4.0",
+    "files": {
+      "annotation": {
+        "path": "/workspace/PlantIRagent/storage/references/sly/SL4.0/ITAG4.0/genes.gtf",
+        "sha256": "8710785eff4c5ec059fb88163515404e0abce01de1bff6aa245b7363d9cea0a9"
+      },
+      "genome": {
+        "path": "/workspace/PlantIRagent/storage/references/sly/SL4.0/ITAG4.0/genome.fa",
+        "sha256": "7ae2eeae52b55e4740998274d5afbcd64ae52d38e2a17dfe73f16b61a39d3874"
+      }
+    },
+    "reference_id": "SL4.0",
+    "species": "sly"
+  },
+  "catalogue_software": {
+    "name": "PlantIRref",
+    "version": "0.2.0"
+  },
+  "recipe": {
+    "rules": {
+      "high_confidence_IR": {
+        "min_ir_ratio": 0.2,
+        "min_ir_specificity": 0.7,
+        "min_retained": 5,
+        "min_informative": 10,
+        "min_spliced": 5
+      },
+      "candidate_IR": {
+        "min_ir_ratio": 0.1,
+        "min_ir_specificity": 0.5,
+        "min_retained": 3,
+        "min_informative": 10,
+        "min_spliced": 3
+      },
+      "nonIR": {
+        "max_ir_ratio": 0.05,
+        "max_retained": 2,
+        "min_informative": 10,
+        "min_spliced": 10
+      }
+    },
+    "implementation": {
+      "aggregate_evidence.py": "e84bf35eda45b851b65d56be746257a16c678330487e88209bccc3f1e5168b22",
+      "aggregate_store.py": "b49f11cb5440ce5c034d13ceab146e989783e46a6a1b17f52c303749312fe42c",
+      "aggregate_release.py": "2d8adf2e8cffc06091883539bf60341dea7e99470aa5a0483de26a4ee5636794",
+      "evidence_admission.py": "fbc8345b08387beb31d1ab07844d56fb8c66f4a22620a0eb35ea1b1608eabef5",
+      "evidence_identity.py": "3e5fca9843eadd6d196cd190cf930fa8194b86e594e46a56ed4063502c711968",
+      "evidence_identity_migrations.json": "8bb983fe0d84528e2c5832dda05b6010bcbe1f1a7a66a7b3f538f954b93264df",
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    },
+    "evidence_admission": {
+      "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+      "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+      "native_policy": {
+        "aggregation": "audited_heterogeneous_counts",
+        "historical_extraction_equivalence_claimed": false,
+        "parameters": {
+          "min_anchor": 8,
+          "min_intron_coverage": 0.9,
+          "min_mapq": 20,
+          "splice_tolerance": 5,
+          "strand_mode": "unstranded"
+        },
+        "software": {
+          "name": "PlantIRref",
+          "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+          "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+          "pysam_version": "0.24.0",
+          "version": "0.2.0"
+        }
+      },
+      "path": "admission.json",
+      "sha256": "9471155593683c92a466cdc015581c6cfc06ffacb6d2e8c23a761392f1fb8534"
+    }
+  },
+  "cohort_hash": "f4dd42ced3f89b66565a2c17fe5f1e0a31fc08bb5c7fdcde0bc76c8e39551674",
+  "samples": [
+    {
+      "accession": "CRR2204727",
+      "version": "2bf6fb2356c0eb2a554004e9180298c7ccaff1231543c10bdcf47177b1cc072c",
+      "source": {
+        "accession": "CRR2204727",
+        "metadata": {
+          "Accession": "CRR2204727",
+          "BioProject": "PRJCA034589",
+          "BioSample": "SAMC4575903",
+          "Database": "NGDC",
+          "Ecotype": "",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "FLEP-seq2",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": ""
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/CRR2204727.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "c417fb251cdb24d9c0ffe2720762d10619a62eb7e0720f4ca86425f5d40a87e5",
+        "version": "2bf6fb2356c0eb2a554004e9180298c7ccaff1231543c10bdcf47177b1cc072c"
+      },
+      "metadata": {
+        "Accession": "CRR2204727",
+        "BioProject": "PRJCA034589",
+        "BioSample": "SAMC4575903",
+        "Database": "NGDC",
+        "Ecotype": "",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "FLEP-seq2",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": ""
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "DRR241610",
+      "version": "b79a2ebe720b09b8f13f50f90ab7945ee28b133e277fdeb76c7271b3872c0a4f",
+      "source": {
+        "accession": "DRR241610",
+        "metadata": {
+          "Accession": "DRR241610",
+          "BioProject": "PRJDB10420",
+          "BioSample": "SAMD00241795",
+          "Database": "DDBJ",
+          "Ecotype": "LA1673",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "mature anther",
+          "Treatment": ""
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/DRR241610.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "a88ffa11e39958aeeb4a9c0fd497767a6791507058179f6c73e7608e8418cc90",
+        "version": "b79a2ebe720b09b8f13f50f90ab7945ee28b133e277fdeb76c7271b3872c0a4f"
+      },
+      "metadata": {
+        "Accession": "DRR241610",
+        "BioProject": "PRJDB10420",
+        "BioSample": "SAMD00241795",
+        "Database": "DDBJ",
+        "Ecotype": "LA1673",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "mature anther",
+        "Treatment": ""
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "DRR241611",
+      "version": "1d9b12dfb4feb8b420dc5e39f622a1b467a9c0b76608b502b1e349ef64184811",
+      "source": {
+        "accession": "DRR241611",
+        "metadata": {
+          "Accession": "DRR241611",
+          "BioProject": "PRJDB10420",
+          "BioSample": "SAMD00241795",
+          "Database": "DDBJ",
+          "Ecotype": "LA1673",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "mature anther",
+          "Treatment": ""
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/DRR241611.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "955b0c48f3220357e227b5aace786c1abc44fb89116180834c5eb21396f99e32",
+        "version": "1d9b12dfb4feb8b420dc5e39f622a1b467a9c0b76608b502b1e349ef64184811"
+      },
+      "metadata": {
+        "Accession": "DRR241611",
+        "BioProject": "PRJDB10420",
+        "BioSample": "SAMD00241795",
+        "Database": "DDBJ",
+        "Ecotype": "LA1673",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "mature anther",
+        "Treatment": ""
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "DRR423645",
+      "version": "a1688dcf831e401a9b834d2ea346866800152cbe20dcdac37dde4e7b68dc3df6",
+      "source": {
+        "accession": "DRR423645",
+        "metadata": {
+          "Accession": "DRR423645",
+          "BioProject": "PRJDB14491",
+          "BioSample": "SAMD00562124",
+          "Database": "DDBJ",
+          "Ecotype": "microtome",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT PCR-cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "seedling"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/DRR423645.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "51c31d0915c33995072ce1367339a5627cbc3b69c78e3291580d8cbb17706f1d",
+        "version": "a1688dcf831e401a9b834d2ea346866800152cbe20dcdac37dde4e7b68dc3df6"
+      },
+      "metadata": {
+        "Accession": "DRR423645",
+        "BioProject": "PRJDB14491",
+        "BioSample": "SAMD00562124",
+        "Database": "DDBJ",
+        "Ecotype": "microtome",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT PCR-cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "seedling"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "DRR423646",
+      "version": "5abef76f5ce90c49245788bad9b8bf30640b528be5e59ca7c318ae74233bad6a",
+      "source": {
+        "accession": "DRR423646",
+        "metadata": {
+          "Accession": "DRR423646",
+          "BioProject": "PRJDB14491",
+          "BioSample": "SAMD00562123",
+          "Database": "DDBJ",
+          "Ecotype": "microtome",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT PCR-cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "seedling"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/DRR423646.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "b930cd73364962c8ac171bc5e2e7c1ad5b0fd792b9cfc30e62fe3e5175d3ce21",
+        "version": "5abef76f5ce90c49245788bad9b8bf30640b528be5e59ca7c318ae74233bad6a"
+      },
+      "metadata": {
+        "Accession": "DRR423646",
+        "BioProject": "PRJDB14491",
+        "BioSample": "SAMD00562123",
+        "Database": "DDBJ",
+        "Ecotype": "microtome",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT PCR-cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "seedling"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "DRR423647",
+      "version": "f3ca505422273c3beccbb72afc2e9a28318107047b428d505b47bec7befdbe36",
+      "source": {
+        "accession": "DRR423647",
+        "metadata": {
+          "Accession": "DRR423647",
+          "BioProject": "PRJDB14491",
+          "BioSample": "SAMD00562122",
+          "Database": "DDBJ",
+          "Ecotype": "microtome",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT PCR-cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "seedling"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/DRR423647.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "9cfa6d146abd7229e21288b5640f9ad4e39962900cf0747d0916c2f9fabeac6a",
+        "version": "f3ca505422273c3beccbb72afc2e9a28318107047b428d505b47bec7befdbe36"
+      },
+      "metadata": {
+        "Accession": "DRR423647",
+        "BioProject": "PRJDB14491",
+        "BioSample": "SAMD00562122",
+        "Database": "DDBJ",
+        "Ecotype": "microtome",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT PCR-cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "seedling"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "ERR15955249",
+      "version": "7dc2d2006590e4f677ec00b6f041d9ae65c87e2a86c367dbb2696412c3395bef",
+      "source": {
+        "accession": "ERR15955249",
+        "metadata": {
+          "Accession": "ERR15955249",
+          "BioProject": "PRJEB104324",
+          "BioSample": "SAMEA120610651",
+          "Database": "ENA",
+          "Ecotype": "Moneyberg-TMV",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "PO_0009007",
+          "Treatment": "PO_0025571"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/ERR15955249.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "17140e097625613918396405ba13199ad6f45dca58ae669b38232caff5173492",
+        "version": "7dc2d2006590e4f677ec00b6f041d9ae65c87e2a86c367dbb2696412c3395bef"
+      },
+      "metadata": {
+        "Accession": "ERR15955249",
+        "BioProject": "PRJEB104324",
+        "BioSample": "SAMEA120610651",
+        "Database": "ENA",
+        "Ecotype": "Moneyberg-TMV",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "PO_0009007",
+        "Treatment": "PO_0025571"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "ERR4039883",
+      "version": "68a523a7c83cb5d161d13e0dd24a2865728bc34ffd53416210314af97171012d",
+      "source": {
+        "accession": "ERR4039883",
+        "metadata": {
+          "Accession": "ERR4039883",
+          "BioProject": "PRJEB37834",
+          "BioSample": "SAMEA6792745",
+          "Database": "ENA",
+          "Ecotype": "",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT PCR-cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "ripe fruit",
+          "Treatment": ""
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/ERR4039883.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "806269940dbec71c58932b07d3fdbe010aeb538d6cfc5665b6803497a3d8d14f",
+        "version": "68a523a7c83cb5d161d13e0dd24a2865728bc34ffd53416210314af97171012d"
+      },
+      "metadata": {
+        "Accession": "ERR4039883",
+        "BioProject": "PRJEB37834",
+        "BioSample": "SAMEA6792745",
+        "Database": "ENA",
+        "Ecotype": "",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT PCR-cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "ripe fruit",
+        "Treatment": ""
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "ERR4039884",
+      "version": "63705aeabc6ead946bc1559697331ae81b22a1f7d08284d044c33f46dc1193e0",
+      "source": {
+        "accession": "ERR4039884",
+        "metadata": {
+          "Accession": "ERR4039884",
+          "BioProject": "PRJEB37834",
+          "BioSample": "SAMEA6792746",
+          "Database": "ENA",
+          "Ecotype": "",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT PCR-cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "ripe fruit",
+          "Treatment": ""
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/ERR4039884.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "df7ab3389d3c5d9d2bbc76ff9b4b4941cb4eacae00c99cbbe2a833b0dab1e189",
+        "version": "63705aeabc6ead946bc1559697331ae81b22a1f7d08284d044c33f46dc1193e0"
+      },
+      "metadata": {
+        "Accession": "ERR4039884",
+        "BioProject": "PRJEB37834",
+        "BioSample": "SAMEA6792746",
+        "Database": "ENA",
+        "Ecotype": "",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT PCR-cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "ripe fruit",
+        "Treatment": ""
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR16643553",
+      "version": "65cf034e0002b2f4524cc3d353b24cf7d689a31cae70ff8d527552e7cb99ced9",
+      "source": {
+        "accession": "SRR16643553",
+        "metadata": {
+          "Accession": "SRR16643553",
+          "BioProject": "PRJNA773605",
+          "BioSample": "SAMN22566420",
+          "Database": "NCBI",
+          "Ecotype": "Micro-Tom",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "Six weeks"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR16643553.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "dd7945e7fff6935ff15e85994a2bff0ab927cdd99437cd359476c1bb13d38d8b",
+        "version": "65cf034e0002b2f4524cc3d353b24cf7d689a31cae70ff8d527552e7cb99ced9"
+      },
+      "metadata": {
+        "Accession": "SRR16643553",
+        "BioProject": "PRJNA773605",
+        "BioSample": "SAMN22566420",
+        "Database": "NCBI",
+        "Ecotype": "Micro-Tom",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "Six weeks"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295320",
+      "version": "1bc1c5c3ce78cdc8e6b1bbf7c88f2fff96c66c4366eefc4dd0f8e9df2533c44c",
+      "source": {
+        "accession": "SRR24295320",
+        "metadata": {
+          "Accession": "SRR24295320",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358524",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "flower buds",
+          "Treatment": "heat stress treatment at 45C; flower buds"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295320.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "cdb71ccf6fb7b45101b36cada0b2de5d154540a77a47fd50beaccd5f6463ba6b",
+        "version": "1bc1c5c3ce78cdc8e6b1bbf7c88f2fff96c66c4366eefc4dd0f8e9df2533c44c"
+      },
+      "metadata": {
+        "Accession": "SRR24295320",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358524",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "flower buds",
+        "Treatment": "heat stress treatment at 45C; flower buds"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295321",
+      "version": "04491c46130c2f5c381d2bfd3c6fd975e5a9c320d05f0a1f38cd1526029fb37c",
+      "source": {
+        "accession": "SRR24295321",
+        "metadata": {
+          "Accession": "SRR24295321",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358523",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "flower buds",
+          "Treatment": "heat stress treatment at 40C; flower buds"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295321.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "26aafdd288f2eca7e2389a1bbe1233e3df3f356a199a1a26a6f2474d30c0f108",
+        "version": "04491c46130c2f5c381d2bfd3c6fd975e5a9c320d05f0a1f38cd1526029fb37c"
+      },
+      "metadata": {
+        "Accession": "SRR24295321",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358523",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "flower buds",
+        "Treatment": "heat stress treatment at 40C; flower buds"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295322",
+      "version": "aea65ab75d0fc1475c5c1fb6de59b3b481a2ef40f67ef6e91e2525946a849a8b",
+      "source": {
+        "accession": "SRR24295322",
+        "metadata": {
+          "Accession": "SRR24295322",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358522",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "flower buds",
+          "Treatment": "elevated temperature, 35C; flower buds"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295322.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "c0699c057fb8a4b4baeebd50146824d6bea114e514f2b34e317878075c8dc9eb",
+        "version": "aea65ab75d0fc1475c5c1fb6de59b3b481a2ef40f67ef6e91e2525946a849a8b"
+      },
+      "metadata": {
+        "Accession": "SRR24295322",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358522",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "flower buds",
+        "Treatment": "elevated temperature, 35C; flower buds"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295323",
+      "version": "91472ae1fb77e8cba1df203c066a9d52eeab23a71cb4b53e8d4a8df7d2e72d24",
+      "source": {
+        "accession": "SRR24295323",
+        "metadata": {
+          "Accession": "SRR24295323",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358521",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "mature green fruit",
+          "Treatment": "heat stress treatment at 45C; mature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295323.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "2e8cb7315707cd77e07683b0fa62918fa737fb11d767dc512b3afdb4424ceb50",
+        "version": "91472ae1fb77e8cba1df203c066a9d52eeab23a71cb4b53e8d4a8df7d2e72d24"
+      },
+      "metadata": {
+        "Accession": "SRR24295323",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358521",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "mature green fruit",
+        "Treatment": "heat stress treatment at 45C; mature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295324",
+      "version": "73b6759ceb9f50a5f71bb6d2eecf07b50b5650c664d74d9a27ecd5f3a3682421",
+      "source": {
+        "accession": "SRR24295324",
+        "metadata": {
+          "Accession": "SRR24295324",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358520",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "mature green fruit",
+          "Treatment": "heat stress treatment at 40C; mature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295324.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "5938a3f10ab097f374efe8a0efdaca3948528653149b93fccec7c6b247d8b956",
+        "version": "73b6759ceb9f50a5f71bb6d2eecf07b50b5650c664d74d9a27ecd5f3a3682421"
+      },
+      "metadata": {
+        "Accession": "SRR24295324",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358520",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "mature green fruit",
+        "Treatment": "heat stress treatment at 40C; mature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295325",
+      "version": "8d988049e499a98e7fcfa3e622ba636e5574a9f2f14b2532bf09ba18c83168c8",
+      "source": {
+        "accession": "SRR24295325",
+        "metadata": {
+          "Accession": "SRR24295325",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358519",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "mature green fruit",
+          "Treatment": "Control temperature, 25C; mature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295325.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "1e904ebff432d628b84aab28a2286f20101f2839271c41e741bbb137cc0ba79b",
+        "version": "8d988049e499a98e7fcfa3e622ba636e5574a9f2f14b2532bf09ba18c83168c8"
+      },
+      "metadata": {
+        "Accession": "SRR24295325",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358519",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "mature green fruit",
+        "Treatment": "Control temperature, 25C; mature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295326",
+      "version": "906e2fd3ab24288d9990b45d72d4aac46356980effc5a618a61693673213992f",
+      "source": {
+        "accession": "SRR24295326",
+        "metadata": {
+          "Accession": "SRR24295326",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358518",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "heat stress treatment at 45C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295326.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "748e30fcfb6235f7ff0216e3119ea3f9027fd66c74a575fc4a067fd00ec12ede",
+        "version": "906e2fd3ab24288d9990b45d72d4aac46356980effc5a618a61693673213992f"
+      },
+      "metadata": {
+        "Accession": "SRR24295326",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358518",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "heat stress treatment at 45C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295327",
+      "version": "675455936fba1325c78ac99c700a15fa742a1dbe22765aa870d1c27db87dff4e",
+      "source": {
+        "accession": "SRR24295327",
+        "metadata": {
+          "Accession": "SRR24295327",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358544",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "heat stress treatment at 45C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295327.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "b3fe75b725b4dc5175f374ace0937f795570eee34a391bd7639da6b090ff182c",
+        "version": "675455936fba1325c78ac99c700a15fa742a1dbe22765aa870d1c27db87dff4e"
+      },
+      "metadata": {
+        "Accession": "SRR24295327",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358544",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "heat stress treatment at 45C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295328",
+      "version": "64e7ec4c9c9138194ee7ff68d908af8ae7af381a2c8219219930eb1ddc955a78",
+      "source": {
+        "accession": "SRR24295328",
+        "metadata": {
+          "Accession": "SRR24295328",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358543",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "heat stress treatment at 40C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295328.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "0a80e66b135fd71a8f546798f25aa171b714394fd5daa38dae44064a06644eed",
+        "version": "64e7ec4c9c9138194ee7ff68d908af8ae7af381a2c8219219930eb1ddc955a78"
+      },
+      "metadata": {
+        "Accession": "SRR24295328",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358543",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "heat stress treatment at 40C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295329",
+      "version": "f78fce55484d1c66da74bf2a386cdcec7d660dbfd0f76d9a0a5903abcd951b5e",
+      "source": {
+        "accession": "SRR24295329",
+        "metadata": {
+          "Accession": "SRR24295329",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358542",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "elevated temperature, 35C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295329.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "47443b2d8638fd60e2b6e592df69f55dc4f013e40783b15456634678083e5aec",
+        "version": "f78fce55484d1c66da74bf2a386cdcec7d660dbfd0f76d9a0a5903abcd951b5e"
+      },
+      "metadata": {
+        "Accession": "SRR24295329",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358542",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "elevated temperature, 35C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295330",
+      "version": "a61e47164585a8fc39fce26b38ad8cf6b4a485a423fc46612fe112cf861b539f",
+      "source": {
+        "accession": "SRR24295330",
+        "metadata": {
+          "Accession": "SRR24295330",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358541",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "Control temperature, 25C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295330.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "e6e1a1a7ed4790000eee8f5fb3a2e187cddd4298170b191e071c9ee916499c6b",
+        "version": "a61e47164585a8fc39fce26b38ad8cf6b4a485a423fc46612fe112cf861b539f"
+      },
+      "metadata": {
+        "Accession": "SRR24295330",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358541",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "Control temperature, 25C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295331",
+      "version": "2824d7b99bb3b0cefddd1cce72c6eb474832581c8a4e84ea0e2998157423ba57",
+      "source": {
+        "accession": "SRR24295331",
+        "metadata": {
+          "Accession": "SRR24295331",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358540",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "heat stress treatment at 40C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295331.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "3befd847fee23f4dfb39404899a2789af571bfb1eba33fc04ee7b819ff3c9b22",
+        "version": "2824d7b99bb3b0cefddd1cce72c6eb474832581c8a4e84ea0e2998157423ba57"
+      },
+      "metadata": {
+        "Accession": "SRR24295331",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358540",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "heat stress treatment at 40C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295332",
+      "version": "75f41f8ab80d993fa7fcb64f16962f60cc8cb5cd397e26c0870d9d4ac2f6f46e",
+      "source": {
+        "accession": "SRR24295332",
+        "metadata": {
+          "Accession": "SRR24295332",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358539",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "Control temperature, 25C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295332.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "b991b8f729f56785c1b875f5621a4f6ff48a9739506667b16310cc27c7f93d5a",
+        "version": "75f41f8ab80d993fa7fcb64f16962f60cc8cb5cd397e26c0870d9d4ac2f6f46e"
+      },
+      "metadata": {
+        "Accession": "SRR24295332",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358539",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "Control temperature, 25C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295333",
+      "version": "c507878b66f935615346472b76d719a9ea999603e7095bb4c4d68e3592f31774",
+      "source": {
+        "accession": "SRR24295333",
+        "metadata": {
+          "Accession": "SRR24295333",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358538",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "heat stress treatment at 45C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295333.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "2cda69063f413786fb518a8292222336398bef94d45715fb0dbcae73ff2c6348",
+        "version": "c507878b66f935615346472b76d719a9ea999603e7095bb4c4d68e3592f31774"
+      },
+      "metadata": {
+        "Accession": "SRR24295333",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358538",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "heat stress treatment at 45C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295334",
+      "version": "2d6e70d200bf28843726a1ae06aee62fd180b135a05de7eccef74cb863e480bd",
+      "source": {
+        "accession": "SRR24295334",
+        "metadata": {
+          "Accession": "SRR24295334",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358537",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "heat stress treatment at 40C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295334.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "ea46ad3318353a3441ecad4734c99e15af31005fdeb850b294fcf85c39296f9f",
+        "version": "2d6e70d200bf28843726a1ae06aee62fd180b135a05de7eccef74cb863e480bd"
+      },
+      "metadata": {
+        "Accession": "SRR24295334",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358537",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "heat stress treatment at 40C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295335",
+      "version": "e222849124edee702e2d040a74411ce72b876214b3958b095dbd195addd24af2",
+      "source": {
+        "accession": "SRR24295335",
+        "metadata": {
+          "Accession": "SRR24295335",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358536",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "elevated temperature, 35C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295335.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "9dd43cdf3386bcf5c471603c1c4cd7ecddb917825d1167659fadef19ecfcd22d",
+        "version": "e222849124edee702e2d040a74411ce72b876214b3958b095dbd195addd24af2"
+      },
+      "metadata": {
+        "Accession": "SRR24295335",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358536",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "elevated temperature, 35C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295336",
+      "version": "ae52404b1145ab6c25159404d142348dfe56f1c871f4d67c41921bf331ec4dde",
+      "source": {
+        "accession": "SRR24295336",
+        "metadata": {
+          "Accession": "SRR24295336",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358535",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "Control temperature, 25C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295336.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "2d777e0be44d0035dc37996f7a137eefd4ccbbca6e652ca634888067b40b0c6b",
+        "version": "ae52404b1145ab6c25159404d142348dfe56f1c871f4d67c41921bf331ec4dde"
+      },
+      "metadata": {
+        "Accession": "SRR24295336",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358535",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "Control temperature, 25C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295337",
+      "version": "a9467a64d4145df9a1042f754f491f7f49c8c726eab55af2e842123559c52e55",
+      "source": {
+        "accession": "SRR24295337",
+        "metadata": {
+          "Accession": "SRR24295337",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358517",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "heat stress treatment at 40C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295337.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "8fb817b06ef9659221af010984a06a96848fa25048a367eb121cea631505a7c5",
+        "version": "a9467a64d4145df9a1042f754f491f7f49c8c726eab55af2e842123559c52e55"
+      },
+      "metadata": {
+        "Accession": "SRR24295337",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358517",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "heat stress treatment at 40C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295338",
+      "version": "49ff689c1c864e481fac194a68c1b5b7d8a18e46065a45f42ed0573fbcbde0a0",
+      "source": {
+        "accession": "SRR24295338",
+        "metadata": {
+          "Accession": "SRR24295338",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358534",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "heat stress treatment at 40C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295338.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "54786f8e437eac0ae20408a51e5b926276b8c71936a28baaab1feb1253462dd9",
+        "version": "49ff689c1c864e481fac194a68c1b5b7d8a18e46065a45f42ed0573fbcbde0a0"
+      },
+      "metadata": {
+        "Accession": "SRR24295338",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358534",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "heat stress treatment at 40C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295339",
+      "version": "239af4187d7cf8d10aebb5012bd75289c01f177e3ebf6888a3b5f5ccc4c4a9a3",
+      "source": {
+        "accession": "SRR24295339",
+        "metadata": {
+          "Accession": "SRR24295339",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358533",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "Control temperature, 25C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295339.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "9cfb93ada17c348b59dc055d7d551320169b550b8115f0ea1c2d3ac3de40b3eb",
+        "version": "239af4187d7cf8d10aebb5012bd75289c01f177e3ebf6888a3b5f5ccc4c4a9a3"
+      },
+      "metadata": {
+        "Accession": "SRR24295339",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358533",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "Control temperature, 25C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295340",
+      "version": "9b4502f05e352324787fd87f14f109e95d4a99cd32aebba80722ab6fd272f921",
+      "source": {
+        "accession": "SRR24295340",
+        "metadata": {
+          "Accession": "SRR24295340",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358532",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "heat stress treatment at 45C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295340.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "63735d7ff7fffb3a8ed1ff10c54a2944f0df297031170f45c73f4e1378e4bc85",
+        "version": "9b4502f05e352324787fd87f14f109e95d4a99cd32aebba80722ab6fd272f921"
+      },
+      "metadata": {
+        "Accession": "SRR24295340",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358532",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "heat stress treatment at 45C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295341",
+      "version": "f1ec8abd8a220ec1973163a8637b03565c6065ee163b655bd4e355cf46d8ba07",
+      "source": {
+        "accession": "SRR24295341",
+        "metadata": {
+          "Accession": "SRR24295341",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358531",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "heat stress treatment at 40C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295341.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "ba5dcb1f2404f74ceda9cf3ad5d670339020d9dc80addcd47a5a03f744951fef",
+        "version": "f1ec8abd8a220ec1973163a8637b03565c6065ee163b655bd4e355cf46d8ba07"
+      },
+      "metadata": {
+        "Accession": "SRR24295341",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358531",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "heat stress treatment at 40C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295342",
+      "version": "7197652b271a6dd9221e9eeb39880c3621910d929d1f098ef8d1a12ebba7bfb1",
+      "source": {
+        "accession": "SRR24295342",
+        "metadata": {
+          "Accession": "SRR24295342",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358530",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root",
+          "Treatment": "elevated temperature, 35C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295342.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "41a3e4689358ae3ddb0ca8be287961f105320f1614c797df1d786f94721da790",
+        "version": "7197652b271a6dd9221e9eeb39880c3621910d929d1f098ef8d1a12ebba7bfb1"
+      },
+      "metadata": {
+        "Accession": "SRR24295342",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358530",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root",
+        "Treatment": "elevated temperature, 35C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295343",
+      "version": "dafb611e854692566ecb4fe64dcb98a5461543b499f362bd3dd1a13481175083",
+      "source": {
+        "accession": "SRR24295343",
+        "metadata": {
+          "Accession": "SRR24295343",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358529",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "elevated temperature, 35C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295343.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "d7fe5ad29b90434cbb755df0a48eb4109fe5ef08a3df85ddd1eaa8b060f3f938",
+        "version": "dafb611e854692566ecb4fe64dcb98a5461543b499f362bd3dd1a13481175083"
+      },
+      "metadata": {
+        "Accession": "SRR24295343",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358529",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "elevated temperature, 35C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295344",
+      "version": "c3e3b60957fd33f5f59f0b2448fc6e3c97b805f1747b813af7a25c69d58707b7",
+      "source": {
+        "accession": "SRR24295344",
+        "metadata": {
+          "Accession": "SRR24295344",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358528",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "mature green fruit",
+          "Treatment": "elevated temperature, 35C; mature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295344.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "efe7b783e2817670597a498f8dd46437ac57837abb2798ebb61bd1abacd49023",
+        "version": "c3e3b60957fd33f5f59f0b2448fc6e3c97b805f1747b813af7a25c69d58707b7"
+      },
+      "metadata": {
+        "Accession": "SRR24295344",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358528",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "mature green fruit",
+        "Treatment": "elevated temperature, 35C; mature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295345",
+      "version": "f37267336afe2c00a835585c0fdf11e8112f6f173f7653124257770a95ea7897",
+      "source": {
+        "accession": "SRR24295345",
+        "metadata": {
+          "Accession": "SRR24295345",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358527",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "heat stress treatment at 45C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295345.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "a3f726e5894afb5b29fc99a373aa657cd862ef6dee81b1f0e7f4be3c00ef4ae0",
+        "version": "f37267336afe2c00a835585c0fdf11e8112f6f173f7653124257770a95ea7897"
+      },
+      "metadata": {
+        "Accession": "SRR24295345",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358527",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "heat stress treatment at 45C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295346",
+      "version": "46e8dc81b8008ed1a49c3a38e73d51504694f3e84e7447ca0f73162d1f9898ae",
+      "source": {
+        "accession": "SRR24295346",
+        "metadata": {
+          "Accession": "SRR24295346",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358526",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "flower buds",
+          "Treatment": "Control temperature, 25C; flower buds"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295346.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "a3ee6fa189e5a08e81361d323dc40816a6651c5d555ce90151e77b87c3a31e73",
+        "version": "46e8dc81b8008ed1a49c3a38e73d51504694f3e84e7447ca0f73162d1f9898ae"
+      },
+      "metadata": {
+        "Accession": "SRR24295346",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358526",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "flower buds",
+        "Treatment": "Control temperature, 25C; flower buds"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295347",
+      "version": "e1e2230f9b4b25153d21cd78f744261d6abdbb1ce4d7f70a9d91898726778094",
+      "source": {
+        "accession": "SRR24295347",
+        "metadata": {
+          "Accession": "SRR24295347",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358525",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "immature green fruits",
+          "Treatment": "Control temperature, 25C; immature green fruit"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295347.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "d0f68292390bbbb77266e1866e4834aa3a586ddf4935882af0b6344b60839e07",
+        "version": "e1e2230f9b4b25153d21cd78f744261d6abdbb1ce4d7f70a9d91898726778094"
+      },
+      "metadata": {
+        "Accession": "SRR24295347",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358525",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "immature green fruits",
+        "Treatment": "Control temperature, 25C; immature green fruit"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295348",
+      "version": "0eb79751cccd063d944c878c15ee7708110b95fae334dd21ae2a8ac8d805fa67",
+      "source": {
+        "accession": "SRR24295348",
+        "metadata": {
+          "Accession": "SRR24295348",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358516",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "elevated temperature, 35C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295348.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "7d4f14a7af8958ef34c615555384c071adc34acd23067580f115dcbb2c6b7610",
+        "version": "0eb79751cccd063d944c878c15ee7708110b95fae334dd21ae2a8ac8d805fa67"
+      },
+      "metadata": {
+        "Accession": "SRR24295348",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358516",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "elevated temperature, 35C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24295349",
+      "version": "20ea438f28f2d524517cf25af5598ae60dbc22d5f6ac401a850263910871e74d",
+      "source": {
+        "accession": "SRR24295349",
+        "metadata": {
+          "Accession": "SRR24295349",
+          "BioProject": "PRJNA961334",
+          "BioSample": "SAMN34358515",
+          "Database": "NCBI",
+          "Ecotype": "cv. Moneymaker",
+          "Genotype": "",
+          "Platform": "PACBIO_SMRT",
+          "Protocol": "Iso-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "Control temperature, 25C; 6-week old plant"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24295349.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "5fccff3551fbbb71184ecd82398e4690eec08ad50c77a5347534465676d9aabd",
+        "version": "20ea438f28f2d524517cf25af5598ae60dbc22d5f6ac401a850263910871e74d"
+      },
+      "metadata": {
+        "Accession": "SRR24295349",
+        "BioProject": "PRJNA961334",
+        "BioSample": "SAMN34358515",
+        "Database": "NCBI",
+        "Ecotype": "cv. Moneymaker",
+        "Genotype": "",
+        "Platform": "PACBIO_SMRT",
+        "Protocol": "Iso-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "Control temperature, 25C; 6-week old plant"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847975",
+      "version": "68c08ea1b4175b650c6594a4b98344eb373302f96fa819e7127e330e92ea803c",
+      "source": {
+        "accession": "SRR24847975",
+        "metadata": {
+          "Accession": "SRR24847975",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616886",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by substrates made from Denmark named Pindstrup"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847975.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "173ce9ba9493c2462a8fbc4220b06c7a6f2eaf39da159ed1f7066df5f698ece8",
+        "version": "68c08ea1b4175b650c6594a4b98344eb373302f96fa819e7127e330e92ea803c"
+      },
+      "metadata": {
+        "Accession": "SRR24847975",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616886",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by substrates made from Denmark named Pindstrup"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847976",
+      "version": "4895ef834cc5977b0d72b2fc45eaec7ce4432676f5a0d4f1a296d5295315fb76",
+      "source": {
+        "accession": "SRR24847976",
+        "metadata": {
+          "Accession": "SRR24847976",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616886",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by substrates made from Denmark named Pindstrup"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847976.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "644f0139a5a667d4807a407647fe298e7e5584720e1d968e3015a649fa7f928d",
+        "version": "4895ef834cc5977b0d72b2fc45eaec7ce4432676f5a0d4f1a296d5295315fb76"
+      },
+      "metadata": {
+        "Accession": "SRR24847976",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616886",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by substrates made from Denmark named Pindstrup"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847977",
+      "version": "6b2a6b4e1c26d9ffc108fd07eb50780c760d9314808b23d2a3c64d8b27982d08",
+      "source": {
+        "accession": "SRR24847977",
+        "metadata": {
+          "Accession": "SRR24847977",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616886",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by substrates made from Denmark named Pindstrup"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847977.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "10d04d2d07ace63fc10aa6e7d244003ba1c2d7d00218d311a62e8d9ce2fe993c",
+        "version": "6b2a6b4e1c26d9ffc108fd07eb50780c760d9314808b23d2a3c64d8b27982d08"
+      },
+      "metadata": {
+        "Accession": "SRR24847977",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616886",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by substrates made from Denmark named Pindstrup"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847978",
+      "version": "21a5135f2fb6ce455c5ae3a61ee4a0a0160d7ccf5e456144fa218950d17eb32f",
+      "source": {
+        "accession": "SRR24847978",
+        "metadata": {
+          "Accession": "SRR24847978",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616885",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by composite substrates made from corn straw(3-5 mm)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847978.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "69deb2fa5221370d7189a5838b54bed00bf77a9d92b1e3edd7e65f085ca12fda",
+        "version": "21a5135f2fb6ce455c5ae3a61ee4a0a0160d7ccf5e456144fa218950d17eb32f"
+      },
+      "metadata": {
+        "Accession": "SRR24847978",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616885",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by composite substrates made from corn straw(3-5 mm)"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847979",
+      "version": "a19b329bd5cb873f96fe71af0214b4f9f5f5b3aa3b825a338f0e76e246b0223b",
+      "source": {
+        "accession": "SRR24847979",
+        "metadata": {
+          "Accession": "SRR24847979",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616885",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by composite substrates made from corn straw(3-5 mm)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847979.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "023c7fcc38cc0142bfc418627e894473bb570fd41c9e29abd8a4fbad78a28f8f",
+        "version": "a19b329bd5cb873f96fe71af0214b4f9f5f5b3aa3b825a338f0e76e246b0223b"
+      },
+      "metadata": {
+        "Accession": "SRR24847979",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616885",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by composite substrates made from corn straw(3-5 mm)"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847980",
+      "version": "db1782ae82bcda937f595f0edc059bc28f60191b83c0dcc6f90d9dff82dd85b0",
+      "source": {
+        "accession": "SRR24847980",
+        "metadata": {
+          "Accession": "SRR24847980",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616885",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by composite substrates made from corn straw(3-5 mm)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847980.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "1a5b9e329f5fad77c82a3ea5b6bc86866b3e693845d1c696e829be228741620c",
+        "version": "db1782ae82bcda937f595f0edc059bc28f60191b83c0dcc6f90d9dff82dd85b0"
+      },
+      "metadata": {
+        "Accession": "SRR24847980",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616885",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by composite substrates made from corn straw(3-5 mm)"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847981",
+      "version": "1358aaa01a04a29935a8a66146afdc63beeada388754c0a9129d926e14264e4d",
+      "source": {
+        "accession": "SRR24847981",
+        "metadata": {
+          "Accession": "SRR24847981",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616884",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by composite substrates made from corn straw(0-3 mm)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847981.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "360665eb7307788bad38d7595986c8ea3c5f07643301508f45509563ccd3771f",
+        "version": "1358aaa01a04a29935a8a66146afdc63beeada388754c0a9129d926e14264e4d"
+      },
+      "metadata": {
+        "Accession": "SRR24847981",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616884",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by composite substrates made from corn straw(0-3 mm)"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847982",
+      "version": "618bdb64a2116179699d976f9cd2b17d3edef92f7bdaeaea574692e52ebd0f04",
+      "source": {
+        "accession": "SRR24847982",
+        "metadata": {
+          "Accession": "SRR24847982",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616884",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by composite substrates made from corn straw(0-3 mm)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847982.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "1ab5c10a9df8b5edbf12893517645c6bc1959e0512337ef39ffd97adfc70d31c",
+        "version": "618bdb64a2116179699d976f9cd2b17d3edef92f7bdaeaea574692e52ebd0f04"
+      },
+      "metadata": {
+        "Accession": "SRR24847982",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616884",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by composite substrates made from corn straw(0-3 mm)"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR24847983",
+      "version": "fcad774ed0f016ccda83cd204a424e48c6ac9ec50a7eaea18cda510b14a9855d",
+      "source": {
+        "accession": "SRR24847983",
+        "metadata": {
+          "Accession": "SRR24847983",
+          "BioProject": "PRJNA979958",
+          "BioSample": "SAMN35616884",
+          "Database": "NCBI",
+          "Ecotype": "Fentailang",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT cDNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "root and leaf",
+          "Treatment": "cultivated by composite substrates made from corn straw(0-3 mm)"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR24847983.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "30358d0d7a3e0cc86ccabe59fdf8380403fb3a9973b303b5dc7e0161310fbc0b",
+        "version": "fcad774ed0f016ccda83cd204a424e48c6ac9ec50a7eaea18cda510b14a9855d"
+      },
+      "metadata": {
+        "Accession": "SRR24847983",
+        "BioProject": "PRJNA979958",
+        "BioSample": "SAMN35616884",
+        "Database": "NCBI",
+        "Ecotype": "Fentailang",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT cDNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "root and leaf",
+        "Treatment": "cultivated by composite substrates made from corn straw(0-3 mm)"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR36064084",
+      "version": "0d01094ebf105af48e54d561b3f887d73e7f827c17e8f3efa323953f331d06bb",
+      "source": {
+        "accession": "SRR36064084",
+        "metadata": {
+          "Accession": "SRR36064084",
+          "BioProject": "PRJNA1365329",
+          "BioSample": "SAMN53281807",
+          "Database": "NCBI",
+          "Ecotype": "20h_2",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT direct RNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "sampling time: 20 h"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR36064084.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "757ee289c085ac52f8e11c8f5d54a8bfd37f1eaf545e68ae9cdae6551c2bd80f",
+        "version": "0d01094ebf105af48e54d561b3f887d73e7f827c17e8f3efa323953f331d06bb"
+      },
+      "metadata": {
+        "Accession": "SRR36064084",
+        "BioProject": "PRJNA1365329",
+        "BioSample": "SAMN53281807",
+        "Database": "NCBI",
+        "Ecotype": "20h_2",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT direct RNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "sampling time: 20 h"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR36064085",
+      "version": "81a749732866197fb83f32df0802b7ebfa53152b9e3d62205d247249188783ce",
+      "source": {
+        "accession": "SRR36064085",
+        "metadata": {
+          "Accession": "SRR36064085",
+          "BioProject": "PRJNA1365329",
+          "BioSample": "SAMN53281806",
+          "Database": "NCBI",
+          "Ecotype": "20h_1",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT direct RNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "sampling time: 20 h"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR36064085.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "5067e4cd6d0376e552412c5c0eaa950590fa4d3d73f15092407300eadc09c3b9",
+        "version": "81a749732866197fb83f32df0802b7ebfa53152b9e3d62205d247249188783ce"
+      },
+      "metadata": {
+        "Accession": "SRR36064085",
+        "BioProject": "PRJNA1365329",
+        "BioSample": "SAMN53281806",
+        "Database": "NCBI",
+        "Ecotype": "20h_1",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT direct RNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "sampling time: 20 h"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR36064086",
+      "version": "a535d42794e968c93aa5bbf021dedb0fdef1736d1532536a213daeab6a51a981",
+      "source": {
+        "accession": "SRR36064086",
+        "metadata": {
+          "Accession": "SRR36064086",
+          "BioProject": "PRJNA1365329",
+          "BioSample": "SAMN53281805",
+          "Database": "NCBI",
+          "Ecotype": "12h_2",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT direct RNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "sampling time: 12 h"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR36064086.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "b098f429b292f53367377e8105efc727aab661d42e0753947f3b9f4325c7964c",
+        "version": "a535d42794e968c93aa5bbf021dedb0fdef1736d1532536a213daeab6a51a981"
+      },
+      "metadata": {
+        "Accession": "SRR36064086",
+        "BioProject": "PRJNA1365329",
+        "BioSample": "SAMN53281805",
+        "Database": "NCBI",
+        "Ecotype": "12h_2",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT direct RNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "sampling time: 12 h"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    },
+    {
+      "accession": "SRR36064087",
+      "version": "12bb00e9393d8fa30a4a320ca000e131934ae4dbfd0115a3f0afea5ba5b214eb",
+      "source": {
+        "accession": "SRR36064087",
+        "metadata": {
+          "Accession": "SRR36064087",
+          "BioProject": "PRJNA1365329",
+          "BioSample": "SAMN53281804",
+          "Database": "NCBI",
+          "Ecotype": "12h_1",
+          "Genotype": "",
+          "Platform": "OXFORD_NANOPORE",
+          "Protocol": "ONT direct RNA-seq",
+          "Species": "Solanum lycopersicum",
+          "Tissue": "leaf",
+          "Treatment": "sampling time: 12 h"
+        },
+        "path": "/workspace/PlantIRagent/storage/evidence/sly/SL4.0/ITAG4.0/SRR36064087.intron_prior.tsv",
+        "report_sha256": null,
+        "sha256": "bc8a3e60f6535c2a0bb76d254604486db1543da2ef1ed0d599d465f349842295",
+        "version": "12bb00e9393d8fa30a4a320ca000e131934ae4dbfd0115a3f0afea5ba5b214eb"
+      },
+      "metadata": {
+        "Accession": "SRR36064087",
+        "BioProject": "PRJNA1365329",
+        "BioSample": "SAMN53281804",
+        "Database": "NCBI",
+        "Ecotype": "12h_1",
+        "Genotype": "",
+        "Platform": "OXFORD_NANOPORE",
+        "Protocol": "ONT direct RNA-seq",
+        "Species": "Solanum lycopersicum",
+        "Tissue": "leaf",
+        "Treatment": "sampling time: 12 h"
+      },
+      "compatibility": {
+        "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+        "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+        "historical_parameters_verified": false,
+        "kind": "validated_import",
+        "native_policy": {
+          "aggregation": "audited_heterogeneous_counts",
+          "historical_extraction_equivalence_claimed": false,
+          "parameters": {
+            "min_anchor": 8,
+            "min_intron_coverage": 0.9,
+            "min_mapq": 20,
+            "splice_tolerance": 5,
+            "strand_mode": "unstranded"
+          },
+          "software": {
+            "name": "PlantIRref",
+            "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+            "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+            "pysam_version": "0.24.0",
+            "version": "0.2.0"
+          }
+        }
+      }
+    }
+  ],
+  "plantvelo": {
+    "name": "IRagent.prior_format",
+    "version": "1",
+    "schema": "plantvelo-high-confidence-five-columns-v1",
+    "source_sha256": {
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    }
+  },
+  "read_samples": [],
+  "evidence_admission": {
+    "audit_id": "7c1c274967c8a280c9ebd29a99937ee2455ebda3b3bebf6187102dad04245241",
+    "count_contract": "PlantIRref.IRprior.read_intron_pairs.v1",
+    "native_policy": {
+      "aggregation": "audited_heterogeneous_counts",
+      "historical_extraction_equivalence_claimed": false,
+      "parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "software": {
+        "name": "PlantIRref",
+        "package_sha256": "f6a311f5ff8e48ffba1bc15f0ea2e29b112754c96783066df60cd09755a28e37",
+        "pysam_sha256": "96e2fa134403897b05830a91b632c9ccab22dab2b4a7c72fc23f1366fff2e332",
+        "pysam_version": "0.24.0",
+        "version": "0.2.0"
+      }
+    },
+    "path": "admission.json",
+    "sha256": "9471155593683c92a466cdc015581c6cfc06ffacb6d2e8c23a761392f1fb8534"
+  }
+}

@@ -1,0 +1,147 @@
+﻿Accession,BioSample,BioProject,Species,Tissue,Treatment,Ecotype,Genotype,Platform,Protocol,Database
+CRR1315186,SAMC4162412,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315187,SAMC4162413,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,cpsf30 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315188,SAMC4162414,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fy-5 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315189,SAMC4162415,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fip1-3 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315190,SAMC4162416,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fca-9  mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315191,SAMC4162417,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,pcfs4-1 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315192,SAMC4162418,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,bdr1-1; bdr2-1; bdr3-1 triple mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315193,SAMC4162419,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,ssu72-2 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315194,SAMC4162420,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,paps1-4 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315195,SAMC4162421,PRJCA030671,Arabidopsis thaliana,aerial part,4 week,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315196,SAMC4162422,PRJCA030671,Arabidopsis thaliana,aerial part,4 week,Col-0,cstf64-2 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315197,SAMC4162423,PRJCA030671,Arabidopsis thaliana,aerial part,4 week,Col-0,cstf77-2 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315198,SAMC4162424,PRJCA030671,Arabidopsis thaliana,seedling,12 day,C24,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315199,SAMC4162425,PRJCA030671,Arabidopsis thaliana,seedling,12 day,C24,cpsf100/esp5-1 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1315200,SAMC4162426,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,paps2-1; paps4-1 double mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869768,SAMC5124907,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fy-5 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869769,SAMC5124908,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fip1-3 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869770,SAMC5124909,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fca-9 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869771,SAMC5124910,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,pcfs4-1 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869773,SAMC5124912,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,ssu72-2 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869774,SAMC5124913,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,paps1-4 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869778,SAMC5124917,PRJCA030671,Arabidopsis thaliana,seedling,12 day,C24,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1869779,SAMC5124918,PRJCA030671,Arabidopsis thaliana,seedling,12 day,C24,cpsf100/esp5-1 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879656,SAMC5197911,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879657,SAMC5197912,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,cpsf30 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879658,SAMC5197913,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,bdr1-1; bdr2-1; bdr3-1 triple mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879659,SAMC5197914,PRJCA030671,Arabidopsis thaliana,aerial part,4 week,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879660,SAMC5197915,PRJCA030671,Arabidopsis thaliana,aerial part,4 week,Col-0,cstf64-2 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879661,SAMC5197916,PRJCA030671,Arabidopsis thaliana,aerial part,4 week,Col-0,cstf77-2 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879662,SAMC5197917,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,paps2-1; paps4-1 double mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879663,SAMC5197918,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fpa-9 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR1879664,SAMC5197919,PRJCA030671,Arabidopsis thaliana,seedling,12 day,Col-0,fpa-9 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR324070,SAMC432575,PRJCA005821,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR324071,SAMC432576,PRJCA005821,Arabidopsis thaliana,seedling,12 day,Col-0,xrn3 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR324428,SAMC459125,PRJCA005821,Arabidopsis thaliana,seedling,12 day,Col-0,met1-1 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR324429,SAMC459124,PRJCA005821,Arabidopsis thaliana,seedling,12 day,Col-0,fpa mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR324430,SAMC459123,PRJCA005821,Arabidopsis thaliana,seedling,12 day,Col-0,xrn3 mutant,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR324431,SAMC459122,PRJCA005821,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq,NGDC
+CRR355283,SAMC536459,PRJCA007575,Arabidopsis thaliana,flower,40 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355284,SAMC536460,PRJCA007575,Arabidopsis thaliana,flower,40 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355285,SAMC536461,PRJCA007575,Arabidopsis thaliana,leaf,30 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355286,SAMC536462,PRJCA007575,Arabidopsis thaliana,leaf,30 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355287,SAMC536463,PRJCA007575,Arabidopsis thaliana,pollen,40 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355288,SAMC536464,PRJCA007575,Arabidopsis thaliana,pollen,40 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355289,SAMC536465,PRJCA007575,Arabidopsis thaliana,root,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355290,SAMC536466,PRJCA007575,Arabidopsis thaliana,root,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355291,SAMC536467,PRJCA007575,Arabidopsis thaliana,seed,60 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355292,SAMC536468,PRJCA007575,Arabidopsis thaliana,seed,60 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355293,SAMC536469,PRJCA007575,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355294,SAMC536470,PRJCA007575,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355295,SAMC536471,PRJCA007575,Arabidopsis thaliana,shoot,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355296,SAMC536472,PRJCA007575,Arabidopsis thaliana,shoot,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355297,SAMC536473,PRJCA007575,Arabidopsis thaliana,seedling,12 day,Col-0,wild type,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR839443,SAMC2972582,PRJCA018751,Arabidopsis thaliana,leaf,2 week,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839444,SAMC2972583,PRJCA018751,Arabidopsis thaliana,leaf,2 week,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839445,SAMC2972584,PRJCA018751,Arabidopsis thaliana,leaf,2 week,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839446,SAMC2972585,PRJCA018751,Arabidopsis thaliana,leaf,2 week,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839447,SAMC2972586,PRJCA018751,Arabidopsis thaliana,leaf,2 week,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839448,SAMC2972587,PRJCA018751,Arabidopsis thaliana,leaf,2 week,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839449,SAMC2972588,PRJCA018751,Arabidopsis thaliana,leaf,2 week,atg5-1,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839450,SAMC2972589,PRJCA018751,Arabidopsis thaliana,leaf,2 week,atg5-1,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839451,SAMC2972590,PRJCA018751,Arabidopsis thaliana,leaf,2 week,atg5-1,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839452,SAMC2972591,PRJCA018751,Arabidopsis thaliana,leaf,2 week,atg5-1,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839453,SAMC2972592,PRJCA018751,Arabidopsis thaliana,leaf,2 week,atg5-1,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+CRR839454,SAMC2972593,PRJCA018751,Arabidopsis thaliana,leaf,2 week,atg5-1,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NGDC
+SRR10611192,SAMN13510395,PRJNA594286,Arabidopsis thaliana,aboveground parts,at growth stage of rosette growth complete,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR10611193,SAMN13510394,PRJNA594286,Arabidopsis thaliana,aboveground parts,at growth stage of rosette growth complete,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR10611194,SAMN13510392,PRJNA594286,Arabidopsis thaliana,aboveground parts,at growth stage of rosette growth complete,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR10611195,SAMN13510391,PRJNA594286,Arabidopsis thaliana,aboveground parts,at growth stage of rosette growth complete,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR11031291,SAMN14008366,PRJNA605023,Arabidopsis thaliana,floral buds,floral buds,Col-0,wild type,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR11031292,SAMN14008365,PRJNA605023,Arabidopsis thaliana,floral buds,floral buds,Col-0,wild type,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR11031293,SAMN14008364,PRJNA605023,Arabidopsis thaliana,seedling,14-day seedlings,Col-0,wild type,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR11031294,SAMN14008363,PRJNA605023,Arabidopsis thaliana,seedling,14-day seedlings,Col-0,wild type,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR11058975,SAMN14080285,PRJNA605833,Arabidopsis thaliana,inflorescence; immature flower buds,,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR11058976,SAMN14080284,PRJNA605833,Arabidopsis thaliana,inflorescence; immature flower buds,,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR11058977,SAMN14080283,PRJNA605833,Arabidopsis thaliana,inflorescence; immature flower buds,,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR11058978,SAMN14080282,PRJNA605833,Arabidopsis thaliana,inflorescence; immature flower buds,,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR11058979,SAMN14080281,PRJNA605833,Arabidopsis thaliana,inflorescence; immature flower buds,,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR11058980,SAMN14080280,PRJNA605833,Arabidopsis thaliana,inflorescence; immature flower buds,,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR14400342,SAMN18972600,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling lightr treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400343,SAMN18972599,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling lightr treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400344,SAMN18972598,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling lightr treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400345,SAMN18972597,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling lightr treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400346,SAMN18972596,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling dark treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400347,SAMN18972595,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling dark treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400348,SAMN18972594,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling dark treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR14400349,SAMN18972593,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling dark treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15010480,SAMN19975979,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling light treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15010481,SAMN19975978,PRJNA726863,Arabidopsis thaliana,seedling,4-d-old seedling; 4-d etiolated seedling dark treated 4 hr,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498054,SAMN20825315,PRJNA755474,Arabidopsis thaliana,flowers; inflorescences,different floral developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498055,SAMN20825314,PRJNA755474,Arabidopsis thaliana,rosettes,flooding; 4 exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498056,SAMN20825313,PRJNA755474,Arabidopsis thaliana,rosettes,flooding; 4 exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498057,SAMN20825312,PRJNA755474,Arabidopsis thaliana,whole seedlings,,Col-0,xrn3-3; xrn4-6; xrn2-1 triple mutant,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498058,SAMN20825311,PRJNA755474,Arabidopsis thaliana,whole seedlings,dark growth; 2-3 time points pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498059,SAMN20825310,PRJNA755474,Arabidopsis thaliana,rosettes,different exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498060,SAMN20825309,PRJNA755474,Arabidopsis thaliana,rosettes,different exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498061,SAMN20825332,PRJNA755474,Arabidopsis thaliana,whole seedlings,UV treatment; light and dark conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498062,SAMN20825331,PRJNA755474,Arabidopsis thaliana,whole seedlings,different times of day pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498063,SAMN20825330,PRJNA755474,Arabidopsis thaliana,whole seedlings,different times of day pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498064,SAMN20825329,PRJNA755474,Arabidopsis thaliana,siliques,different silique developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498065,SAMN20825328,PRJNA755474,Arabidopsis thaliana,roots,liquid culture,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498066,SAMN20825327,PRJNA755474,Arabidopsis thaliana,roots,liquid culture,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498067,SAMN20825326,PRJNA755474,Arabidopsis thaliana,isolated nuclei,nuclei isolation,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498068,SAMN20825308,PRJNA755474,Arabidopsis thaliana,rosettes,different exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498069,SAMN20825325,PRJNA755474,Arabidopsis thaliana,whole seedlings,,Col-0,lba1/upf1 heterozygous; upf3-1 mutant,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498070,SAMN20825324,PRJNA755474,Arabidopsis thaliana,whole seedlings,,Col-0,lba1/upf1 heterozygous; upf3-1 mutant,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498071,SAMN20825323,PRJNA755474,Arabidopsis thaliana,leaves,Pseudomonas syringae pv. tomato DC3000 infection; 8 and 24 hpi pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498072,SAMN20825322,PRJNA755474,Arabidopsis thaliana,leaves,powdery mildew infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498073,SAMN20825321,PRJNA755474,Arabidopsis thaliana,leaves,Botrytis infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498074,SAMN20825320,PRJNA755474,Arabidopsis thaliana,leaves,Botrytis infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498075,SAMN20825319,PRJNA755474,Arabidopsis thaliana,leaves,Botrytis infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498076,SAMN20825318,PRJNA755474,Arabidopsis thaliana,whole seedlings; whole 5-week-old plants,different temperatures and exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498077,SAMN20825317,PRJNA755474,Arabidopsis thaliana,whole seedlings; whole 5-week-old plants,different temperatures and exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498078,SAMN20825316,PRJNA755474,Arabidopsis thaliana,flowers; inflorescences,different floral developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498079,SAMN20825307,PRJNA755474,Arabidopsis thaliana,whole seedlings,wild-type control for lba1/upf3,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15498080,SAMN20825306,PRJNA755474,Arabidopsis thaliana,siliques,different silique developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR15613182,SAMN20348870,PRJNA748959,Arabidopsis thaliana,leaf,5 weeks; rosette growth complete,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR15613183,SAMN20348869,PRJNA748959,Arabidopsis thaliana,leaf,5 weeks; rosette growth complete,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR15613184,SAMN20348868,PRJNA748959,Arabidopsis thaliana,leaf,5 weeks; rosette growth complete,Col-0,wild type,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR23291376,SAMN20825315,PRJNA755474,Arabidopsis thaliana,flowers; inflorescences,different floral developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291377,SAMN20825314,PRJNA755474,Arabidopsis thaliana,rosettes,flooding; 4 exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291378,SAMN20825313,PRJNA755474,Arabidopsis thaliana,rosettes,flooding; 4 exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291379,SAMN20825312,PRJNA755474,Arabidopsis thaliana,whole seedlings,,Col-0,xrn3-3; xrn4-6; xrn2-1 triple mutant,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291380,SAMN20825311,PRJNA755474,Arabidopsis thaliana,whole seedlings,dark growth; 2-3 time points pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291381,SAMN20825310,PRJNA755474,Arabidopsis thaliana,rosettes,different exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291382,SAMN20825309,PRJNA755474,Arabidopsis thaliana,rosettes,different exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291383,SAMN20825332,PRJNA755474,Arabidopsis thaliana,whole seedlings,UV treatment; light and dark conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291384,SAMN20825331,PRJNA755474,Arabidopsis thaliana,whole seedlings,different times of day pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291385,SAMN20825330,PRJNA755474,Arabidopsis thaliana,whole seedlings,different times of day pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291386,SAMN20825329,PRJNA755474,Arabidopsis thaliana,siliques,different silique developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291387,SAMN20825328,PRJNA755474,Arabidopsis thaliana,roots,liquid culture,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291388,SAMN20825327,PRJNA755474,Arabidopsis thaliana,roots,liquid culture,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291389,SAMN20825326,PRJNA755474,Arabidopsis thaliana,isolated nuclei,nuclei isolation,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291390,SAMN20825308,PRJNA755474,Arabidopsis thaliana,rosettes,different exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291391,SAMN20825325,PRJNA755474,Arabidopsis thaliana,whole seedlings,,Col-0,lba1/upf1 heterozygous; upf3-1 mutant,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291392,SAMN20825324,PRJNA755474,Arabidopsis thaliana,whole seedlings,,Col-0,lba1/upf1 heterozygous; upf3-1 mutant,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291393,SAMN20825323,PRJNA755474,Arabidopsis thaliana,leaves,Pseudomonas syringae pv. tomato DC3000 infection; 8 and 24 hpi pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291394,SAMN20825322,PRJNA755474,Arabidopsis thaliana,leaves,powdery mildew infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291395,SAMN20825321,PRJNA755474,Arabidopsis thaliana,leaves,Botrytis infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291396,SAMN20825320,PRJNA755474,Arabidopsis thaliana,leaves,Botrytis infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291397,SAMN20825319,PRJNA755474,Arabidopsis thaliana,leaves,Botrytis infection; multiple days post-infection pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291398,SAMN20825318,PRJNA755474,Arabidopsis thaliana,whole seedlings; whole 5-week-old plants,different temperatures and exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291399,SAMN20825317,PRJNA755474,Arabidopsis thaliana,whole seedlings; whole 5-week-old plants,different temperatures and exposure conditions pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291400,SAMN20825316,PRJNA755474,Arabidopsis thaliana,flowers; inflorescences,different floral developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291401,SAMN20825307,PRJNA755474,Arabidopsis thaliana,whole seedlings,wild-type control for lba1/upf3,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI
+SRR23291402,SAMN20825306,PRJNA755474,Arabidopsis thaliana,siliques,different silique developmental stages pooled,Col-0,wild type,PACBIO_SMRT,Iso-seq,NCBI

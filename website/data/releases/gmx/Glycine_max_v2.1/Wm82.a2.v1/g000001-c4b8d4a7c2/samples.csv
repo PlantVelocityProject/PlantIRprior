@@ -1,0 +1,62 @@
+﻿Accession,BioSample,BioProject,Species,Tissue,Treatment,Ecotype,Genotype,Platform,Protocol,Database
+CRR1297105,SAMC4132171,PRJCA030124,Glycine max,leaf,,ChiHei 23,,OXFORD_NANOPORE,ONT cDNA-seq,NGDC
+CRR355301,SAMC536477,PRJCA007575,Glycine max,shoot,14 day(s),Wm82,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355302,SAMC536478,PRJCA007575,Glycine max,shoot,14 day(s),Wm82,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355303,SAMC536479,PRJCA007575,Glycine max,shoot,14 day(s),Wm82,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+ERR5777389,SAMEA8618121,PRJEB44525,Glycine max,Primary leaf,0.9% NaCl 1h; First Trifoliate,,,OXFORD_NANOPORE,ONT direct RNA-seq,ENA
+ERR5777390,SAMEA8618120,PRJEB44525,Glycine max,Primary leaf,No treatment; First Trifoliate,,,OXFORD_NANOPORE,ONT direct RNA-seq,ENA
+SRR10305130,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309858,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309859,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309860,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309861,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309862,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309863,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309864,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309865,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309866,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309867,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309868,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309869,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309870,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309871,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309872,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309873,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309874,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309875,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309876,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309877,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309878,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10309879,SAMN12622420,PRJNA561626,Glycine max,mixed tissue,35 days,Williams 82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR12327364,SAMN15647391,PRJNA648759,Glycine max,the Full length RNAseq of heterograft soybean roots,V0 stage; 7 days seeding,Williams 82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12327382,SAMN15647397,PRJNA648759,Glycine max,the Full length RNAseq of homograft soybean roots,V0 stage; 7 days seeding,Williams 82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12327383,SAMN15647396,PRJNA648759,Glycine max,the Full length RNAseq of homograft soybean shoots,V0 stage; 7 days seeding,Williams 82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12327385,SAMN15647394,PRJNA648759,Glycine max,the Full length RNAseq of heterograft soybean shoots,V0 stage; 7 days seeding,Williams 82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR15602385,SAMN20965968,PRJNA757530,Glycine max,leaf,Flowering; 60 days,KB000009_107,,PACBIO_SMRT,Iso-seq,NCBI
+SRR15602386,SAMN20965967,PRJNA757530,Glycine max,leaf,Flowering; 60 days,KB000009_107,,PACBIO_SMRT,Iso-seq,NCBI
+SRR17226646,SAMN23929506,PRJNA788163,Glycine max,shoot nuc,14,Wm82,,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17226648,SAMN23929505,PRJNA788163,Glycine max,shoot,14,Wm82,,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17226649,SAMN23929504,PRJNA788163,Glycine max,shoot,14,Wm82,,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17876321,SAMN25638651,PRJNA803218,Glycine max,root,16 d,SCN4replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876322,SAMN25638650,PRJNA803218,Glycine max,root,16 d,SCN4replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876323,SAMN25638649,PRJNA803218,Glycine max,root,16 d,CKreplicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876324,SAMN25638648,PRJNA803218,Glycine max,root,16 d,CKreplicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876325,SAMN25638647,PRJNA803218,Glycine max,root,16 d,CKreplicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876326,SAMN25638655,PRJNA803218,Glycine max,root,16 d,SCN5replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876327,SAMN25638654,PRJNA803218,Glycine max,root,16 d,SCN5replicate2,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876328,SAMN25638653,PRJNA803218,Glycine max,root,16 d,SCN5replicate1,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR17876329,SAMN25638652,PRJNA803218,Glycine max,root,16 d,SCN4replicate3,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR23561053,SAMN33386377,PRJNA935991,Glycine max,mixture of several tissues,"combined from leaf, root, shoot, stem, and seed",ENREI,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR28278308,SAMN40349390,PRJNA1085890,Glycine max,leaf and root tissues (mixed),50 mM NaHCO3; 14-day-old seedlling,Hefeng55,,PACBIO_SMRT,Iso-seq,NCBI
+SRR29211040,SAMN41553737,PRJNA1114896,Glycine max,mix,"Seeding, Blooming",Nongdadou2,,PACBIO_SMRT,Iso-seq,NCBI
+SRR34844829,SAMN50284830,PRJNA1298774,Glycine max,leaf,V3,Qi Huang NO.34,,PACBIO_SMRT,Iso-seq,NCBI
+SRR6244032,SAMN07965045,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 23 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244033,SAMN07965045,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 23 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244034,SAMN07965044,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 2 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244035,SAMN07965044,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 2 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244036,SAMN07965044,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 2 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244037,SAMN07965044,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 2 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244038,SAMN07965045,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 23 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244039,SAMN07965045,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 23 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244040,SAMN07965045,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 23 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR6244041,SAMN07965044,PRJNA416810,Glycine max,embryonic axis,"Seeds stored at 5C, 35% relative humidity until use; seed; 2 years",Williams '82,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI

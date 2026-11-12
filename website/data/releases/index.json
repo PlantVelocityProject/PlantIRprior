@@ -1,0 +1,663 @@
+{
+  "latest": {
+    "ath": "ath/TAIR10/Araport11/g000001-6e1bbf52d2",
+    "gmx": "gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2",
+    "osa": "osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773",
+    "sly": "sly/SL4.0/ITAG4.0/g000001-af698fe9e0",
+    "zma": "zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74"
+  },
+  "methods": {
+    "ath/TAIR10/Araport11/g000001-6e1bbf52d2": {
+      "admission_parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "historical_parameters_verified": false,
+      "input_kinds": {
+        "validated_import": 146
+      },
+      "native_parameters": []
+    },
+    "gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2": {
+      "admission_parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "historical_parameters_verified": false,
+      "input_kinds": {
+        "validated_import": 61
+      },
+      "native_parameters": []
+    },
+    "osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773": {
+      "admission_parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "historical_parameters_verified": false,
+      "input_kinds": {
+        "validated_import": 248
+      },
+      "native_parameters": []
+    },
+    "sly/SL4.0/ITAG4.0/g000001-af698fe9e0": {
+      "admission_parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "historical_parameters_verified": false,
+      "input_kinds": {
+        "validated_import": 53
+      },
+      "native_parameters": []
+    },
+    "zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74": {
+      "admission_parameters": {
+        "min_anchor": 8,
+        "min_intron_coverage": 0.9,
+        "min_mapq": 20,
+        "splice_tolerance": 5,
+        "strand_mode": "unstranded"
+      },
+      "historical_parameters_verified": false,
+      "input_kinds": {
+        "validated_import": 175
+      },
+      "native_parameters": []
+    }
+  },
+  "records": {
+    "ath/TAIR10/Araport11/g000001-6e1bbf52d2": {
+      "annotation_id": "Araport11",
+      "changes": {
+        "kind": "initial"
+      },
+      "cohort_hash": "81982ba115fb0ec5fb8fa9872f002507fb6e1e4872f6921d278b87b5e2608231",
+      "created_at": "2026-11-02T14:42:44+00:00",
+      "events": 2256,
+      "files": {
+        "browse": {
+          "bytes": 543913,
+          "label": "Browser data",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/browse.js",
+          "sha256": "414a0a3024bc3b1c17fc1e13c80239860f6969524eb9299047487140fa3562c2"
+        },
+        "events": {
+          "bytes": 432116,
+          "label": "High-confidence events · CSV",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/events.csv",
+          "sha256": "882889091df28aba27935e1864f21e78e09e2282e230b1e7c35b1f61665809c9"
+        },
+        "evidence": {
+          "bytes": 6106995,
+          "label": "Complete intron evidence · TSV.gz",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/intron_evidence.tsv.gz",
+          "sha256": "2f2a9f227fb8fa8ae27875cfa9f49a34dd390cd816a65b382897ccf5d170f04b"
+        },
+        "prior": {
+          "bytes": 70075,
+          "label": "PlantVelo prior · TSV",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/high_confidence_IR.tsv",
+          "sha256": "72d5dab4a890ace5910c8736bfe15ffc985fac548a9f38bfa849d3f30ce1277c"
+        },
+        "provenance": {
+          "bytes": 347641,
+          "label": "Source provenance · JSON",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/provenance.json",
+          "sha256": "fa11596d6f235684eaaab1cfe1d1d610e52ea88eecb0155fbe351cb980072b61"
+        },
+        "qc": {
+          "bytes": 688,
+          "label": "Quality report · JSON",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/qc.json",
+          "sha256": "c768ae8755bc644babea64b5ecac8ec017ff8c5385d5a3c1df23167ce4cc2998"
+        },
+        "samples": {
+          "bytes": 20669,
+          "label": "Included samples · CSV",
+          "path": "data/releases/ath/TAIR10/Araport11/g000001-6e1bbf52d2/samples.csv",
+          "sha256": "e72b21c5a97fbcae891274547d4470515e1f5821b8169a937542626a20903a75"
+        }
+      },
+      "generation": 1,
+      "intron_rows": 132674,
+      "key": "ath/TAIR10/Araport11/g000001-6e1bbf52d2",
+      "reference_id": "TAIR10",
+      "reference_sha256": {
+        "annotation": "addb33b3e1b792af04026d8822215eebc59359b50d2514d4b1f66e9e5e3f7464",
+        "genome": "ae760f0b62995aa434e8b3b8f3d4b44317b6f41320d6558c36bbeeb47bbdfdeb"
+      },
+      "release_id": "g000001-6e1bbf52d2",
+      "rules": {
+        "candidate_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.1,
+          "min_ir_specificity": 0.5,
+          "min_retained": 3,
+          "min_spliced": 3
+        },
+        "high_confidence_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.2,
+          "min_ir_specificity": 0.7,
+          "min_retained": 5,
+          "min_spliced": 5
+        },
+        "nonIR": {
+          "max_ir_ratio": 0.05,
+          "max_retained": 2,
+          "min_informative": 10,
+          "min_spliced": 10
+        }
+      },
+      "samples": 146,
+      "software": {
+        "name": "IRagent.prior_format",
+        "schema": "plantvelo-high-confidence-five-columns-v1",
+        "source_sha256": {
+          "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+        },
+        "version": "1"
+      },
+      "source_hashes": {
+        "high_confidence_IR.tsv": "72d5dab4a890ace5910c8736bfe15ffc985fac548a9f38bfa849d3f30ce1277c",
+        "intron_evidence.tsv.gz": "2f2a9f227fb8fa8ae27875cfa9f49a34dd390cd816a65b382897ccf5d170f04b",
+        "provenance.json": "fa11596d6f235684eaaab1cfe1d1d610e52ea88eecb0155fbe351cb980072b61",
+        "qc.json": "c768ae8755bc644babea64b5ecac8ec017ff8c5385d5a3c1df23167ce4cc2998"
+      },
+      "species": "ath"
+    },
+    "gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2": {
+      "annotation_id": "Wm82.a2.v1",
+      "changes": {
+        "kind": "initial"
+      },
+      "cohort_hash": "fc8591960dc6e889d3d2fd96012d46e343cd8ff2831a410394196aae30d28f73",
+      "created_at": "2026-11-02T14:43:00+00:00",
+      "events": 2097,
+      "files": {
+        "browse": {
+          "bytes": 505616,
+          "label": "Browser data",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/browse.js",
+          "sha256": "3d39dda76c5a55ababf51ddf2d5e35ed2fee370e9e605c596dc9b5041a28d169"
+        },
+        "events": {
+          "bytes": 414924,
+          "label": "High-confidence events · CSV",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/events.csv",
+          "sha256": "ce17c28d10cbf1804fad493da2425996de84e74b5a7697a4c6189f6b8ceea5b7"
+        },
+        "evidence": {
+          "bytes": 8540481,
+          "label": "Complete intron evidence · TSV.gz",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/intron_evidence.tsv.gz",
+          "sha256": "f449681959fcb27ee5de00fc10d3ca2d5888e0885ed1a498f2cd532b70c27b33"
+        },
+        "prior": {
+          "bytes": 79149,
+          "label": "PlantVelo prior · TSV",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/high_confidence_IR.tsv",
+          "sha256": "130e2ae62703ea4070729560ba808e38b5a8cf6912200f42fb1768d0e1187fb9"
+        },
+        "provenance": {
+          "bytes": 146714,
+          "label": "Source provenance · JSON",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/provenance.json",
+          "sha256": "1cdfc4796e3acc1f85b280a758a7df03aed96f70fd4d92395da5a10a4d3f364c"
+        },
+        "qc": {
+          "bytes": 684,
+          "label": "Quality report · JSON",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/qc.json",
+          "sha256": "c9b78c5a4fa2341c81c417b187af1bdb920ba932d01bd601eef33b0be515e420"
+        },
+        "samples": {
+          "bytes": 7819,
+          "label": "Included samples · CSV",
+          "path": "data/releases/gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2/samples.csv",
+          "sha256": "b083fec1cbb66ab20dfdd4e7bf4054bfcd8f2d2b7fa9f04c53502b6a63fb6f90"
+        }
+      },
+      "generation": 1,
+      "intron_rows": 237648,
+      "key": "gmx/Glycine_max_v2.1/Wm82.a2.v1/g000001-c4b8d4a7c2",
+      "reference_id": "Glycine_max_v2.1",
+      "reference_sha256": {
+        "annotation": "b6a726eaed0d41f09a3f1c250a0c3c5c4b2ce86b900e398934f4bbe08213c659",
+        "genome": "54e6d38b7c435a5d6f60916dd8acfa7cb29137ab78e2c86b05a37cf8550502ee"
+      },
+      "release_id": "g000001-c4b8d4a7c2",
+      "rules": {
+        "candidate_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.1,
+          "min_ir_specificity": 0.5,
+          "min_retained": 3,
+          "min_spliced": 3
+        },
+        "high_confidence_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.2,
+          "min_ir_specificity": 0.7,
+          "min_retained": 5,
+          "min_spliced": 5
+        },
+        "nonIR": {
+          "max_ir_ratio": 0.05,
+          "max_retained": 2,
+          "min_informative": 10,
+          "min_spliced": 10
+        }
+      },
+      "samples": 61,
+      "software": {
+        "name": "IRagent.prior_format",
+        "schema": "plantvelo-high-confidence-five-columns-v1",
+        "source_sha256": {
+          "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+        },
+        "version": "1"
+      },
+      "source_hashes": {
+        "high_confidence_IR.tsv": "130e2ae62703ea4070729560ba808e38b5a8cf6912200f42fb1768d0e1187fb9",
+        "intron_evidence.tsv.gz": "f449681959fcb27ee5de00fc10d3ca2d5888e0885ed1a498f2cd532b70c27b33",
+        "provenance.json": "1cdfc4796e3acc1f85b280a758a7df03aed96f70fd4d92395da5a10a4d3f364c",
+        "qc.json": "c9b78c5a4fa2341c81c417b187af1bdb920ba932d01bd601eef33b0be515e420"
+      },
+      "species": "gmx"
+    },
+    "osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773": {
+      "annotation_id": "RAP-DB",
+      "changes": {
+        "kind": "initial"
+      },
+      "cohort_hash": "2b6dcf3239d971cf9d01f7eafc147dfa8e9026ef29496ec1617180c25bec1c98",
+      "created_at": "2026-11-02T14:43:32+00:00",
+      "events": 1470,
+      "files": {
+        "browse": {
+          "bytes": 381608,
+          "label": "Browser data",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/browse.js",
+          "sha256": "a92c8fd784ea5719a3ce20f488a0fc85b1ac6cccec0e51c8c319085a87dd5219"
+        },
+        "events": {
+          "bytes": 287960,
+          "label": "High-confidence events · CSV",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/events.csv",
+          "sha256": "bbbbd7f6eaafecec571a66e0f096642e385e82ad5d0edfcd1859dabb37518b20"
+        },
+        "evidence": {
+          "bytes": 5555696,
+          "label": "Complete intron evidence · TSV.gz",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/intron_evidence.tsv.gz",
+          "sha256": "d21a997a23750fcc68355dc724a41dd8df3bc637c00803b3ca2ee42f13ba1e7f"
+        },
+        "prior": {
+          "bytes": 50652,
+          "label": "PlantVelo prior · TSV",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/high_confidence_IR.tsv",
+          "sha256": "d6ed1c857f3a6df7a340c74830d36099ba5abb3445ec4ec3aefb059c48114d7f"
+        },
+        "provenance": {
+          "bytes": 578580,
+          "label": "Source provenance · JSON",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/provenance.json",
+          "sha256": "dd67414cdea2683a8585d14978fd14ac0e769a7c7eaa6970c47ca926336b5fd5"
+        },
+        "qc": {
+          "bytes": 687,
+          "label": "Quality report · JSON",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/qc.json",
+          "sha256": "48981480e9e4ddd53ba7e6ec1ac88f7d81e9090af8b4b2607f84fb57a4c16b2d"
+        },
+        "samples": {
+          "bytes": 30450,
+          "label": "Included samples · CSV",
+          "path": "data/releases/osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773/samples.csv",
+          "sha256": "93cb1fa6e70edda61c024e4b59e3dba6676938b19dafba45e33ffe114c7d1110"
+        }
+      },
+      "generation": 1,
+      "intron_rows": 128011,
+      "key": "osa/IRGSP-1.0/RAP-DB/g000001-8b70f03773",
+      "reference_id": "IRGSP-1.0",
+      "reference_sha256": {
+        "annotation": "85ea94b690131229111226bf3ba6e3615d53d81d918151afd89d70a6dda1b4d0",
+        "genome": "b3beff484bd4336bfde54b4f9fbd999d17f93827edfa8f7dd2db74d7a0da3290"
+      },
+      "release_id": "g000001-8b70f03773",
+      "rules": {
+        "candidate_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.1,
+          "min_ir_specificity": 0.5,
+          "min_retained": 3,
+          "min_spliced": 3
+        },
+        "high_confidence_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.2,
+          "min_ir_specificity": 0.7,
+          "min_retained": 5,
+          "min_spliced": 5
+        },
+        "nonIR": {
+          "max_ir_ratio": 0.05,
+          "max_retained": 2,
+          "min_informative": 10,
+          "min_spliced": 10
+        }
+      },
+      "samples": 248,
+      "software": {
+        "name": "IRagent.prior_format",
+        "schema": "plantvelo-high-confidence-five-columns-v1",
+        "source_sha256": {
+          "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+        },
+        "version": "1"
+      },
+      "source_hashes": {
+        "high_confidence_IR.tsv": "d6ed1c857f3a6df7a340c74830d36099ba5abb3445ec4ec3aefb059c48114d7f",
+        "intron_evidence.tsv.gz": "d21a997a23750fcc68355dc724a41dd8df3bc637c00803b3ca2ee42f13ba1e7f",
+        "provenance.json": "dd67414cdea2683a8585d14978fd14ac0e769a7c7eaa6970c47ca926336b5fd5",
+        "qc.json": "48981480e9e4ddd53ba7e6ec1ac88f7d81e9090af8b4b2607f84fb57a4c16b2d"
+      },
+      "species": "osa"
+    },
+    "sly/SL4.0/ITAG4.0/g000001-af698fe9e0": {
+      "annotation_id": "ITAG4.0",
+      "changes": {
+        "kind": "initial"
+      },
+      "cohort_hash": "f4dd42ced3f89b66565a2c17fe5f1e0a31fc08bb5c7fdcde0bc76c8e39551674",
+      "created_at": "2026-11-02T14:43:49+00:00",
+      "events": 1330,
+      "files": {
+        "browse": {
+          "bytes": 372608,
+          "label": "Browser data",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/browse.js",
+          "sha256": "87ed93b979a676757e9a1865c9eb297bf2b7d9ab1411aa73e22cd1437f705114"
+        },
+        "events": {
+          "bytes": 311156,
+          "label": "High-confidence events · CSV",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/events.csv",
+          "sha256": "53cbfd590bb63d1fbe6dabefa44f6a943d61817a7089915f044d9ceb1ab54593"
+        },
+        "evidence": {
+          "bytes": 4945794,
+          "label": "Complete intron evidence · TSV.gz",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/intron_evidence.tsv.gz",
+          "sha256": "6a8ed8afd73e1df15d0a8a2bac0816b8adf81bf5f2bcf25d1dc937c4e225e662"
+        },
+        "prior": {
+          "bytes": 61770,
+          "label": "PlantVelo prior · TSV",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/high_confidence_IR.tsv",
+          "sha256": "6f84f77735f2a192fff55209a4adb8bb716351791f5c378528786cb0532b77dc"
+        },
+        "provenance": {
+          "bytes": 129934,
+          "label": "Source provenance · JSON",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/provenance.json",
+          "sha256": "3e9a3b99d8dc3df104298c8428dbcc4dd8e5b41cb682ad27767bea280a3c0042"
+        },
+        "qc": {
+          "bytes": 684,
+          "label": "Quality report · JSON",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/qc.json",
+          "sha256": "12f9c0d1643eaa0fca57d6791d7d5e72051d5f7285ae0ff90238b76833404032"
+        },
+        "samples": {
+          "bytes": 8150,
+          "label": "Included samples · CSV",
+          "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/samples.csv",
+          "sha256": "b4acf5d2e675de17cb17272624d89bb9d6d4cf44dea420d9c45629750a927e45"
+        }
+      },
+      "generation": 1,
+      "intron_rows": 127433,
+      "key": "sly/SL4.0/ITAG4.0/g000001-af698fe9e0",
+      "reference_id": "SL4.0",
+      "reference_sha256": {
+        "annotation": "8710785eff4c5ec059fb88163515404e0abce01de1bff6aa245b7363d9cea0a9",
+        "genome": "7ae2eeae52b55e4740998274d5afbcd64ae52d38e2a17dfe73f16b61a39d3874"
+      },
+      "release_id": "g000001-af698fe9e0",
+      "rules": {
+        "candidate_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.1,
+          "min_ir_specificity": 0.5,
+          "min_retained": 3,
+          "min_spliced": 3
+        },
+        "high_confidence_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.2,
+          "min_ir_specificity": 0.7,
+          "min_retained": 5,
+          "min_spliced": 5
+        },
+        "nonIR": {
+          "max_ir_ratio": 0.05,
+          "max_retained": 2,
+          "min_informative": 10,
+          "min_spliced": 10
+        }
+      },
+      "samples": 53,
+      "software": {
+        "name": "IRagent.prior_format",
+        "schema": "plantvelo-high-confidence-five-columns-v1",
+        "source_sha256": {
+          "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+        },
+        "version": "1"
+      },
+      "source_hashes": {
+        "high_confidence_IR.tsv": "6f84f77735f2a192fff55209a4adb8bb716351791f5c378528786cb0532b77dc",
+        "intron_evidence.tsv.gz": "6a8ed8afd73e1df15d0a8a2bac0816b8adf81bf5f2bcf25d1dc937c4e225e662",
+        "provenance.json": "3e9a3b99d8dc3df104298c8428dbcc4dd8e5b41cb682ad27767bea280a3c0042",
+        "qc.json": "12f9c0d1643eaa0fca57d6791d7d5e72051d5f7285ae0ff90238b76833404032"
+      },
+      "species": "sly"
+    },
+    "zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74": {
+      "annotation_id": "Zm00001eb.1",
+      "changes": {
+        "kind": "initial"
+      },
+      "cohort_hash": "7d2aa8240cd997b6f955788c92c453a684b582dbecf2b4bf7743f6cd69880288",
+      "created_at": "2026-11-02T14:44:39+00:00",
+      "events": 1782,
+      "files": {
+        "browse": {
+          "bytes": 468538,
+          "label": "Browser data",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/browse.js",
+          "sha256": "389f97f4f1e3c8e7ef6d7fa33498ece7adf684d82772800bd50718ebf73557e4"
+        },
+        "events": {
+          "bytes": 373700,
+          "label": "High-confidence events · CSV",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/events.csv",
+          "sha256": "c2d9cf07b511ec6ffd39e9693c04ea2f28926a11019138ddef51544594e69bbd"
+        },
+        "evidence": {
+          "bytes": 7852791,
+          "label": "Complete intron evidence · TSV.gz",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/intron_evidence.tsv.gz",
+          "sha256": "0ee663f1ce08e0b0cbf2076d93c6437d6948d387fe489f88eb8da01f0245b3ea"
+        },
+        "prior": {
+          "bytes": 69781,
+          "label": "PlantVelo prior · TSV",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/high_confidence_IR.tsv",
+          "sha256": "b4c242924f36e872e8984565f155fc3a4078a9e4b7ead5897b089ad50e2e71d1"
+        },
+        "provenance": {
+          "bytes": 412237,
+          "label": "Source provenance · JSON",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/provenance.json",
+          "sha256": "3afbe2613e893cc8791d2e0912195c69743dd3fd7583dc120f2702ad7b926414"
+        },
+        "qc": {
+          "bytes": 688,
+          "label": "Quality report · JSON",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/qc.json",
+          "sha256": "c496356996a55c03243bd97913e0c8fa001ae25f55c7e5e97e6b1b9361891841"
+        },
+        "samples": {
+          "bytes": 21145,
+          "label": "Included samples · CSV",
+          "path": "data/releases/zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74/samples.csv",
+          "sha256": "615432d2103fa7caac86e670396a07cfef7a8f8dfb4d6da58d7efb5b339bab5d"
+        }
+      },
+      "generation": 1,
+      "intron_rows": 187009,
+      "key": "zma/Zm-B73-REFERENCE-NAM-5.0/Zm00001eb.1/g000001-2bd5d2ad74",
+      "reference_id": "Zm-B73-REFERENCE-NAM-5.0",
+      "reference_sha256": {
+        "annotation": "a7376eada3366287e1a7018eee2193ff2eb3a8250b366a5c98bd4fd873852c28",
+        "genome": "dfa228c1fa3c9731cfb3e0f41bd63c4e6316318a884db881e3fd610b27f39d77"
+      },
+      "release_id": "g000001-2bd5d2ad74",
+      "rules": {
+        "candidate_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.1,
+          "min_ir_specificity": 0.5,
+          "min_retained": 3,
+          "min_spliced": 3
+        },
+        "high_confidence_IR": {
+          "min_informative": 10,
+          "min_ir_ratio": 0.2,
+          "min_ir_specificity": 0.7,
+          "min_retained": 5,
+          "min_spliced": 5
+        },
+        "nonIR": {
+          "max_ir_ratio": 0.05,
+          "max_retained": 2,
+          "min_informative": 10,
+          "min_spliced": 10
+        }
+      },
+      "samples": 175,
+      "software": {
+        "name": "IRagent.prior_format",
+        "schema": "plantvelo-high-confidence-five-columns-v1",
+        "source_sha256": {
+          "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+        },
+        "version": "1"
+      },
+      "source_hashes": {
+        "high_confidence_IR.tsv": "b4c242924f36e872e8984565f155fc3a4078a9e4b7ead5897b089ad50e2e71d1",
+        "intron_evidence.tsv.gz": "0ee663f1ce08e0b0cbf2076d93c6437d6948d387fe489f88eb8da01f0245b3ea",
+        "provenance.json": "3afbe2613e893cc8791d2e0912195c69743dd3fd7583dc120f2702ad7b926414",
+        "qc.json": "c496356996a55c03243bd97913e0c8fa001ae25f55c7e5e97e6b1b9361891841"
+      },
+      "species": "zma"
+    }
+  },
+  "schema_version": 1,
+  "snapshot": {
+    "events": 8935,
+    "files": {
+      "browse": {
+        "bytes": 2269981,
+        "label": "Current browser data",
+        "path": "data/releases/snapshots/1784a803001109e6/browse.js",
+        "sha256": "7c2dea203d920eaf25d8a312da6bd223fdbd49fe7869a1aef6e02c4408f780a7"
+      },
+      "bundle": {
+        "bytes": 33265853,
+        "label": "Complete resources · ZIP",
+        "path": "data/releases/snapshots/1784a803001109e6/plantir-resources.zip",
+        "sha256": "7af5a0f9a3749a72303370d1325ed81703e1c047171076ef0dad488b0a66d381"
+      },
+      "manifest": {
+        "bytes": 20241,
+        "label": "Snapshot manifest · JSON",
+        "path": "data/releases/snapshots/1784a803001109e6/manifest.json",
+        "sha256": "97f81f88d754c4274507e54746b6db692e08f1a65a59cd0fe7c5431d0ed16fdd"
+      }
+    },
+    "id": "1784a803001109e6",
+    "key": "snapshot/1784a803001109e6",
+    "samples": 683
+  },
+  "species": {
+    "ath": {
+      "accession": "GCA_000001735.1",
+      "annotation": "Araport11",
+      "art": "arabidopsis",
+      "assembly": "TAIR10",
+      "common": "Arabidopsis",
+      "events": 2256,
+      "name": "Arabidopsis thaliana",
+      "samples": 146
+    },
+    "gmx": {
+      "accession": "GCA_000004515.4",
+      "annotation": "Wm82.a2.v1",
+      "art": "soybean",
+      "assembly": "Glycine_max_v2.1",
+      "common": "Soybean",
+      "events": 2097,
+      "name": "Glycine max",
+      "samples": 61
+    },
+    "osa": {
+      "accession": "GCA_001433935.1",
+      "annotation": "RAP-DB",
+      "art": "rice",
+      "assembly": "IRGSP-1.0",
+      "common": "Rice",
+      "events": 1470,
+      "name": "Oryza sativa",
+      "samples": 248
+    },
+    "sly": {
+      "accession": "GCA_000188115.5",
+      "annotation": "ITAG4.0",
+      "art": "tomato",
+      "assembly": "SL4.0",
+      "common": "Tomato",
+      "events": 1330,
+      "name": "Solanum lycopersicum",
+      "samples": 53
+    },
+    "zma": {
+      "accession": "GCA_902167145.1",
+      "annotation": "Zm00001eb.1",
+      "art": "maize",
+      "assembly": "Zm-B73-REFERENCE-NAM-5.0",
+      "common": "Maize",
+      "events": 1782,
+      "name": "Zea mays",
+      "samples": 175
+    }
+  },
+  "updated_at": "2026-11-11T09:13:26+00:00"
+}

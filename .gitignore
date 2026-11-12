@@ -1,0 +1,53 @@
+# Local workflow inputs, state, and outputs
+/storage/
+/state/
+/logs/
+/reports/
+/releases/
+/metadata/
+
+# Exclude from the main repository; PlantVelo has its own Git repository.
+/tests/
+/containers/
+/docs/
+/plantvelo/
+/PlantVelocity/
+
+# Keep /website/data/releases/ for complete static deployments.
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+*.whl
+*.log
+*.sqlite*
+*.bak
+*.bak-*
+
+# Website caches and test output; keep source, assets, and published data.
+/website/.vite/
+/website/.cache/
+/website/coverage/
+/website/test-results/
+/website/playwright-report/
+/website/tests/
+*.tsbuildinfo
+
+# Temporary files and operating-system metadata
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Local settings and credentials
+/.aws/
+/.codex/
+/.agents/
+/.qtrans/
+.env
+.env.*
+!.env.example
+.netrc

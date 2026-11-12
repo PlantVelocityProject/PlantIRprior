@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "defaults": {
+    "ath": {"reference_id": "TAIR10", "annotation_id": "Araport11"},
+    "gmx": {"reference_id": "Glycine_max_v2.1", "annotation_id": "Wm82.a2.v1"},
+    "osa": {"reference_id": "IRGSP-1.0", "annotation_id": "RAP-DB"},
+    "sly": {"reference_id": "SL4.0", "annotation_id": "ITAG4.0"},
+    "zma": {"reference_id": "Zm-B73-REFERENCE-NAM-5.0", "annotation_id": "Zm00001eb.1"}
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "annotation_id": "ITAG4.0",
+  "changes": {
+    "kind": "initial"
+  },
+  "cohort_hash": "f4dd42ced3f89b66565a2c17fe5f1e0a31fc08bb5c7fdcde0bc76c8e39551674",
+  "created_at": "2026-11-02T14:43:49+00:00",
+  "events": 1330,
+  "files": {
+    "browse": {
+      "bytes": 372608,
+      "label": "Browser data",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/browse.js",
+      "sha256": "87ed93b979a676757e9a1865c9eb297bf2b7d9ab1411aa73e22cd1437f705114"
+    },
+    "events": {
+      "bytes": 311156,
+      "label": "High-confidence events · CSV",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/events.csv",
+      "sha256": "53cbfd590bb63d1fbe6dabefa44f6a943d61817a7089915f044d9ceb1ab54593"
+    },
+    "evidence": {
+      "bytes": 4945794,
+      "label": "Complete intron evidence · TSV.gz",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/intron_evidence.tsv.gz",
+      "sha256": "6a8ed8afd73e1df15d0a8a2bac0816b8adf81bf5f2bcf25d1dc937c4e225e662"
+    },
+    "prior": {
+      "bytes": 61770,
+      "label": "PlantVelo prior · TSV",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/high_confidence_IR.tsv",
+      "sha256": "6f84f77735f2a192fff55209a4adb8bb716351791f5c378528786cb0532b77dc"
+    },
+    "provenance": {
+      "bytes": 129934,
+      "label": "Source provenance · JSON",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/provenance.json",
+      "sha256": "3e9a3b99d8dc3df104298c8428dbcc4dd8e5b41cb682ad27767bea280a3c0042"
+    },
+    "qc": {
+      "bytes": 684,
+      "label": "Quality report · JSON",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/qc.json",
+      "sha256": "12f9c0d1643eaa0fca57d6791d7d5e72051d5f7285ae0ff90238b76833404032"
+    },
+    "samples": {
+      "bytes": 8150,
+      "label": "Included samples · CSV",
+      "path": "data/releases/sly/SL4.0/ITAG4.0/g000001-af698fe9e0/samples.csv",
+      "sha256": "b4acf5d2e675de17cb17272624d89bb9d6d4cf44dea420d9c45629750a927e45"
+    }
+  },
+  "generation": 1,
+  "intron_rows": 127433,
+  "key": "sly/SL4.0/ITAG4.0/g000001-af698fe9e0",
+  "reference_id": "SL4.0",
+  "reference_sha256": {
+    "annotation": "8710785eff4c5ec059fb88163515404e0abce01de1bff6aa245b7363d9cea0a9",
+    "genome": "7ae2eeae52b55e4740998274d5afbcd64ae52d38e2a17dfe73f16b61a39d3874"
+  },
+  "release_id": "g000001-af698fe9e0",
+  "rules": {
+    "candidate_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.1,
+      "min_ir_specificity": 0.5,
+      "min_retained": 3,
+      "min_spliced": 3
+    },
+    "high_confidence_IR": {
+      "min_informative": 10,
+      "min_ir_ratio": 0.2,
+      "min_ir_specificity": 0.7,
+      "min_retained": 5,
+      "min_spliced": 5
+    },
+    "nonIR": {
+      "max_ir_ratio": 0.05,
+      "max_retained": 2,
+      "min_informative": 10,
+      "min_spliced": 10
+    }
+  },
+  "samples": 53,
+  "software": {
+    "name": "IRagent.prior_format",
+    "schema": "plantvelo-high-confidence-five-columns-v1",
+    "source_sha256": {
+      "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+    },
+    "version": "1"
+  },
+  "source_hashes": {
+    "high_confidence_IR.tsv": "6f84f77735f2a192fff55209a4adb8bb716351791f5c378528786cb0532b77dc",
+    "intron_evidence.tsv.gz": "6a8ed8afd73e1df15d0a8a2bac0816b8adf81bf5f2bcf25d1dc937c4e225e662",
+    "provenance.json": "3e9a3b99d8dc3df104298c8428dbcc4dd8e5b41cb682ad27767bea280a3c0042",
+    "qc.json": "12f9c0d1643eaa0fca57d6791d7d5e72051d5f7285ae0ff90238b76833404032"
+  },
+  "species": "sly"
+}

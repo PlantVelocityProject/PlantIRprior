@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "resources": {"threads": 8, "sort_threads": 2, "pychopper_threads": 4, "jobs": 1},
+  "protocols": {
+    "Iso-seq": {"route": "iso-seq"},
+    "ONT cDNA-seq": {"route": "ont-cdna"},
+    "ONT PCR-cDNA-seq": {"route": "ont-pcr-cdna", "pychopper_kit": "PCS109"},
+    "ONT direct RNA-seq": {"route": "ont-direct-rna"},
+    "FLEP-seq": {"route": "flep", "max_intron": 12000},
+    "FLEP-seq2": {"route": "flep2", "max_intron": 12000}
+  }
+}

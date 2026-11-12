@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "parameters": {
+    "min_mapq": 20,
+    "min_anchor": 8,
+    "min_intron_coverage": 0.90,
+    "splice_tolerance": 5,
+    "strand_mode": "unstranded"
+  }
+}

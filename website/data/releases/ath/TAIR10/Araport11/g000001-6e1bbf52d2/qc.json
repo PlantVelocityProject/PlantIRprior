@@ -1,0 +1,25 @@
+{
+  "generation": 1,
+  "intron_rows": 132674,
+  "high_confidence_rows": 2256,
+  "counts": {
+    "retained": 147796106,
+    "spliced": 1440633508,
+    "specific": 43763203,
+    "informative": 1588429614
+  },
+  "count_unit": "read_intron_pairs",
+  "cohort_hash": "81982ba115fb0ec5fb8fa9872f002507fb6e1e4872f6921d278b87b5e2608231",
+  "plantvelo_validation": {
+    "status": "passed",
+    "matched_introns": 2256,
+    "software": {
+      "name": "IRagent.prior_format",
+      "version": "1",
+      "schema": "plantvelo-high-confidence-five-columns-v1",
+      "source_sha256": {
+        "prior_format.py": "832344ede71869ae2a8e5a358a2b877d6bbc5518d8436c6d366b91f1acfaa71a"
+      }
+    }
+  }
+}

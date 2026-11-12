@@ -1,0 +1,18 @@
+[Unit]
+Description=PlantIRagent background task API for same-account Hermes
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/Zhuxiangrong/workspace/PlantIRagent
+ExecStart=/usr/bin/python3 -B /home/Zhuxiangrong/workspace/PlantIRagent/scripts/local_task_server.py
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+UMask=0077
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

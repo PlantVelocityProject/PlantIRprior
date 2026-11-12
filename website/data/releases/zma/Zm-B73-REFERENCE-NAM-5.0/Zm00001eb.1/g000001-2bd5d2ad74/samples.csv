@@ -1,0 +1,176 @@
+﻿Accession,BioSample,BioProject,Species,Tissue,Treatment,Ecotype,Genotype,Platform,Protocol,Database
+CRR355298,SAMC536474,PRJCA007575,Zea mays,shoot,12 day(s),B73,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355299,SAMC536475,PRJCA007575,Zea mays,shoot,14 day(s),B73,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR355300,SAMC536476,PRJCA007575,Zea mays,shoot,14 day(s),B73,,OXFORD_NANOPORE,FLEP-seq2,NGDC
+CRR698940,SAMC1121170,PRJCA015053,Zea mays,leaf,,KA105,,OXFORD_NANOPORE,ONT cDNA-seq,NGDC
+ERR2093901,SAMEA104209642,PRJEB22122,Zea mays,bract,developmental tissues/stages,B73,,PACBIO_SMRT,Iso-seq,ENA
+ERR2093902,SAMEA104209643,PRJEB22122,Zea mays,leaf,developmental tissues/stages,B73,,PACBIO_SMRT,Iso-seq,ENA
+ERR2093903,SAMEA104209644,PRJEB22122,Zea mays,pericarp,developmental tissues/stages,B73,,PACBIO_SMRT,Iso-seq,ENA
+ERR2093904,SAMEA104209645,PRJEB22122,Zea mays,seedling,developmental tissues/stages,B73,,PACBIO_SMRT,Iso-seq,ENA
+ERR2093905,SAMEA104209646,PRJEB22122,Zea mays,shoot,developmental tissues/stages,B73,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261692,SAMEA5547160,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261693,SAMEA5547160,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261694,SAMEA5547160,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261695,SAMEA5547161,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261696,SAMEA5547161,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261697,SAMEA5547161,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261698,SAMEA5547162,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261699,SAMEA5547162,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261700,SAMEA5547162,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261701,SAMEA5547163,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261702,SAMEA5547163,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261703,SAMEA5547163,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261704,SAMEA5547163,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261705,SAMEA5547164,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+ERR3261706,SAMEA5547164,PRJEB32007,Zea mays,plant anatomical entity,juvenile stage; 20 DAP,KI11; B73; KI11XB73; B73XKI11,,PACBIO_SMRT,Iso-seq,ENA
+SRR10387979,SAMN13182953,PRJNA587226,Zea mays,root_after_treatment,After N supply; Two weeks,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR10387980,SAMN13182952,PRJNA587226,Zea mays,root_before_treatment,Before N supply; Two weeks,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR11024951,SAMN14002344,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Amb; Twenty-six days after planting,,Hp301,PACBIO_SMRT,Iso-seq,NCBI
+SRR11024957,SAMN14002347,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Ele; Twenty-six days after planting,,Hp301,PACBIO_SMRT,Iso-seq,NCBI
+SRR11024971,SAMN14002397,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Ele; Twenty-six days after planting,,C123,PACBIO_SMRT,Iso-seq,NCBI
+SRR11024993,SAMN14002390,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Amb; Twenty-six days after planting,,C123,PACBIO_SMRT,Iso-seq,NCBI
+SRR11025012,SAMN14002373,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Ele; Twenty-six days after planting,,NC338,PACBIO_SMRT,Iso-seq,NCBI
+SRR11025021,SAMN14002323,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Ele; Twenty-six days after planting,,B73,PACBIO_SMRT,Iso-seq,NCBI
+SRR11025034,SAMN14002366,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Amb; Twenty-six days after planting,,NC338,PACBIO_SMRT,Iso-seq,NCBI
+SRR11025039,SAMN14002296,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Amb; Twenty-six days after planting,,Mo17,PACBIO_SMRT,Iso-seq,NCBI
+SRR11025052,SAMN14002298,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Ele; Twenty-six days after planting,,Mo17,PACBIO_SMRT,Iso-seq,NCBI
+SRR11025073,SAMN14002319,PRJNA604929,Zea mays,Leaf tissue from the 5th leaf,Amb; Twenty-six days after planting,,B73,PACBIO_SMRT,Iso-seq,NCBI
+SRR12162135,SAMN15409181,PRJNA643165,Zea mays,kernels,24 days after pollination,B73,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR12162136,SAMN15409181,PRJNA643165,Zea mays,kernels,24 days after pollination,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162137,SAMN15409181,PRJNA643165,Zea mays,kernels,24 days after pollination,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162138,SAMN15409181,PRJNA643165,Zea mays,kernels,24 days after pollination,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162139,SAMN15409181,PRJNA643165,Zea mays,kernels,24 days after pollination,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162140,SAMN15409181,PRJNA643165,Zea mays,kernels,24 days after pollination,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162141,SAMN15409180,PRJNA643165,Zea mays,seedling,14 day seedling,B73,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR12162142,SAMN15409180,PRJNA643165,Zea mays,seedling,14 day seedling,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162143,SAMN15409183,PRJNA643165,Zea mays,kernels,24 days after pollination,W22,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR12162144,SAMN15409183,PRJNA643165,Zea mays,kernels,24 days after pollination,W22,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR12162145,SAMN15409183,PRJNA643165,Zea mays,kernels,24 days after pollination,W22,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162146,SAMN15409182,PRJNA643165,Zea mays,seedling,14 day seedling,W22,,OXFORD_NANOPORE,ONT direct RNA-seq,NCBI
+SRR12162147,SAMN15409180,PRJNA643165,Zea mays,seedling,14 day seedling,B73,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12162148,SAMN15409179,PRJNA643165,Zea mays,kernels,24 days after pollination,B104,,OXFORD_NANOPORE,ONT PCR-cDNA-seq,NCBI
+SRR12487907,SAMN15869239,PRJNA635654,Zea mays,above ground tissues,control; 10 days seedling,A188,A188,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12487908,SAMN15869238,PRJNA635654,Zea mays,above ground tissues,control; 10 days seedling,A188,A188,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12487909,SAMN15869237,PRJNA635654,Zea mays,above ground tissues,control; 10 days seedling,A188,A188,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12487910,SAMN15869215,PRJNA635654,Zea mays,callus,control; 39 days,A188,A188,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12487911,SAMN15869214,PRJNA635654,Zea mays,callus,control; 39 days,A188,A188,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR12487912,SAMN15869213,PRJNA635654,Zea mays,callus,control; 39 days,A188,A188,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR13587281,SAMN17601141,PRJNA698070,Zea mays,Tassel (VT),VT,TIL11,,PACBIO_SMRT,Iso-seq,NCBI
+SRR13587282,SAMN17601140,PRJNA698070,Zea mays,Ear (VT),VT,TIL11,,PACBIO_SMRT,Iso-seq,NCBI
+SRR13587283,SAMN17601139,PRJNA698070,Zea mays,Seedlings underground (V4),V4,TIL11,,PACBIO_SMRT,Iso-seq,NCBI
+SRR13587284,SAMN17601138,PRJNA698070,Zea mays,Seedlings aboveground (V4),V4,TIL11,,PACBIO_SMRT,Iso-seq,NCBI
+SRR13587285,SAMN17601137,PRJNA698070,Zea mays,Leaf (V4),V4,TIL11,,PACBIO_SMRT,Iso-seq,NCBI
+SRR14140361,SAMN18613441,PRJNA719429,Zea mays,pooled,14 days,FR697,FR697,PACBIO_SMRT,Iso-seq,NCBI
+SRR15648686,SAMN21016867,PRJNA751841,Zea mays,"root,seedling,silk,tassel,bract",,inbred line Mo17,,PACBIO_SMRT,Iso-seq,NCBI
+SRR17226650,SAMN23929503,PRJNA788163,Zea mays,shoot nuc,14,B73,,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17226651,SAMN23929502,PRJNA788163,Zea mays,shoot,14,B73,,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR17226652,SAMN23929501,PRJNA788163,Zea mays,shoot,12,B73,,OXFORD_NANOPORE,FLEP-seq2,NCBI
+SRR18461190,SAMN26920483,PRJNA819278,Zea mays,stalks; maize stalk internodes (without epidermis) infected by F. graminearum,24 hours post PH-1 infection; two-month-old maize stalks,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18571904,SAMN27167258,PRJNA822071,Zea mays,root tip,cold stress; 8 days after germination,IL85,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571905,SAMN27167257,PRJNA822071,Zea mays,root tip,cold stress; 8 days after germination,B73,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571906,SAMN27167256,PRJNA822071,Zea mays,root tip,cold stress; 8 days after germination,B73,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571907,SAMN27167255,PRJNA822071,Zea mays,root tip,cold stress; 8 days after germination,B73,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571908,SAMN27167254,PRJNA822071,Zea mays,root tip,control; 7 days after germination,IL85,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571909,SAMN27167253,PRJNA822071,Zea mays,root tip,control; 7 days after germination,IL85,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571910,SAMN27167252,PRJNA822071,Zea mays,root tip,control; 7 days after germination,IL85,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571911,SAMN27167251,PRJNA822071,Zea mays,root tip,control; 7 days after germination,B73,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571912,SAMN27167260,PRJNA822071,Zea mays,root tip,cold stress; 8 days after germination,IL85,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571913,SAMN27167259,PRJNA822071,Zea mays,root tip,cold stress; 8 days after germination,IL85,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571914,SAMN27167250,PRJNA822071,Zea mays,root tip,control; 7 days after germination,B73,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18571915,SAMN27167249,PRJNA822071,Zea mays,root tip,control; 7 days after germination,B73,,OXFORD_NANOPORE,ONT cDNA-seq,NCBI
+SRR18584195,SAMN27178164,PRJNA822292,Zea mays,Primary Root (6 DAS); Primary Root (V1),Primary Root (6 DAS); Primary Root (V1); Primary Root (6 DAS) Primary Root (V1),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584197,SAMN27178162,PRJNA822292,Zea mays,Ear (2 mm); Tassel (2 mm); Ear (5 mm); Silk; Ear (3 cm),Ear (2 mm); Tassel (2 mm); Ear (5 mm); Silk; Ear (3 cm); Ear (2 mm) Tassel (2 mm) Ear (5 mm) Silk Ear (3 cm),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584199,SAMN27178161,PRJNA822292,Zea mays,Anther; Tassel (2 cm),Anther; Tassel (2 cm); Anther Tassel (2 cm),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584200,SAMN27178160,PRJNA822292,Zea mays,SAM (V3),SAM (V3),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584201,SAMN27178159,PRJNA822292,Zea mays,First Leaf - L(V3); Topmost Leaf - L(V3); Tip of 2 Stage leaf - L(V5); Base of 2 Stage leaf - L (V5); Husk leaf; Ear leaf,First Leaf - L(V3); Topmost Leaf - L(V3); Tip of 2 Stage leaf - L(V5); Base of 2 Stage leaf - L (V5); Husk leaf; Ear leaf; First Leaf - L(V3) Topmost Leaf - L(V3) Tip of 2 Stage leaf - L(V5) Base of 2 Stage leaf - L (V5) Husk leaf Ear leaf,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584202,SAMN27178158,PRJNA822292,Zea mays,Anther; Tassel (2 cm),Anther; Tassel (2 cm); Anther Tassel (2 cm),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584203,SAMN27178157,PRJNA822292,Zea mays,SAM (V3),V3,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584205,SAMN27178167,PRJNA822292,Zea mays,Ear (2 mm); Tassel (2 mm); Ear (5 mm),Ear (2 mm); Tassel (2 mm); Ear (5 mm); Ear (2 mm) Tassel (2 mm) Ear (5 mm),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584251,SAMN27178166,PRJNA822292,Zea mays,Ear (2 mm); Tassel (2 mm); Ear (5 mm); Silk; Ear (3 cm),Ear (2 mm); Tassel (2 mm); Ear (5 mm); Silk; Ear (3 cm); Ear (2 mm) Tassel (2 mm) Ear (5 mm) Silk Ear (3 cm),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584252,SAMN27178165,PRJNA822292,Zea mays,Embryo (15 DAP); Embryo (25 DAP),Embryo (15 DAP); Embryo (25 DAP); Embryo (15 DAP) Embryo (25 DAP),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR18584253,SAMN27178163,PRJNA822292,Zea mays,Endosperm (15 DAP); Endosperm (25 DAP),Endosperm (15 DAP); Endosperm (25 DAP); Endosperm (15 DAP) Endosperm (25 DAP),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR21416150,SAMN29977420,PRJNA862467,Zea mays,mix,,Teo.Iso,,PACBIO_SMRT,Iso-seq,NCBI
+SRR21539832,SAMN30816289,PRJNA822523,Zea mays,leaf,Flowering,Zea mays,,PACBIO_SMRT,Iso-seq,NCBI
+SRR23046702,SAMN32631246,PRJNA921723,Zea mays,leaf,,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911624,SAMN35726114,PRJNA983493,Zea mays,seedling,20 days seedling,Zheng58,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911625,SAMN35726113,PRJNA983493,Zea mays,seedling,20 days seedling,PH6WC,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911626,SAMN35726112,PRJNA983493,Zea mays,seedling,20 days seedling,PH4CV,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911627,SAMN35726111,PRJNA983493,Zea mays,seedling,20 days seedling,PH207,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911628,SAMN35726110,PRJNA983493,Zea mays,seedling,20 days seedling,inbred line Mo17,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911629,SAMN35726109,PRJNA983493,Zea mays,seedling,20 days seedling,Huangzao4,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911636,SAMN35726108,PRJNA983493,Zea mays,seedling,20 days seedling,Chang7-2,,PACBIO_SMRT,Iso-seq,NCBI
+SRR24911637,SAMN35726107,PRJNA983493,Zea mays,seedling,20 days seedling,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147022,SAMN04438374,PRJNA10769,Zea mays,immature ear,V8,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147023,SAMN04438374,PRJNA10769,Zea mays,immature ear,V8,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147024,SAMN04438374,PRJNA10769,Zea mays,immature ear,V8,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147025,SAMN04438374,PRJNA10769,Zea mays,immature ear,V8,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147026,SAMN04438374,PRJNA10769,Zea mays,immature ear,V8,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147027,SAMN04438374,PRJNA10769,Zea mays,immature ear,V8,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147028,SAMN04439348,PRJNA10769,Zea mays,embryo,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147029,SAMN04439348,PRJNA10769,Zea mays,embryo,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147030,SAMN04439348,PRJNA10769,Zea mays,embryo,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147031,SAMN04439348,PRJNA10769,Zea mays,embryo,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147032,SAMN04439348,PRJNA10769,Zea mays,embryo,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147033,SAMN04439348,PRJNA10769,Zea mays,embryo,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147034,SAMN04439362,PRJNA10769,Zea mays,endosperm,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147035,SAMN04439362,PRJNA10769,Zea mays,endosperm,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147036,SAMN04439362,PRJNA10769,Zea mays,endosperm,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147037,SAMN04439362,PRJNA10769,Zea mays,endosperm,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147038,SAMN04439362,PRJNA10769,Zea mays,endosperm,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147039,SAMN04439362,PRJNA10769,Zea mays,endosperm,20DAP (days after pollination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147040,SAMN04439364,PRJNA10769,Zea mays,pollen,R1,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147041,SAMN04439364,PRJNA10769,Zea mays,pollen,R1,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147042,SAMN04439364,PRJNA10769,Zea mays,pollen,R1,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147043,SAMN04439364,PRJNA10769,Zea mays,pollen,R1,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147044,SAMN04439364,PRJNA10769,Zea mays,pollen,R1,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147045,SAMN04439364,PRJNA10769,Zea mays,pollen,R1,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147046,SAMN04438367,PRJNA10769,Zea mays,root,14DAG (days after germination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147047,SAMN04438367,PRJNA10769,Zea mays,root,14DAG (days after germination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147048,SAMN04438367,PRJNA10769,Zea mays,root,14DAG (days after germination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147049,SAMN04438367,PRJNA10769,Zea mays,root,14DAG (days after germination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147050,SAMN04438367,PRJNA10769,Zea mays,root,14DAG (days after germination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147051,SAMN04438367,PRJNA10769,Zea mays,root,14DAG (days after germination),B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147052,SAMN04439363,PRJNA10769,Zea mays,immature tassel,V7,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147053,SAMN04439363,PRJNA10769,Zea mays,immature tassel,V7,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147054,SAMN04439363,PRJNA10769,Zea mays,immature tassel,V7,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147055,SAMN04439363,PRJNA10769,Zea mays,immature tassel,V7,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147056,SAMN04439363,PRJNA10769,Zea mays,immature tassel,V7,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR3147057,SAMN04439363,PRJNA10769,Zea mays,immature tassel,V7,B73,,PACBIO_SMRT,Iso-seq,NCBI
+SRR33980785,SAMN49082548,PRJNA1276729,Zea mays,leaf,,Yu82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR33980786,SAMN49082547,PRJNA1276729,Zea mays,leaf,,Yu82,,PACBIO_SMRT,Iso-seq,NCBI
+SRR33980814,SAMN49082550,PRJNA1276730,Zea mays,leaf,,D132,,PACBIO_SMRT,Iso-seq,NCBI
+SRR33980815,SAMN49082549,PRJNA1276730,Zea mays,leaf,,D132,,PACBIO_SMRT,Iso-seq,NCBI
+SRR7632686,SAMN09747820,PRJNA483809,Zea mays,endosperm,18DAP,W64A,,PACBIO_SMRT,Iso-seq,NCBI
+SRR7632687,SAMN09747820,PRJNA483809,Zea mays,endosperm,18DAP,W64A,,PACBIO_SMRT,Iso-seq,NCBI
+SRR7632688,SAMN09747820,PRJNA483809,Zea mays,endosperm,18DAP,W64A,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873352,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873353,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873354,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873355,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873356,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873357,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873358,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873359,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873360,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873361,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873362,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873363,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873364,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873365,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873366,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873367,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873368,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873369,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873371,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873382,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873383,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873384,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873385,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873386,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873387,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873388,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873412,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873413,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873414,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8873415,SAMN11369616,PRJNA531547,Zea mays,multiple organs/tissues (pooled),,SK,,PACBIO_SMRT,Iso-seq,NCBI
+SRR8981115,SAMN11521872,PRJNA539996,Zea mays,whole plant,Various development stage of maize,K0326Y,,PACBIO_SMRT,Iso-seq,NCBI

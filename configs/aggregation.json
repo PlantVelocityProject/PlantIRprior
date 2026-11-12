@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "group_by": ["species", "reference_id", "annotation_id"],
+  "trigger": {
+    "publication_mode": "manual",
+    "checkpoint_new_samples": 50,
+    "max_wait_days": null
+  }
+}
