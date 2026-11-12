@@ -8,6 +8,7 @@ the **PlantIRPrior** resource website, and an IR agent that helps plan, monitor
 and report resource updates. This repository provides the website and supporting
 workflow materials for readers of the accompanying research.
 
+[Website](https://plantvelocityproject.github.io/PlantIRprior/) ·
 [Release manifest](website/data/releases/index.json) ·
 [IR agent skill](integrations/hermes/skills/ir-prior-update/SKILL.md) ·
 [PlantVelo](https://github.com/PlantVelocityProject/plantvelo) ·
@@ -41,7 +42,8 @@ their PlantVelocity analysis.
 
 ## PlantIR Prior website
 
-The website supports browsing and filtering IR events, inspecting source samples
+The [PlantIRPrior website](https://plantvelocityproject.github.io/PlantIRprior/)
+supports browsing and filtering IR events, inspecting source samples
 and reference versions, exploring release history, and downloading event tables,
 PlantVelo priors and evidence bundles. Its Methods page presents the scientific
 workflow interactively.
