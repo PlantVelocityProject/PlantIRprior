@@ -5,6 +5,7 @@
 /reports/
 /releases/
 /metadata/
+/.backups/
 
 # Exclude from the main repository; PlantVelo has its own Git repository.
 /tests/
