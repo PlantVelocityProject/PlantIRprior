@@ -6,7 +6,7 @@ Browse plant intron-retention (IR) events and download reference-matched
 structural priors for RNA velocity analysis. Each release includes long-read
 evidence and source provenance.
 
-[**Explore the resource →**](https://plantvelocityproject.github.io/PlantIRprior/) ·
+[**Explore the resource**](https://plantvelocityproject.github.io/PlantIRprior/) ·
 [Download priors](https://plantvelocityproject.github.io/PlantIRprior/#resources) ·
 [Methods](https://plantvelocityproject.github.io/PlantIRprior/#methods) ·
 [Release history](https://plantvelocityproject.github.io/PlantIRprior/#releases)
@@ -40,9 +40,7 @@ evidence and source provenance.
 ## Resource coverage
 
 The bundled snapshot contains the following high-confidence events. Counts and
-reference identities come from the [release manifest](website/data/releases/index.json),
-last updated **11 November 2026**; the website provides the release history and
-downloads for each version.
+reference identities come from the [release manifest](website/data/releases/index.json); the website provides the release history and downloads for each version.
 
 | Species | Samples | IR events |
 | --- | ---: | ---: |
@@ -121,13 +119,6 @@ task operations and reporting rules, and
 | [IR agent skill](integrations/hermes/skills/ir-prior-update/) | Update instructions, task operations and reporting rules |
 | [scripts/](scripts/) | Workflow orchestration, validation, task interface and release delivery |
 | [configs/](configs/) | Alignment parameters, evidence settings, classification thresholds and publication policy |
-
-The website includes its runtime assets, local fonts and release data. To preview
-it locally, serve the directory and open <http://localhost:8000>:
-
-```bash
-python3 -m http.server 8000 --directory website
-```
 
 For analysis software, continue to
 [PlantVelo](https://github.com/PlantVelocityProject/plantvelo) and
