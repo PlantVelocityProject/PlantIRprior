@@ -73,7 +73,9 @@ p { text-wrap: pretty; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .footer-inner p { color: var(--pine); font-weight: 600; }
 .footer-inner p span { display: block; color: var(--subtle-text); font-size: 14px; font-weight: 400; margin-top: 2px; }
-.footer-inner .footer-companion { margin-top: 22px; color: var(--subtle-text); font-size: 14px; font-weight: 400; }
+.footer-inner .footer-contact { margin-top: 22px; color: var(--subtle-text); font-size: 14px; font-weight: 400; }
+.footer-contact a { text-decoration: none; overflow-wrap: anywhere; }
+.footer-contact a:hover { text-decoration: underline; }
 .footer-project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; }
 .footer-github { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; }
 .footer-github:hover { text-decoration: underline; }
